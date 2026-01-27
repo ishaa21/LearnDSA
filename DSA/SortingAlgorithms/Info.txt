@@ -1,0 +1,5 @@
+Sorting algorithms arrange data in a specific order, such as ascending or descending.
+
+Sorting improves efficiency of searching and makes data easier to analyze and process. Different sorting algorithms are used depending on time, space, and data size requirements.
+
+Sorting is a core concept in data organization.

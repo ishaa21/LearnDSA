@@ -1,0 +1,27 @@
+Using == operator:
+str1 == str2: True
+str1 == str3: False
+str1 == str4: False
+
+Using != operator:
+str1 != str3: True
+str1 != str2: False
+
+Case-insensitive comparison:
+str1.lower() == str3.lower(): True
+str1.upper() == str3.upper(): True
+
+Comparing first 3 characters:
+str5[:3] == str6[:3]: True
+
+Ignoring case and spaces:
+Normalized equal: True
+
+Using == vs is (identity vs equality):
+str9 == str10: True
+str9 is str10: True
+str9 is str11: True
+
+Using comparison operators:
+'apple' < 'banana': True
+'zebra' > 'apple': True

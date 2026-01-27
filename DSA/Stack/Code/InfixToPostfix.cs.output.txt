@@ -1,0 +1,7 @@
+=== Infix to Postfix ===
+
+Infix Expression: a+b*c-d/e
+Postfix Expression: abc*+de/-
+
+Algorithm: Shunting-yard
+Complexity: O(n)

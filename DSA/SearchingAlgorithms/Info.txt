@@ -1,0 +1,5 @@
+Searching algorithms are used to find an element in a data structure.
+
+These algorithms vary in efficiency based on whether the data is sorted or unsorted. Choosing the right searching algorithm improves performance.
+
+Searching is a fundamental operation in almost every software system.

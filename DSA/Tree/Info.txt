@@ -1,0 +1,5 @@
+A tree is a hierarchical data structure consisting of nodes connected by edges.
+
+Each tree has a root node, and every node can have child nodes. Trees represent parent-child relationships and are used to organize data efficiently.
+
+Trees allow faster searching, insertion, and deletion compared to linear structures.

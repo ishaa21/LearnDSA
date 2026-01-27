@@ -1,0 +1,50 @@
+String: ABC
+All substrings:
+A
+AB
+ABC
+B
+BC
+C
+Total substrings: 6
+
+String: HELLO
+All substrings:
+H
+HE
+HEL
+HELL
+HELLO
+E
+EL
+ELL
+ELLO
+L
+LL
+LLO
+L
+LO
+O
+Total substrings: 15
+
+Method 2: Direct approach
+String: PY
+All substrings:
+P
+PY
+Y
+
+
+Method 3: Using list comprehension
+String: AB
+All substrings:
+A
+AB
+B
+Total: 3
+
+
+Method 4: Substrings of length 2
+String: HELLO
+Substrings of length 2:
+['HE', 'EL', 'LL', 'LO']

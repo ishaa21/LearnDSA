@@ -1,0 +1,8 @@
+Original string: Hello World
+After removing all 'l': Heo Word
+After removing all 'o': Hell Wrld
+After removing all spaces: HelloWorld
+
+Manual approach:
+Original: Programming Language
+After removing all 'a': Progrmming Lnguge

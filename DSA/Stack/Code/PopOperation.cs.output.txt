@@ -1,0 +1,19 @@
+=== Pop Operation ===
+
+Current stack: 10 20 30 40 50 
+
+Popping elements:
+Successfully popped: 50 (top = 3)
+Successfully popped: 40 (top = 2)
+Current stack: 10 20 30 
+
+Popping all remaining:
+Successfully popped: 30 (top = 1)
+Successfully popped: 20 (top = 0)
+Successfully popped: 10 (top = -1)
+Stack is empty
+Stack underflow - cannot pop
+
+Complexity Analysis:
+Time: O(1)
+Space: O(1)

@@ -1,0 +1,12 @@
+=== Traversal of Doubly Linked List ===
+
+Forward: 10 <-> 20 <-> 30 <-> 40 <-> 50 <-> NULL
+Backward: 50 <-> 40 <-> 30 <-> 20 <-> 10 <-> NULL
+Total nodes: 5
+Node at position 3: 30
+
+Complexity Analysis:
+Forward traversal: O(n)
+Backward traversal: O(n)
+Count nodes: O(n)
+Get at position: O(n)

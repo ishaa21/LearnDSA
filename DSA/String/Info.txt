@@ -1,0 +1,5 @@
+A string is a sequence of characters used to represent textual data.
+
+Strings are used in almost every application for storing names, messages, and instructions. String operations include comparison, concatenation, and modification.
+
+Efficient string handling is important for performance in large applications.

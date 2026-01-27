@@ -1,0 +1,14 @@
+=== N-Queens Problem (C#) ===
+
+. . Q . 
+Q . . . 
+. . . Q 
+. Q . . 
+
+. Q . . 
+. . . Q 
+Q . . . 
+. . Q . 
+
+Time Complexity: O(N!)
+Space Complexity: O(N^2)

@@ -1,0 +1,7 @@
+A Greedy Algorithm is an approach that makes the best possible choice at each step, with the hope that these local optimal choices will lead to a global optimal solution.
+
+Greedy algorithms do not reconsider decisions once made. They are simple, fast, and efficient, but they work correctly only for problems where greedy choices are proven to be optimal.
+
+This technique is mainly used in optimization problems where decisions are made step by step.
+
+Greedy algorithms are easy to implement and require less memory compared to other techniques.

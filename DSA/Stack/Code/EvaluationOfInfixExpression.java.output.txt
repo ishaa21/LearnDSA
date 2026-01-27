@@ -1,0 +1,7 @@
+=== Evaluation of Infix Expression ===
+
+Infix Expression: 10+(2^3)*5
+Result: 50
+
+Operator Precedence: ^ > * / > + -
+Complexity: O(n)

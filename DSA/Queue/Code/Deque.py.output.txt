@@ -1,0 +1,32 @@
+=== Deque (Double Ended Queue) ===
+
+Deque is empty
+
+Inserting at rear:
+Successfully inserted at rear: 10 (size = 1)
+Successfully inserted at rear: 20 (size = 2)
+Successfully inserted at rear: 30 (size = 3)
+
+Deque: 10 20 30 
+
+Inserting at front:
+Successfully inserted at front: 5 (size = 4)
+Successfully inserted at front: 2 (size = 5)
+
+Deque: 2 5 10 20 30 
+
+Deleting from front:
+Successfully deleted from front: 2 (size = 4)
+
+Deleting from rear:
+Successfully deleted from rear: 30 (size = 4)
+
+Deque: 5 10 20 
+
+Complexity Analysis:
+Insert Front: O(1)
+Insert Rear: O(1)
+Delete Front: O(1)
+Delete Rear: O(1)
+Space: O(n)
+Advantage: Flexible insertion/deletion from both ends

@@ -1,0 +1,15 @@
+=== Evaluation of Postfix Expression ===
+
+Postfix Expression: 10 2 3 ^ * 5 +
+Result: 85
+
+Steps:
+1. Push 10
+2. Push 2
+3. Push 3
+4. Pop 3,2; Compute 2^3=8; Push 8
+5. Pop 8,10; Compute 10*8=80; Push 80
+6. Push 5
+7. Pop 5,80; Compute 80+5=85; Push 85
+
+Complexity: O(n)

@@ -1,0 +1,10 @@
+=== Reverse Linked List ===
+
+Original list: 10 -> 20 -> 30 -> 40 -> 50 -> NULL
+After iterative reverse: 50 -> 40 -> 30 -> 20 -> 10 -> NULL
+Original list: 10 -> 20 -> 30 -> 40 -> 50 -> NULL
+After recursive reverse: 50 -> 40 -> 30 -> 20 -> 10 -> NULL
+
+Complexity Analysis:
+Iterative reverse: O(n) time, O(1) space
+Recursive reverse: O(n) time, O(n) space (call stack)

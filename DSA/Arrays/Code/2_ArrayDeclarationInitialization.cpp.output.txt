@@ -1,0 +1,5 @@
+arr1: 1 2 3 4 5 
+arr2: 10 20 30 40 
+arr3 (partial init): 100 200 0 0 0 
+arr4 (std::array): 5 10 15 20 25 
+arr5 (uniform init): 30 60 90 

@@ -1,0 +1,17 @@
+Using strchr():
+Character 'l' found at index: 2
+
+Using strrchr():
+Last occurrence of 'l' at index: 9
+
+Manual search:
+Found at index: 2
+Found at index: 3
+Found at index: 9
+Total occurrences: 3
+
+Searching from position 5:
+Found at index: 9
+
+Case-insensitive search for 'W':
+Found at index: 6

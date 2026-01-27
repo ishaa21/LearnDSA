@@ -1,0 +1,18 @@
+Original string: Hello World
+
+Using Remove():
+After removing character at position 0: ello World
+After removing character at position 5: HelloWorld
+After removing last character: Hello Worl
+
+Removing all 'l':
+Using Replace(): Heo Word
+
+Using StringBuilder:
+After removing character at position 0: ello World
+After removing all 'l': Heo Word
+
+Using LINQ:
+Using Where(): Heo Word
+
+Using Substring: HelloWorld

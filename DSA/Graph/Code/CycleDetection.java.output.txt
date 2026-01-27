@@ -1,0 +1,19 @@
+=== Cycle Detection (Java) ===
+
+Graph 1 (With Cycle):
+Edges: 0-1, 1-2, 2-3, 3-0 (forms a cycle)
+Cycle Detected: Yes
+
+Graph 2 (Acyclic):
+Edges: 0-1, 1-2, 2-3 (no cycle)
+Cycle Detected: No
+
+=== Algorithm ===
+1. Use DFS to traverse graph
+2. For each vertex, track parent
+3. If visited neighbor is not parent = cycle found
+4. Continue for all components
+
+=== Complexity ===
+Time Complexity:  O(V + E)
+Space Complexity: O(V)

@@ -1,0 +1,25 @@
+=== Coin Change Problem (C) ===
+
+Available Coins: 1 5 10 25 
+Amount to Make: 41
+
+Coin Change for amount 41:
+Take coin of value 25
+Take coin of value 10
+Take coin of value 5
+Take coin of value 1
+
+Total Coins Used: 4
+Amount Made: Complete
+
+=== Greedy Strategy ===
+1. Sort coins in descending order
+2. For each coin (largest to smallest):
+   - Use as many as possible
+   - Subtract from amount
+3. Continue until amount becomes 0
+
+=== Complexity ===
+Time Complexity:  O(n log n) for sorting + O(amount)
+Space Complexity: O(1)
+Note: Greedy works for standard coin systems

@@ -1,0 +1,27 @@
+Method 1: Using slicing
+Original: Hello World
+Reversed: dlroW olleH
+
+Method 2: Using reversed() function
+Original: Hello World
+Reversed: dlroW olleH
+
+Method 3: Using loop
+Original: Programming
+Reversed: gnimmargorP
+
+Method 4: Using list.reverse()
+Original: Python
+Reversed: nohtyP
+
+Method 5: Using recursion
+Original: Recursion
+Reversed: noisruceR
+
+Method 6: Using reduce
+Original: Reduce
+Reversed: ecudeR
+
+Method 7: Using stack
+Original: Stack
+Reversed: kcatS

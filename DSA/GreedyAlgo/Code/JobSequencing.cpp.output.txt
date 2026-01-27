@@ -1,0 +1,28 @@
+=== Job Sequencing Problem (C++) ===
+
+Jobs (ID, Deadline, Profit):
+Job 1: Deadline 4, Profit 20
+Job 2: Deadline 1, Profit 10
+Job 3: Deadline 1, Profit 40
+Job 4: Deadline 1, Profit 30
+Job 5: Deadline 3, Profit 35
+
+Selected Jobs (in execution order):
+Slot 1: Job 3
+Slot 3: Job 5
+Slot 4: Job 1
+
+Total Jobs: 3
+Total Profit: 95
+
+=== Greedy Strategy ===
+1. Sort jobs by profit (descending)
+2. For each job:
+   - Find latest available slot before deadline
+   - If slot found: schedule job there
+3. Calculate total profit
+
+=== Complexity ===
+Time Complexity:  O(n²) worst case
+Space Complexity: O(n)
+Optimal: Yes (greedy optimal for this problem)

@@ -1,0 +1,22 @@
+=== Postorder Traversal (Python) ===
+
+Tree structure:
+         1
+        / \
+       2   3
+      / \ / \
+     4  5 6  7
+
+Recursive Postorder (Left-Right-Root): 4 5 2 6 7 3 1
+Iterative Postorder (two stacks):      4 5 2 6 7 3 1
+
+=== Postorder Characteristics ===
+1. Left subtree → Right subtree → Root
+2. Root is processed last
+3. Useful for deleting tree
+4. Useful for postfix expression evaluation
+
+=== Complexity Analysis ===
+Time Complexity:  O(n) - visit each node once
+Space Complexity: O(h) - h = height (recursion/stack)
+                   O(n) worst case (skewed tree)

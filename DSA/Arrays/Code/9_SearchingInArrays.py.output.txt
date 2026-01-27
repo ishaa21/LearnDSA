@@ -1,0 +1,4 @@
+Linear Search for 40: Found at index 3
+Linear Search for 25: Not found
+Binary Search for 50: Found at index 4
+Using built-in for 30: Found at index 2

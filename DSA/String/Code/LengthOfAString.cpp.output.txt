@@ -1,0 +1,8 @@
+Using length(): 11
+Using size(): 11
+Using range-based loop: 11
+Using strlen() on C-string: 11
+Using null terminator check: 11
+
+Empty string length: 0
+Single character length: 1

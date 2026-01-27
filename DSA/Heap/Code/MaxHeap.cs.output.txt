@@ -1,0 +1,22 @@
+=== Max Heap (C#) ===
+
+Inserting: 5, 10, 3, 2, 8, 1
+Max Heap (Array): 10 8 5 2 3 1 
+
+Extracting maximum elements:
+Extract: 10
+Max Heap (Array): 8 3 5 2 1 
+Extract: 8
+Max Heap (Array): 5 3 1 2 
+
+=== Max Heap Properties ===
+1. Parent >= Left Child
+2. Parent >= Right Child
+3. Complete binary tree (all levels filled except last)
+4. Maximum element always at root
+
+=== Max Heap Complexity ===
+Insert:      O(log n)
+Extract Max: O(log n)
+Get Max:     O(1)
+Space:       O(n)

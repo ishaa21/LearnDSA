@@ -1,0 +1,4 @@
+arr1: 1 2 3 4 5 
+arr3 (manual init): 10 20 30 
+arr4 (String array): C# Java Python C++ 
+arr5 (implicitly typed): 5 10 15 20 25 

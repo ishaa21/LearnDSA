@@ -1,0 +1,44 @@
+# Valid Parentheses
+
+## What is this?
+Check if parentheses in a string are balanced and ordered correctly. e.g., "()" is valid, ")(" is not.
+
+## Why do we need it?
+- Syntax checking in compilers
+- Linting code
+
+## Algorithm Logic
+1. Traverse string
+2. Push opening brackets '(', '{', '['
+3. On closing bracket, check if stack top matches counterpart. Pop.
+4. If stack empty at end -> Valid.
+
+## Common Mistakes
+- Ignoring empty stack when popping
+- Stack not empty at end
+
+## Time Complexity
+O(n)
+
+## Space Complexity
+O(n)
+
+## Real Life Use
+- IDEs (highlighting matching braces)
+- Math expression parsers
+
+## Key Takeaways
+- Classic stack problem
+- Very important for interviews
+
+## Recommended Problems
+- Valid Parentheses (LeetCode)
+- Balanced Parenthesis (GFG)
+
+## Mini Practice
+### Problem: Check Balance
+Check if "{[()]}" is valid.
+Input: "{[()]}"
+Output: Valid
+Hint: Push {, Push [, Push (. Match ) with (. Match ] with [. Match } with {.
+Solution: Use stack. Return stack.isEmpty() at end.

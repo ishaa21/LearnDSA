@@ -1,0 +1,18 @@
+Original string: Hello World
+
+Using list conversion:
+After inserting 'H' at position 0: HHello World
+
+Using slicing:
+After inserting '!' at position 5: Hello! World
+After inserting '*' at beginning: *Hello World
+After inserting '*' at end: Hello World*
+After multiple insertions: *Hello World!
+
+Using format or f-string:
+Inserting '*' at position 1 in 'Hi': H*i
+
+After inserting '***' at position 2: Te***st
+
+Using function:
+After inserting '@' at position 6: Hello @World

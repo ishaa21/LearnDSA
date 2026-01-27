@@ -1,0 +1,14 @@
+=== Infix to Prefix ===
+
+Algorithm: Convert Infix to Postfix, then reverse
+Steps:
+1. Reverse the infix expression
+2. Swap ( and )
+3. Convert to postfix
+4. Reverse result
+
+Example:
+Infix: a+b*c-d/e
+Prefix: -+a*bc/de
+
+Complexity: O(n)

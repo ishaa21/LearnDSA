@@ -1,0 +1,30 @@
+Forward traversal:
+arr[0] = 10
+arr[1] = 20
+arr[2] = 30
+arr[3] = 40
+arr[4] = 50
+
+Backward traversal:
+arr[4] = 50
+arr[3] = 40
+arr[2] = 30
+arr[1] = 20
+arr[0] = 10
+
+Enhanced for loop:
+Value: 10
+Value: 20
+Value: 30
+Value: 40
+Value: 50
+
+While loop traversal:
+Value: 10
+Value: 20
+Value: 30
+Value: 40
+Value: 50
+
+Sum of all elements: 150
+Maximum element: 50

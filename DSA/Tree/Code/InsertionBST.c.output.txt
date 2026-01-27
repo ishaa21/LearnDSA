@@ -1,0 +1,19 @@
+=== Insertion in BST (C) ===
+
+Recursive Insertion:
+Inorder: 20 30 40 50 60 70 80 
+
+Iterative Insertion:
+Inorder: 20 30 40 50 60 70 80 
+
+=== Insertion Steps ===
+1. Start at root
+2. If data < current, go left
+3. If data > current, go right
+4. If NULL found, insert new node
+5. If duplicate, don't insert
+
+=== Insertion Complexity ===
+Time Complexity:  O(log n) avg, O(n) worst
+Space Complexity: O(h) for recursion
+                  O(1) for iteration

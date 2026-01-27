@@ -1,0 +1,13 @@
+Array: 64 34 25 12 22 11 90 
+
+Searching for 22: Found at index 4
+Searching for 64: Found at index 0
+Searching for 90: Found at index 6
+Searching for 100: Not found
+
+Array 2: 10 20 30 20 40 20 
+All occurrences of 20: index 1 index 3 index 5 
+
+Complexity Analysis:
+Time Complexity: O(n) - Linear
+Space Complexity: O(1) - Constant

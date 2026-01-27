@@ -1,0 +1,31 @@
+=== Hash Table ===
+
+Inserting elements:
+Inserted: apple -> 5 (index 30)
+Inserted: banana -> 3 (index 49)
+Inserted: orange -> 7 (index 60)
+Inserted: grape -> 4 (index 52)
+
+Hash Table Contents:
+Index 30: apple -> 5
+Index 49: banana -> 3
+Index 52: grape -> 4
+Index 60: orange -> 7
+
+Searching elements:
+Found: banana -> 3 (index 49)
+Not found: mango
+
+Deleting elements:
+Deleted: banana (was at index 49)
+
+Hash Table Contents:
+Index 30: apple -> 5
+Index 52: grape -> 4
+Index 60: orange -> 7
+
+Complexity Analysis:
+Insert: O(1) average, O(n) worst case
+Search: O(1) average, O(n) worst case
+Delete: O(1) average, O(n) worst case
+Collision Handling: Linear Probing

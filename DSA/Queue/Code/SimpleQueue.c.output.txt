@@ -1,0 +1,24 @@
+=== Simple Queue ===
+
+Queue is empty
+
+Enqueuing elements:
+Successfully enqueued: 10 (rear = 0)
+Successfully enqueued: 20 (rear = 1)
+Successfully enqueued: 30 (rear = 2)
+Successfully enqueued: 40 (rear = 3)
+Successfully enqueued: 50 (rear = 4)
+
+Queue: 10 20 30 40 50 
+
+Dequeuing 2 elements:
+Successfully dequeued: 10 (front = 0)
+Successfully dequeued: 20 (front = 1)
+
+Queue: 30 40 50 
+
+Complexity Analysis:
+Enqueue: O(1)
+Dequeue: O(1)
+Peek: O(1)
+Space: O(n)

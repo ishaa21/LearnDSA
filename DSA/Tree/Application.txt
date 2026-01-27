@@ -1,0 +1,5 @@
+-> File and folder systems
+-> Database indexing
+-> XML and HTML parsing
+-> Decision-making systems
+-> Organization charts

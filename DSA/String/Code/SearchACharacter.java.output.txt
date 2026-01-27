@@ -1,0 +1,20 @@
+Using indexOf():
+Character 'l' found at index: 2
+
+Using lastIndexOf():
+Last occurrence of 'l' at index: 9
+
+Manual search - all occurrences:
+Found at index: 2
+Found at index: 3
+Found at index: 9
+Total occurrences: 3
+
+Searching from position 5:
+Found at index: 9
+
+Using toCharArray():
+Total count of 'l': 3
+
+Case-insensitive search for 'W':
+Case-insensitive count: 1

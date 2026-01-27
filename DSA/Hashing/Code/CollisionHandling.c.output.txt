@@ -1,0 +1,25 @@
+=== Collision Handling Strategies ===
+
+TABLE_SIZE: 7
+
+1. LINEAR PROBING (index = (h(key) + i) % TABLE_SIZE)
+   Inserted: john(25), jane(30), jack(28)
+   Search john: 25
+   Complexity: O(1) avg, O(n) worst
+
+2. QUADRATIC PROBING (index = (h(key) + i²) % TABLE_SIZE)
+   Inserted: john(25), jane(30), jack(28)
+   Probing sequence: h(key), h(key)+1, h(key)+4, h(key)+9...
+   Reduces primary clustering compared to linear probing
+   Complexity: O(1) avg, O(n) worst
+
+3. DOUBLE HASHING (index = (h₁(key) + i*h₂(key)) % TABLE_SIZE)
+   Inserted: john(25), jane(30), jack(28)
+   Uses two hash functions
+   Eliminates both primary and secondary clustering
+   Complexity: O(1) avg, O(n) worst
+
+COMPARISON:
+Linear Probing:     Simple, cache-friendly, but clustering issues
+Quadratic Probing:  Reduces primary clustering
+Double Hashing:     Best distribution, no clustering, higher computation

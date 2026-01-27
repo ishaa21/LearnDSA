@@ -1,0 +1,30 @@
+Original string: Hello World
+
+Using replace():
+After removing all 'l': Heo Word
+After removing all 'o': Hell Wrld
+After removing all spaces: HelloWorld
+
+Using list comprehension:
+After removing all 'l': Heo Word
+
+Using filter():
+After removing all 'l': Heo Word
+
+Using translate():
+After removing all 'l': Heo Word
+
+Manual approach with loop:
+Original: Programming Language
+After removing all 'a': Progrmming Lnguge
+
+Using regex:
+After removing all 'l': Heo Word
+
+Removing multiple characters:
+After removing 'l' and 'o': He Wrd!
+
+Count before and after:
+Original: Mississippi
+Removed: 4 occurrences
+Result: Miiippi

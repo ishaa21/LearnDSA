@@ -1,0 +1,6 @@
+=== Unbounded Knapsack (C#) ===
+
+Max value: 110
+
+Time Complexity: O(nW)
+Space Complexity: O(W)

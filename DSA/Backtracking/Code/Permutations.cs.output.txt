@@ -1,0 +1,11 @@
+=== Permutations (C#) ===
+
+[1, 2, 3]
+[1, 3, 2]
+[2, 1, 3]
+[2, 3, 1]
+[3, 2, 1]
+[3, 1, 2]
+
+Time Complexity: O(n! * n)
+Space Complexity: O(n)

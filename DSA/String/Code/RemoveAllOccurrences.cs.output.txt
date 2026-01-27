@@ -1,0 +1,22 @@
+Original string: Hello World
+
+Using Replace():
+After removing all 'l': Heo Word
+After removing all 'o': Hell Wrld
+After removing all spaces: HelloWorld
+
+Using Regex:
+After removing all 'l': Heo Word
+
+Using custom function:
+After removing all 'l': Heo Word
+
+Using StringBuilder:
+After removing all 'l': Heo Word
+
+Using LINQ:
+After removing all 'l': Heo Word
+
+Manual approach:
+Original: Programming Language
+After removing all 'a': Progrmming Lnguge

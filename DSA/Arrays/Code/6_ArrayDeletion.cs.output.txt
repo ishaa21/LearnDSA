@@ -1,0 +1,6 @@
+Original array: 10 20 30 40 50 
+After deleting first element: 20 30 40 50 
+Original List: 10 20 30 40 50
+After removing element at position 0: 20 30 40 50
+After removing value 30: 20 40 50
+After removing last element: 20 40

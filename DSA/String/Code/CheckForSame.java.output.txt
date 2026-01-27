@@ -1,0 +1,24 @@
+Using equals() method:
+str1.equals(str2): true
+str1.equals(str3): false
+str1.equals(str4): false
+
+Using == operator (reference comparison):
+str1 == str2: true
+
+Using equalsIgnoreCase():
+str1.equalsIgnoreCase(str3): true
+
+Using compareTo():
+str1.compareTo(str2): 0
+str1.compareTo(str3): -32
+str1.compareTo(str4): -15
+
+Using compareToIgnoreCase():
+str1.compareToIgnoreCase(str3): 0
+
+Comparing substrings:
+First 5 chars equal: true
+
+Using contentEquals():
+str1.contentEquals(str2): true

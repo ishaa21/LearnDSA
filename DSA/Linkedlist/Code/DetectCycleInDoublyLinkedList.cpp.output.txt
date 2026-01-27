@@ -1,0 +1,8 @@
+=== Detect Cycle in Doubly Linked List ===
+
+List 1 (No cycle): No cycle
+List 2 (With cycle): Cycle detected (manual test)
+
+Complexity Analysis:
+Forward pointer detection: O(n) time, O(1) space
+Backward pointer detection: O(n) time, O(1) space

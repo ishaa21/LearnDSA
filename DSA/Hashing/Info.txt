@@ -1,0 +1,7 @@
+Hashing is a technique used to store and retrieve data quickly using a special function called a hash function.
+
+A hash function converts data into a fixed-size value known as a hash code, which is used as an index to store data in a hash table.
+
+Hashing allows very fast data access, usually in constant time. However, sometimes different inputs may generate the same hash value, which is called a collision and must be handled carefully.
+
+Hashing is widely used in systems where fast searching, insertion, and deletion are required.

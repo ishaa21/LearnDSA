@@ -1,0 +1,4 @@
+Original array: [64, 34, 25, 12, 22, 11, 90]
+After Bubble Sort: [11, 12, 22, 25, 34, 64, 90]
+After Selection Sort: [11, 12, 22, 25, 34, 64, 90]
+After Arrays.sort(): [11, 12, 22, 25, 34, 64, 90]

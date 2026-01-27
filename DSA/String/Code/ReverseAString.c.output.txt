@@ -1,0 +1,15 @@
+Method 1: Using swap function
+Original: Hello World
+Reversed: dlroW olleH
+
+Method 2: Using pointers
+Original: Hello World
+Reversed: dlroW olleH
+
+Method 3: Building new string
+Original: Programming
+Reversed: gnimmargorP
+
+Method 4: Using recursion
+Original: Recursion
+Reversed: noisruceR

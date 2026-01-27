@@ -1,0 +1,5 @@
+Original array: 10 20 30 40 50 
+After updating index 0 to 15: 15 20 30 40 50 
+After updating index 2 to 35: 15 20 35 40 50 
+After doubling elements > 20: 15 20 70 80 100 
+After adding 5 to all elements: 20 25 75 85 105 

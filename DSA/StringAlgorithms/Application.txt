@@ -1,0 +1,5 @@
+-> Search engines
+-> Spell checking
+-> Pattern matching
+-> DNA sequence analysis
+-> Text editors

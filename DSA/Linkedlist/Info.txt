@@ -1,0 +1,5 @@
+A linked list is a linear data structure where elements are stored in nodes. Each node contains data and a reference to the next node.
+
+Unlike arrays, linked lists do not require continuous memory and can grow or shrink dynamically. This makes insertion and deletion operations efficient.
+
+Linked lists are useful when memory flexibility is more important than fast access.

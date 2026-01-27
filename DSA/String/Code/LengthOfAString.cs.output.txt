@@ -1,0 +1,9 @@
+Using Length property: 11
+Using foreach loop: 11
+Using LINQ Count: 11
+Using ToCharArray length: 11
+Empty string length: 0
+Single character length: 1
+String with spaces length: 13
+Length of 'CSharp': 6
+Length of 'Programming': 11

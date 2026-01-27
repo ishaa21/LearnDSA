@@ -1,0 +1,6 @@
+-> Job scheduling and task selection
+-> Network routing and bandwidth allocation
+-> Data compression techniques
+-> Resource management systems
+-> Cash withdrawal and coin change systems
+-> Activity planning and optimization

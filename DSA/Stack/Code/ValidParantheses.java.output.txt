@@ -1,0 +1,12 @@
+=== Valid Parentheses ===
+
+Expression: () -> Valid
+Expression: (){}[] -> Valid
+Expression: ([{}]) -> Valid
+Expression: ([)] -> Invalid
+Expression: {[} -> Invalid
+Expression: ((( -> Invalid
+Expression: ) -> Invalid
+
+Complexity: O(n)
+Space: O(n)

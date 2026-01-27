@@ -1,0 +1,11 @@
+=== Deletion in Linked List ===
+
+Original list: 10 -> 20 -> 30 -> 40 -> 50 -> NULL
+After deleting position 2: 10 -> 30 -> 40 -> 50 -> NULL
+After deleting value 40: 10 -> 30 -> 50 -> NULL
+
+Complexity Analysis:
+Delete at position: O(n)
+Delete by value: O(n)
+Delete all occurrences: O(n)
+Space: O(1)

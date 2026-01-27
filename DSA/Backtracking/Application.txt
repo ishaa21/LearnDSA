@@ -1,0 +1,7 @@
+-> Solving puzzles like Sudoku and crosswords
+-> Pathfinding and maze-solving problems
+-> Scheduling and planning problems
+-> Game-solving algorithms (chess, puzzles)
+-> Generating combinations and permutations
+-> Constraint satisfaction problems
+-> Decision-making systems in AI

@@ -1,0 +1,32 @@
+=== Binary Search Tree (C) ===
+
+Inserting: 50, 30, 70, 20, 40, 60, 80
+Inorder Traversal (Sorted): 20 30 40 50 60 70 80 
+
+Searching for 40: Found
+Searching for 25: Not Found
+
+=== BST Properties ===
+1. Left subtree < Root < Right subtree
+2. All nodes in left subtree < root
+3. All nodes in right subtree > root
+4. Inorder traversal gives sorted sequence
+5. No duplicate values
+
+=== BST Structure ===
+        50
+       /  \
+      30   70
+     / \  / \
+    20 40 60 80
+
+=== Operations Complexity ===
+Average Case (Balanced):
+  Search:   O(log n)
+  Insert:   O(log n)
+  Delete:   O(log n)
+
+Worst Case (Skewed):
+  Search:   O(n)
+  Insert:   O(n)
+  Delete:   O(n)

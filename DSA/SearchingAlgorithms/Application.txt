@@ -1,0 +1,5 @@
+-> Database record lookup
+-> Contact search in mobile phones
+-> Search engines
+-> File systems
+-> Student record systems

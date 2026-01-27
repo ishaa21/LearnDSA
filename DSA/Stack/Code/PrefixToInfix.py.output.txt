@@ -1,0 +1,6 @@
+=== Prefix to Infix ===
+
+Prefix Expression: -+ab*cd
+Infix Expression: ((a+b)-(c*d))
+
+Complexity: O(n)

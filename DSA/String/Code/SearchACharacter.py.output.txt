@@ -1,0 +1,26 @@
+Using find():
+Character 'l' found at index: 2
+
+Using rfind():
+Last occurrence of 'l' at index: 9
+
+Using index():
+Character 'l' found at index: 2
+
+Manual search - all occurrences:
+Found at index: 2
+Found at index: 3
+Found at index: 9
+Total occurrences: 3
+
+Using count():
+Total occurrences of 'l': 3
+
+Finding all indices:
+Indices: [2, 3, 9]
+
+Case-insensitive search for 'W':
+Case-insensitive count: 1
+
+Using startswith and in operator:
+'l' in 'Hello World': True

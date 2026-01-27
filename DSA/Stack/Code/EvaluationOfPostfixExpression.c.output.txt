@@ -1,0 +1,15 @@
+=== Evaluation of Postfix Expression ===
+
+Postfix Expression: 23+4*5-
+Result: 15
+
+Steps (23+4*5-):
+1. Push 2
+2. Push 3
+3. Pop 3,2; Compute 2+3=5; Push 5
+4. Push 4
+5. Pop 4,5; Compute 5*4=20; Push 20
+6. Push 5
+7. Pop 5,20; Compute 20-5=15; Push 15
+
+Complexity: O(n)

@@ -1,0 +1,31 @@
+String: ABC
+Length: 3
+
+All substrings:
+A
+AB
+ABC
+B
+BC
+C
+Total substrings: 6
+
+
+String: HELLO
+All substrings:
+H
+HE
+HEL
+HELL
+HELLO
+E
+EL
+ELL
+ELLO
+L
+LL
+LLO
+L
+LO
+O
+Total substrings: 15

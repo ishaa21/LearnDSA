@@ -1,0 +1,30 @@
+=== Diameter of Tree (Python) ===
+
+Tree structure:
+         1
+        / \
+       2   3
+      / \ / \
+     4  5 6  7
+
+Diameter (Naive approach): 5
+Diameter (Optimized approach): 5
+
+=== Diameter Definition ===
+Diameter: Longest path between any two nodes in tree
+Includes: Number of edges in the path
+
+Possible cases for diameter:
+1. Path passes through root
+   diameter = leftHeight + rightHeight + 1
+2. Path entirely in left subtree
+3. Path entirely in right subtree
+
+=== Complexity Analysis ===
+Naive Approach:
+  Time Complexity:  O(n²) - getHeight called for each node
+  Space Complexity: O(h) - recursion stack
+
+Optimized Approach:
+  Time Complexity:  O(n) - single pass
+  Space Complexity: O(h) - recursion stack

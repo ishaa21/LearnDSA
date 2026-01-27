@@ -1,0 +1,40 @@
+Forward traversal with index:
+arr[0] = 10
+arr[1] = 20
+arr[2] = 30
+arr[3] = 40
+arr[4] = 50
+
+Forward traversal (direct):
+Value: 10
+Value: 20
+Value: 30
+Value: 40
+Value: 50
+
+Backward traversal:
+arr[4] = 50
+arr[3] = 40
+arr[2] = 30
+arr[1] = 20
+arr[0] = 10
+
+Using enumerate:
+Index: 0, Value: 10
+Index: 1, Value: 20
+Index: 2, Value: 30
+Index: 3, Value: 40
+Index: 4, Value: 50
+
+Using reversed():
+Value: 50
+Value: 40
+Value: 30
+Value: 20
+Value: 10
+
+Sum of all elements: 150
+
+Double each element:
+[20, 40, 60, 80, 100]
+Product of all elements: 12000000

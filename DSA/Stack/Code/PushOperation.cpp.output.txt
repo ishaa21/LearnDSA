@@ -1,0 +1,13 @@
+=== Push Operation ===
+
+Stack is empty
+Successfully pushed: 10 (top = 0)
+Successfully pushed: 20 (top = 1)
+Successfully pushed: 30 (top = 2)
+Successfully pushed: 40 (top = 3)
+Successfully pushed: 50 (top = 4)
+Current stack: 10 20 30 40 50 
+
+Complexity Analysis:
+Time: O(1)
+Space: O(1)

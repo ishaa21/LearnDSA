@@ -1,0 +1,28 @@
+=== HashMap (C#) ===
+
+Inserting key-value pairs...
+Inserted: apple->5, banana->3, orange->7, grape->4
+
+Retrieving values...
+Get('apple') = 5
+Get('banana') = 3
+Get('grape') = 4
+Get('mango') = -1 (not found)
+
+Checking keys...
+ContainsKey('apple') = True
+ContainsKey('mango') = False
+
+Updating value...
+Updated apple->10
+Get('apple') = 10
+
+Removing 'banana'...
+Get('banana') = -1 (removed)
+
+=== HashMap Operations Complexity ===
+Put(key, value):    O(1) average, O(n) worst
+Get(key):           O(1) average, O(n) worst
+ContainsKey(key):   O(1) average, O(n) worst
+Remove(key):        O(1) average, O(n) worst
+Space Complexity:   O(n) where n = number of entries

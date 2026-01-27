@@ -1,0 +1,5 @@
+A queue is a linear data structure that follows the First In First Out (FIFO) principle.
+
+Elements are inserted at one end (rear) and removed from the other end (front). Queues are used when order of processing matters.
+
+Queues help manage tasks that must be processed in the order they arrive.

@@ -1,0 +1,11 @@
+=== Reverse Doubly Linked List ===
+
+Original (Forward): 10 <-> 20 <-> 30 <-> 40 <-> 50 <-> NULL
+Original (Backward): 50 <-> 40 <-> 30 <-> 20 <-> 10 <-> NULL
+
+After reverse (Forward): 
+50 <-> 40 <-> 30 <-> 20 <-> 10 <-> NULL
+After reverse (Backward): 10 <-> 20 <-> 30 <-> 40 <-> 50 <-> NULL
+
+Complexity Analysis:
+Reverse: O(n) time, O(1) space

@@ -1,0 +1,33 @@
+=== HashSet (C++) ===
+
+Adding elements to Set1...
+Set1 size: 4
+Set contents: { apple banana orange grape }
+
+Adding elements to Set2...
+Set2 size: 4
+Set contents: { banana grape mango pear }
+
+Checking elements...
+Set1 contains 'apple': 1
+Set1 contains 'mango': 0
+
+Union of Set1 and Set2:
+Union size: 6
+Set contents: { apple banana orange grape mango pear }
+
+Intersection of Set1 and Set2:
+Intersection size: 2
+Set contents: { banana grape }
+
+Removing 'banana' from Set1...
+Set1 size: 3
+Set1 contains 'banana': 0
+
+=== HashSet Operations Complexity ===
+add(element):       O(1) average, O(n) worst
+contains(element):  O(1) average, O(n) worst
+remove(element):    O(1) average, O(n) worst
+union():            O(m + n) where m, n = set sizes
+intersection():     O(m + n) where m, n = set sizes
+Space Complexity:   O(n) where n = number of elements

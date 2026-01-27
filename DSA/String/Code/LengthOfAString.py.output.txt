@@ -1,0 +1,10 @@
+Using len(): 11
+Using __len__(): 11
+Using manual loop: 11
+Using count(): 11
+Empty string length: 0
+Single character length: 1
+String with spaces length: 13
+Enter a string: (user input required)
+Length of input: (depends on user input)
+Special string length: 18

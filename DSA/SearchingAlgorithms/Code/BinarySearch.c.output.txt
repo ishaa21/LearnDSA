@@ -1,0 +1,13 @@
+Sorted Array: 11 12 22 25 34 64 90 
+
+Searching for 25 (Iterative): Found at index 3
+Searching for 25 (Recursive): Found at index 3
+Searching for 11: Found at index 0
+Searching for 90: Found at index 6
+Searching for 50: Not found
+
+Complexity Analysis:
+Time Complexity: O(log n) - Logarithmic
+Space Complexity: O(1) - Iterative, O(log n) - Recursive
+Best Case: O(1) - Element at middle
+Worst Case: O(log n) - Element not found or at extreme

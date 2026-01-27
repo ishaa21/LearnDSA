@@ -1,0 +1,11 @@
+=== Insertion in Doubly Linked List ===
+
+After end insertions: 10 <-> 20 <-> 30 <-> NULL
+After beginning insertion: 5 <-> 10 <-> 20 <-> 30 <-> NULL
+After position insertion: 5 <-> 15 <-> 10 <-> 20 <-> 30 <-> NULL
+
+Complexity Analysis:
+Insert at beginning: O(1)
+Insert at end: O(n)
+Insert at position: O(n)
+Space: O(1) for operation

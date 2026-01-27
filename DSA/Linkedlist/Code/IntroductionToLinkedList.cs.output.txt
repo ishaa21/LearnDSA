@@ -1,0 +1,16 @@
+Linked List: 10 -> 20 -> 30 -> NULL
+After inserting 5 at beginning: 5 -> 10 -> 20 -> 30 -> NULL
+After inserting 40 at end: 5 -> 10 -> 20 -> 30 -> 40 -> NULL
+Number of nodes: 5
+Search 20: Found
+Search 50: Not Found
+Element at index 0: 5
+Element at index 2: 20
+
+Complexity Analysis:
+Create Node: O(1)
+Insert at beginning: O(1)
+Insert at end: O(n)
+Search: O(n)
+Display/Traverse: O(n)
+Space: O(n)

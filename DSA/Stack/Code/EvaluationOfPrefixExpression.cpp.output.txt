@@ -1,0 +1,15 @@
+=== Evaluation of Prefix Expression ===
+
+Prefix Expression: -*+2345
+Result: 9
+
+Steps (-*+2345):
+1. Process 5: Push 5
+2. Process 4: Push 4
+3. Process 3: Push 3
+4. Process +: Pop 3,4; Compute 3+4=7; Push 7
+5. Process 2: Push 2
+6. Process *: Pop 2,7; Compute 2*7=14; Push 14
+7. Process -: Pop 14,5; Compute 14-5=9; Push 9
+
+Complexity: O(n)

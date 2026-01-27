@@ -1,0 +1,19 @@
+=== Stack Implementation (Array) ===
+
+Pushed: 10
+Pushed: 20
+Pushed: 30
+Pushed: 40
+Stack: 10 20 30 40 
+
+Peek: 40
+
+Popped: 40
+Popped: 30
+Stack: 10 20 
+
+Complexity Analysis:
+Push: O(1)
+Pop: O(1)
+Peek: O(1)
+Space: O(n)

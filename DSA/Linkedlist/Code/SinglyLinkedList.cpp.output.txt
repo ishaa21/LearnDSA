@@ -1,0 +1,16 @@
+=== Singly Linked List Operations ===
+
+Initial List: 10 -> 20 -> 30 -> 40 -> NULL
+After inserting 5 at beginning: 5 -> 10 -> 20 -> 30 -> 40 -> NULL
+After inserting 15 at position 2: 5 -> 10 -> 15 -> 20 -> 30 -> 40 -> NULL
+After deleting 15: 5 -> 10 -> 20 -> 30 -> 40 -> NULL
+After deleting 5: 10 -> 20 -> 30 -> 40 -> NULL
+After deleting 40: 10 -> 20 -> 30 -> NULL
+
+Complexity Analysis:
+Insert at beginning: O(1)
+Insert at end: O(n)
+Insert at position: O(n)
+Delete: O(n)
+Search: O(n)
+Space: O(n)

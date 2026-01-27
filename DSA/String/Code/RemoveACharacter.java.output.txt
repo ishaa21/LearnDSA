@@ -1,0 +1,18 @@
+Original string: Hello World
+
+Using substring():
+After removing character at position 0: ello World
+After removing character at position 5: HelloWorld
+After removing last character: Hello Worl
+
+Removing all 'l':
+Using replace(): Heo Word
+
+Removing first 'l' only:
+Using replaceFirst(): Helo World
+
+Using StringBuilder:
+After removing character at position 0: ello World
+After removing all 'l' using StringBuilder: Heo Word
+
+Using stream filter: Heo Word

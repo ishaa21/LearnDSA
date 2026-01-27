@@ -1,0 +1,7 @@
+-> Storing student marks or attendance records
+-> Managing lists such as names, prices, or IDs in applications
+-> Representing images using pixel values
+-> Handling rows and columns in tables or spreadsheets
+-> Storing sensor readings in IoT systems
+-> Game boards and grids
+-> Managing fixed-size datasets in software systems

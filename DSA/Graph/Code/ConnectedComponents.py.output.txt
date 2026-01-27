@@ -1,0 +1,23 @@
+=== Connected Components (Python) ===
+
+Graph (6 vertices):
+Component 1: 0-1, 0-2
+Component 2: 3-4
+Isolated: 5
+
+Connected Components:
+Component 1: 0 1 2 
+Component 2: 3 4 
+Component 3: 5 
+
+=== Algorithm ===
+1. Initialize all vertices as unvisited
+2. For each unvisited vertex:
+   a. Start BFS/DFS from that vertex
+   b. Mark all reachable vertices as visited
+   c. This forms one connected component
+3. Repeat until all vertices visited
+
+=== Complexity ===
+Time Complexity:  O(V + E)
+Space Complexity: O(V)

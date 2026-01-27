@@ -1,0 +1,9 @@
+Original array: [10, 20, 30, 40, 50]
+After deleting first element (del): [20, 30, 40, 50]
+After popping first element (pop): [20, 30, 40, 50]
+Removed element: 10
+After deleting element at position 2: [10, 20, 40, 50]
+After deleting last element: [10, 20, 30, 40]
+After removing value 30: [10, 20, 40, 50]
+After deleting elements from index 1 to 2: [10, 40, 50]
+After filtering out 30: [10, 20, 40, 50]

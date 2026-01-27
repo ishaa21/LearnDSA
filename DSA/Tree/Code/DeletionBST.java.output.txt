@@ -1,0 +1,30 @@
+=== Deletion in BST (Java) ===
+
+Original Tree (Inorder): 20 30 40 50 60 70 80 
+
+Delete Leaf (20):
+30 40 50 60 70 80 
+
+Delete Node with One Child (30):
+40 50 60 70 80 
+
+Delete Node with Two Children (50):
+40 60 70 80 
+
+=== Deletion Cases ===
+Case 1: Leaf Node
+  - Simply remove the node
+  - Update parent's pointer to null
+
+Case 2: Node with One Child
+  - Replace node with its child
+  - Update parent's pointer
+
+Case 3: Node with Two Children
+  - Find inorder successor (min in right subtree)
+  - Replace node's data with successor's data
+  - Delete successor node
+
+=== Deletion Complexity ===
+Time Complexity:  O(log n) avg, O(n) worst
+Space Complexity: O(h) for recursion

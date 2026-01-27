@@ -1,0 +1,32 @@
+=== Hash Functions ===
+
+Division Method (key % TABLE_SIZE):
+Hash(45) = 45
+Hash(78) = 78
+Hash(150) = 50
+
+Multiplication Method (A * 0.618...):
+Hash(45) = 80
+Hash(78) = 21
+Hash(150) = 70
+
+Sum of Digits Method:
+Hash(45) = 9
+Hash(78) = 15
+Hash(150) = 6
+
+String Hash (Djb2):
+Hash('apple') = 35
+Hash('banana') = 47
+Hash('orange') = 75
+
+Polynomial Rolling Hash:
+Hash('abc') = 66
+Hash('bcd') = 99
+Hash('hello') = 14
+
+Properties of Good Hash Function:
+1. Deterministic: Same input always produces same output
+2. Efficient: O(1) time complexity
+3. Uniform Distribution: Minimizes collisions
+4. Minimal Clustering: Avoids patterns

@@ -1,0 +1,29 @@
+=== Activity Selection Problem (Python) ===
+
+Activities (ID, Start, End):
+Activity 1: 0 - 5
+Activity 2: 1 - 2
+Activity 3: 3 - 4
+Activity 4: 0 - 6
+Activity 5: 5 - 7
+Activity 6: 8 - 9
+
+Selected Activities:
+Activity 2 (1 - 2)
+Activity 3 (3 - 4)
+Activity 5 (5 - 7)
+Activity 6 (8 - 9)
+
+Total Activities Selected: 4
+
+=== Greedy Strategy ===
+1. Sort activities by end time
+2. Select first activity
+3. For remaining activities:
+   - If start >= last end: select it
+4. Repeat until all checked
+
+=== Complexity ===
+Time Complexity:  O(n log n) for sorting
+Space Complexity: O(1)
+Greedy Choice: Earliest finish time

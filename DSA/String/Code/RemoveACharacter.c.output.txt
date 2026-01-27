@@ -1,0 +1,7 @@
+Original string: Hello World
+After removing character at position 0: ello World
+After removing character at position 5: HelloWorld
+After removing last character: Hello Worl
+
+Removing all occurrences of 'l':
+Result: Heo Word

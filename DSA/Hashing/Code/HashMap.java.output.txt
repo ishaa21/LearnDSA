@@ -1,0 +1,28 @@
+=== HashMap (Java) ===
+
+Inserting key-value pairs...
+Inserted: apple->5, banana->3, orange->7, grape->4
+
+Retrieving values...
+get('apple') = 5
+get('banana') = 3
+get('grape') = 4
+get('mango') = -1 (not found)
+
+Checking keys...
+containsKey('apple') = true
+containsKey('mango') = false
+
+Updating value...
+Updated apple->10
+get('apple') = 10
+
+Removing 'banana'...
+get('banana') = -1 (removed)
+
+=== HashMap Operations Complexity ===
+put(key, value):    O(1) average, O(n) worst
+get(key):           O(1) average, O(n) worst
+containsKey(key):   O(1) average, O(n) worst
+remove(key):        O(1) average, O(n) worst
+Space Complexity:   O(n) where n = number of entries

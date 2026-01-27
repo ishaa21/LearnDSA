@@ -1,0 +1,13 @@
+=== Doubly Linked List ===
+
+Forward: 10 <-> 20 <-> 30 <-> NULL
+Backward: 30 <-> 20 <-> 10 <-> NULL
+
+After inserting 5 at beginning:
+Forward: 5 <-> 10 <-> 20 <-> 30 <-> NULL
+
+Complexity Analysis:
+Insert at beginning: O(1)
+Insert at end: O(n)
+Delete: O(1) with pointer, O(n) without
+Space: O(n)

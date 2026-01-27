@@ -1,0 +1,7 @@
+=== LIS (C) ===
+
+Length of LIS: 5
+LIS: 10 22 33 50 60 
+
+Time Complexity: O(n^2)
+Space Complexity: O(n)

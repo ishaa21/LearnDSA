@@ -1,0 +1,4 @@
+Original array: 10 20 30 40 50 
+After inserting 5 at beginning: 5 10 20 30 40 50 
+After inserting 25 at position 3: 5 10 20 25 30 40 50 
+After inserting 60 at end: 5 10 20 25 30 40 50 60 

@@ -1,0 +1,5 @@
+Function call management
+Undo/redo operations
+Expression evaluation
+Syntax checking
+Backtracking

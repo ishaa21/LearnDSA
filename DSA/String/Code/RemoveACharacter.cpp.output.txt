@@ -1,0 +1,13 @@
+Original string: Hello World
+
+Using erase():
+After removing character at position 0: ello World
+After removing character at position 5: HelloWorld
+After removing last character: Hello Worl
+Using substr: HelloWorld
+
+Removing all 'l':
+Result: Heo Word
+
+Using erase with iterator:
+After removing all 'l': Heo Word

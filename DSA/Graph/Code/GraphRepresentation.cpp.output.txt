@@ -1,0 +1,36 @@
+=== Graph Representation (C++) ===
+
+Vertices: 5, Edges: 7
+
+Adjacency Matrix:
+0 1 0 0 1 
+1 0 1 1 1 
+0 1 0 1 0 
+0 1 1 0 1 
+1 1 0 1 0 
+
+Adjacency List:
+0 -> 1 4 
+1 -> 0 2 3 4 
+2 -> 1 3 
+3 -> 1 2 4 
+4 -> 0 1 3 
+
+=== Graph Representation Methods ===
+1. Adjacency Matrix
+   - 2D array where arr[i][j] = 1 if edge exists
+   - Space: O(V²)
+   - Edge lookup: O(1)
+
+2. Adjacency List
+   - Array of linked lists or vectors
+   - Space: O(V + E)
+   - Edge lookup: O(degree)
+
+=== Complexity Comparison ===
+Operation        | Adjacency Matrix | Adjacency List
+Space            | O(V²)            | O(V + E)
+Add Edge         | O(1)             | O(1)
+Remove Edge      | O(1)             | O(degree)
+Check Edge       | O(1)             | O(degree)
+Get Neighbors    | O(V)             | O(degree)

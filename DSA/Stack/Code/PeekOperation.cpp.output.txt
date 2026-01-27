@@ -1,0 +1,16 @@
+=== Peek Operation ===
+
+Stack is empty - cannot peek
+
+Pushing elements:
+Current stack: 10 20 30 40 50 
+
+Peeking without removing:
+Peeked: 50 (at position 4)
+Peeked: 50 (at position 4)
+Peeked: 50 (at position 4)
+Current stack: 10 20 30 40 50 
+
+Complexity Analysis:
+Time: O(1)
+Space: O(1)

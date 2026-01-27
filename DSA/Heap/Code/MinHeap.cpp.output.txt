@@ -1,0 +1,22 @@
+=== Min Heap (C++) ===
+
+Inserting: 10, 5, 3, 2, 8, 1
+Min Heap (Array): 1 2 3 10 8 5 
+
+Extracting minimum elements:
+Extract: 1
+Min Heap (Array): 2 5 3 10 8 
+Extract: 2
+Min Heap (Array): 3 5 8 10 
+
+=== Min Heap Properties ===
+1. Parent <= Left Child
+2. Parent <= Right Child
+3. Complete binary tree (all levels filled except last)
+4. Minimum element always at root
+
+=== Min Heap Complexity ===
+Insert:      O(log n)
+Extract Min: O(log n)
+Get Min:     O(1)
+Space:       O(n)

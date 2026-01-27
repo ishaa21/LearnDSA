@@ -1,0 +1,9 @@
+An array is a basic data structure used to store multiple values of the same data type under a single name. All elements in an array are stored in contiguous memory locations, which means they are placed one after another in memory.
+
+Each element in an array is identified by an index, which represents its position. Indexing usually starts from zero, allowing direct and fast access to any element.
+
+Arrays have a fixed size, meaning the number of elements must be decided at the time of creation and cannot be changed later. Because of this fixed structure, arrays are simple, predictable, and memory-efficient when the data size is known in advance.
+
+Arrays support fast access to elements, but operations like insertion and deletion are comparatively slower because shifting of elements may be required.
+
+Arrays form the foundation of many data structures and are widely used in programming due to their simplicity and performance.

@@ -1,0 +1,6 @@
+-> Password storage and authentication systems
+-> Database indexing
+-> Caching mechanisms
+-> File integrity checking
+-> Symbol tables in compilers
+-> Search engines and lookup services

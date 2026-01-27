@@ -1,0 +1,23 @@
+Using IndexOf():
+Character 'l' found at index: 2
+
+Using LastIndexOf():
+Last occurrence of 'l' at index: 9
+
+Manual search - all occurrences:
+Found at index: 2
+Found at index: 3
+Found at index: 9
+Total occurrences: 3
+
+Searching from position 5:
+Found at index: 9
+
+Using LINQ Count():
+Total count of 'l': 3
+
+Case-insensitive search for 'W':
+Case-insensitive count: 1
+
+All indices using LINQ:
+Indices: 2, 3, 9

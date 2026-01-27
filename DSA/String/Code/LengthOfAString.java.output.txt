@@ -1,0 +1,9 @@
+Using length(): 11
+Using loop on char array: 11
+Using stream count: 11
+Using toCharArray length: 11
+Empty string length: 0
+Single character length: 1
+String with spaces length: 13
+Length of 'Java': 4
+Length of 'Programming': 11

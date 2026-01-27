@@ -1,0 +1,4 @@
+First element: 10
+Last element: 50
+All elements: 10 20 30 40 50 
+Array size: 5

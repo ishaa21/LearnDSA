@@ -1,0 +1,29 @@
+Original Array: [64, 34, 25, 12, 22, 11, 90]
+Sorted Array: [11, 12, 22, 25, 34, 64, 90]
+
+Already sorted: [1, 2, 3, 4, 5]
+After Heap Sort: [1, 2, 3, 4, 5]
+
+Reverse sorted: [5, 4, 3, 2, 1]
+After Heap Sort: [1, 2, 3, 4, 5]
+
+Array with duplicates: [5, 2, 8, 2, 9, 1, 5, 5]
+After Heap Sort: [1, 2, 2, 5, 5, 5, 8, 9]
+
+Single element: [42]
+After Heap Sort: [42]
+
+Two elements: [50, 30]
+After Heap Sort: [30, 50]
+
+Building max heap from: [64, 34, 25, 12, 22, 11, 90]
+Max heap structure: [90, 64, 25, 34, 22, 11, 12]
+
+Complexity Analysis:
+Time Complexity: O(n log n) - Linearithmic
+Space Complexity: O(1) - In-place
+Best Case: O(n log n)
+Worst Case: O(n log n)
+Average Case: O(n log n)
+Stable: No (not stable)
+Note: In-place, guaranteed O(n log n), good for large datasets

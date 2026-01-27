@@ -1,0 +1,9 @@
+Element at [0,0]: 1
+Element at [1,2]: 6
+Element at [2,1]: 8
+2D Array:
+1 2 3 
+4 5 6 
+7 8 9 
+After modification, arr[1,1] = 10
+Sum of all elements: 50

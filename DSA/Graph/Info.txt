@@ -1,0 +1,7 @@
+A graph is a data structure used to represent connections between objects. It consists of nodes (vertices) and edges that connect these nodes.
+
+Graphs are used to model relationships where elements are linked in non-linear ways. These connections can be directed or undirected, and may also have weights representing cost, distance, or time.
+
+Graphs are powerful because they can represent real-life networks such as social media, transportation systems, and communication networks.
+
+Graph algorithms help in analyzing paths, connectivity, and relationships within complex systems.

@@ -1,0 +1,27 @@
+Original Array: [64, 34, 25, 12, 22, 11, 90]
+Sorted Array: [11, 12, 22, 25, 34, 64, 90]
+
+Selection Sort with statistics:
+Sorted: [11, 12, 22, 25, 34, 64, 90]
+Comparisons: 21, Swaps: 6
+
+Already sorted: [1, 2, 3, 4, 5]
+After Selection Sort: [1, 2, 3, 4, 5]
+
+Reverse sorted: [5, 4, 3, 2, 1]
+After Selection Sort: [1, 2, 3, 4, 5]
+
+Descending order:
+Sorted (Descending): [90, 64, 34, 25, 22, 12, 11]
+
+Array with duplicates: [5, 2, 8, 2, 9, 1, 5, 5]
+After Selection Sort: [1, 2, 2, 5, 5, 5, 8, 9]
+
+Complexity Analysis:
+Time Complexity: O(n^2) - Quadratic
+Space Complexity: O(1) - In-place
+Best Case: O(n^2)
+Worst Case: O(n^2)
+Average Case: O(n^2)
+Stable: No (not stable)
+Number of swaps: At most n-1

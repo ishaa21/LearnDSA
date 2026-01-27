@@ -1,0 +1,9 @@
+=== Insertion in Linked List ===
+
+After position-based insertions: 10 -> 15 -> 20 -> 30 -> NULL
+After sorted insertions: 10 -> 15 -> 20 -> 25 -> 30 -> NULL
+
+Complexity Analysis:
+Insert at position: O(n)
+Insert sorted: O(n)
+Space: O(1) for operation, O(n) for list

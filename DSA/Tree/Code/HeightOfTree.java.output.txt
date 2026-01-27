@@ -1,0 +1,31 @@
+=== Height of Tree (Java) ===
+
+Tree structure:
+         1
+        / \
+       2   3
+      / \   \
+     4   5   6
+           \
+            7
+
+Height of tree: 4
+Number of nodes: 7
+
+=== Height Analysis ===
+Minimum height of balanced tree with n nodes:
+  h_min = ceil(log₂(n+1)) - 1
+  h_min = ceil(log₂(7+1)) - 1 = 2
+
+Maximum height of skewed tree:
+  h_max = n - 1 (for n nodes)
+
+=== Height Definition ===
+Height of node: Distance from node to farthest leaf
+Height of tree: Height of root node
+Height of NULL: 0
+Height of leaf: 1
+
+=== Complexity Analysis ===
+Time Complexity:  O(n) - visit each node once
+Space Complexity: O(h) - h = height (recursion stack)

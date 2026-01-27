@@ -1,0 +1,20 @@
+=== Heapify (C++) ===
+
+Original Array: 4 10 3 5 1 2 8 
+
+Building Min Heap:
+Min Heap: 1 4 2 10 5 3 8 
+
+Building Max Heap:
+Max Heap: 10 5 8 4 1 2 3 
+
+=== Heapify Algorithm ===
+1. Start from last non-leaf node (index n/2 - 1)
+2. Call heapify for each node from bottom to top
+3. Heapify moves element down to correct position
+4. Recursively heapify affected subtrees
+
+=== Heapify Complexity ===
+Time Complexity:  O(n)
+Space Complexity: O(log n) for recursion
+Applications: Heap Sort, Priority Queue construction

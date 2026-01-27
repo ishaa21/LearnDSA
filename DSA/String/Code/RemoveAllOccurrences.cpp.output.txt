@@ -1,0 +1,15 @@
+Original string: Hello World
+
+Using erase-remove idiom:
+After removing all 'l': Heo Word
+
+After removing all 'o': Hell Wrld
+
+After removing all spaces: HelloWorld
+
+Using loop with iterator:
+After removing all 'l': Heo Word
+
+Building new string:
+Original: Programming Language
+After removing all 'a': Progrmming Lnguge

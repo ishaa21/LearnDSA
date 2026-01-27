@@ -1,0 +1,6 @@
+=== Rabin-Karp Algorithm (C#) ===
+
+Pattern found at index 2
+
+Time Complexity: O(n+m) average, O(nm) worst
+Space Complexity: O(1)

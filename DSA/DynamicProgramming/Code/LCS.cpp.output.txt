@@ -1,0 +1,7 @@
+=== LCS (C++) ===
+
+Length of LCS: 4
+LCS: GTAB
+
+Time Complexity: O(mn)
+Space Complexity: O(mn)

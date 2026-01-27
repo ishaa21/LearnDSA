@@ -1,0 +1,10 @@
+Array: 64 34 25 12 22 11 90 
+
+Searching for 22: Found at index 4
+Searching for 90: Found at index 6
+Searching for 50: Not found
+
+Counting occurrences of 22: 1
+
+Time Complexity: O(n)
+Space Complexity: O(1)

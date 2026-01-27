@@ -1,0 +1,5 @@
+Original array: 10 20 30 40 50 
+After inserting 5 at beginning: 5 10 20 30 40 50 
+Original ArrayList: [10, 20, 30, 40, 50]
+After inserting 25 at position 2: [10, 20, 25, 30, 40, 50]
+After inserting 5 at beginning: [5, 10, 20, 25, 30, 40, 50]

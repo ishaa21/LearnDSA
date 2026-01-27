@@ -1,0 +1,25 @@
+Using == operator:
+str1 == str2: True
+str1 == str3: False
+str1 == str4: False
+
+Using Equals() method:
+str1.Equals(str2): True
+str1.Equals(str3): False
+
+Case-insensitive comparison:
+str1.Equals(str3, StringComparison.OrdinalIgnoreCase): True
+
+Using String.Compare():
+String.Compare(str1, str2): 0
+String.Compare(str1, str3): -32
+
+Case-insensitive String.Compare():
+String.Compare(str1, str3, true): 0
+
+Comparing substrings:
+First 5 chars equal: True
+
+Using CompareTo():
+str1.CompareTo(str2): 0
+str1.CompareTo(str3): -32

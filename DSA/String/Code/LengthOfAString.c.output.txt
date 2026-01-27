@@ -1,0 +1,5 @@
+Using strlen(): 11
+Using manual loop: 11
+Using pointer: 11
+Enter a string: (user input required)
+Length of input string: (depends on user input)

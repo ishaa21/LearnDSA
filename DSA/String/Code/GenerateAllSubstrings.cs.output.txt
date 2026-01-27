@@ -1,0 +1,48 @@
+String: ABC
+Length: 3
+
+All substrings:
+A
+AB
+ABC
+B
+BC
+C
+Total substrings: 6
+
+
+String: HELLO
+All substrings:
+H
+HE
+HEL
+HELL
+HELLO
+E
+EL
+ELL
+ELLO
+L
+LL
+LLO
+L
+LO
+O
+Total substrings: 15
+
+Substrings of length 2:
+String: HELLO
+HE
+EL
+LL
+LO
+
+
+Using LINQ to get substrings:
+String: ABC
+A
+AB
+ABC
+B
+BC
+C

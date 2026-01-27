@@ -1,0 +1,16 @@
+Original string: Hello World
+
+Using Insert():
+After inserting 'H' at position 0: HHello World
+After inserting '!' at position 5: Hello! World
+After inserting '!' at end: Hello World!
+
+Using Substring:
+After inserting '*' at position 5: Hello* World
+
+Using StringBuilder:
+After inserting '*' at position 0: *Hello World
+After inserting '*' at both ends: *Hello World*
+
+Using function:
+After inserting '@' at position 6: Hello @World

@@ -1,0 +1,9 @@
+Original string: Hello World
+
+Using insert():
+After inserting 'H' at position 0: HHello World
+After inserting '!' at position 5: Hello! World
+After inserting '!' at end: Hello World!
+After inserting '***' at position 5: Hello*** World
+Using substr and +: Hello* World
+After inserting '*' at both ends: *Hello World*

@@ -1,0 +1,21 @@
+=== Level Order Traversal (C) ===
+
+Tree structure:
+         1
+        / \
+       2   3
+      / \ / \
+     4  5 6  7
+
+Level Order Traversal (BFS): 1 2 3 4 5 6 7 
+
+=== Level Order Characteristics ===
+1. Visit all nodes at level k before level k+1
+2. Also called Breadth-First Search (BFS)
+3. Uses queue data structure
+4. Useful for finding shortest path in trees
+
+=== Complexity Analysis ===
+Time Complexity:  O(n) - visit each node once
+Space Complexity: O(w) - w = maximum width (max nodes at any level)
+                   O(n) in worst case

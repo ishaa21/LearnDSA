@@ -1,0 +1,23 @@
+Original Array: 64 34 25 12 22 11 90 
+Sorted Array (Quick Sort - Last as pivot): 11 12 22 25 34 64 90 
+
+Sorting with random pivot:
+11 12 22 25 34 64 90 
+
+Already sorted: 1 2 3 4 5 
+After Quick Sort: 1 2 3 4 5 
+
+Reverse sorted: 5 4 3 2 1 
+After Quick Sort: 1 2 3 4 5 
+
+Array with duplicates: 5 2 8 2 9 1 5 5 
+After Quick Sort: 1 2 2 5 5 5 8 9 
+
+Complexity Analysis:
+Time Complexity: O(n log n) - Average, O(n^2) - Worst
+Space Complexity: O(log n) - Due to recursion stack
+Best Case: O(n log n)
+Worst Case: O(n^2) - Already sorted or reverse sorted
+Average Case: O(n log n)
+Stable: No (not stable)
+Note: In-place sorting, efficient on large datasets

@@ -1,0 +1,6 @@
+First element: 10
+Last element: 50
+All elements: [10, 20, 30, 40, 50]
+List length: 5
+After appending 60: [10, 20, 30, 40, 50, 60]
+After removing last element: [10, 20, 30, 40, 50]

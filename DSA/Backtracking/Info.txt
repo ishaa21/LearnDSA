@@ -1,0 +1,9 @@
+Backtracking is an algorithmic technique used to find solutions by trying all possible choices step by step. If a choice leads to a wrong or invalid solution, the algorithm goes back (backtracks) and tries another option.
+
+It follows the idea of trial and error, but in a systematic way. At every step, a decision is made, and if that decision does not satisfy the required conditions, it is immediately rejected instead of continuing further.
+
+Backtracking works by exploring a solution space in a depth-first manner. It builds a solution incrementally and abandons a path as soon as it is clear that the path cannot lead to a valid solution.
+
+This technique is mainly used for optimization and decision problems where multiple possibilities exist and all valid solutions need to be explored efficiently.
+
+Backtracking reduces unnecessary work by pruning invalid paths early, which makes it more efficient than brute force in many cases.

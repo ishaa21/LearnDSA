@@ -1,0 +1,19 @@
+=== Stack Implementation (Linked List) ===
+
+Pushed: 10
+Pushed: 20
+Pushed: 30
+Pushed: 40
+Stack: 40 -> 30 -> 20 -> 10 -> NULL
+
+Peek: 40
+
+Popped: 40
+Popped: 30
+Stack: 20 -> 10 -> NULL
+
+Complexity Analysis:
+Push: O(1)
+Pop: O(1)
+Peek: O(1)
+Space: O(n)

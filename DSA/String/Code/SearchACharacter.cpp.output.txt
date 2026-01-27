@@ -1,0 +1,23 @@
+Using find():
+Character 'l' found at index: 2
+
+Using rfind():
+Last occurrence of 'l' at index: 9
+
+Manual search:
+Found at index: 2
+Found at index: 3
+Found at index: 9
+Total occurrences: 3
+
+Finding all occurrences:
+Found at index: 2
+Found at index: 3
+Found at index: 9
+Total: 3
+
+Using count algorithm:
+Count of 'l': 3
+
+Case-insensitive search:
+Case-insensitive count: 1

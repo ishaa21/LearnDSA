@@ -1,0 +1,8 @@
+Original string: Hello World
+After inserting 'H' at position 0: HHello World
+After inserting '!' at position 5: Hello! World
+After inserting '!' at end: Hello World!
+
+Manual method:
+Original: Hi
+After inserting '*' at position 1: H*i

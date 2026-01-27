@@ -1,0 +1,20 @@
+Original Array: 64 34 25 12 22 11 90 
+Sorted Array (Counting Sort): 11 12 22 25 34 64 90 
+
+Small range array: 4 2 3 4 1 2 4 
+After Counting Sort: 1 2 2 3 4 4 4 
+
+Array with duplicates: 5 2 8 2 9 1 5 5 
+After Counting Sort: 1 2 2 5 5 5 8 9 
+
+Single element: 42 
+After Counting Sort: 42 
+
+Complexity Analysis:
+Time Complexity: O(n + k) where k is range of input
+Space Complexity: O(k)
+Best Case: O(n + k)
+Worst Case: O(n + k)
+Average Case: O(n + k)
+Stable: Yes
+Note: Non-comparison, efficient for small ranges

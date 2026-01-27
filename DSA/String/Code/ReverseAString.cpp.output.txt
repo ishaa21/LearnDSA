@@ -1,0 +1,19 @@
+Method 1: Using reverse() algorithm
+Original: Hello World
+Reversed: dlroW olleH
+
+Method 2: Using loop
+Original: Hello World
+Reversed: dlroW olleH
+
+Method 3: Building new string
+Original: Programming
+Reversed: gnimmargorP
+
+Method 4: Using reverse iterators
+Original: Iteration
+Reversed: noitaretI
+
+Method 5: Using recursion
+Original: Recursion
+Reversed: noisruceR

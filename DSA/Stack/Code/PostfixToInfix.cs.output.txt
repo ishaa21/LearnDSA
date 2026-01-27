@@ -1,0 +1,6 @@
+=== Postfix to Infix ===
+
+Postfix Expression: ab+cd*-
+Infix Expression: ((a+b)-(c*d))
+
+Complexity: O(n)

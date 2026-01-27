@@ -1,0 +1,8 @@
+Original array: [10, 20, 30, 40, 50]
+After updating index 0 to 15: [15, 20, 30, 40, 50]
+After updating indices 2 and 4: [15, 20, 35, 40, 55]
+After doubling elements > 20: [10, 20, 60, 80, 100]
+After adding 5 to all elements: [15, 25, 35, 45, 55]
+After doubling all elements (comprehension): [20, 40, 60, 80, 100]
+After updating range [1:4] to 99: [10, 99, 99, 99, 50]
+After using function to update index 2: [10, 20, 100, 40, 50]

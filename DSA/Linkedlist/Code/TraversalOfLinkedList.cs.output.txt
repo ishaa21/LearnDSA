@@ -1,0 +1,12 @@
+=== Traversal of Linked List ===
+
+Forward: 10 -> 20 -> 30 -> 40 -> 50 -> NULL
+Recursive: 10 -> 20 -> 30 -> 40 -> 50 -> NULL
+Total nodes: 5
+Node at position 3: 30
+
+Complexity Analysis:
+Forward traversal: O(n)
+Recursive traversal: O(n) time, O(n) space (call stack)
+Count nodes: O(n)
+Get at position: O(n)

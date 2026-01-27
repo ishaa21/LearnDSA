@@ -1,0 +1,28 @@
+=== Fractional Knapsack (Java) ===
+
+Items (ID, Weight, Value):
+Item 1: Weight 10.00, Value 60.00
+Item 2: Weight 20.00, Value 100.00
+Item 3: Weight 30.00, Value 120.00
+Knapsack Capacity: 50.00
+
+Fractional Knapsack Solution:
+Item 1: Take 10.00 units (Weight: 10.00, Value/Weight: 6.00)
+Item 2: Take 20.00 units (Weight: 20.00, Value/Weight: 5.00)
+Item 3: Take 20.00 units (Weight: 30.00, Value/Weight: 4.00)
+
+Total Capacity Used: 50.00 / 50.00
+Total Value: 240.00
+
+=== Greedy Strategy ===
+1. Calculate value/weight ratio for each item
+2. Sort items by ratio (descending)
+3. For each item in sorted order:
+   - If item fits completely: take it
+   - Otherwise: take fraction that fits
+4. Repeat until capacity full
+
+=== Complexity ===
+Time Complexity:  O(n log n) for sorting
+Space Complexity: O(1)
+Optimal: Yes (greedy works for fractional)

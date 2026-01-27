@@ -1,0 +1,31 @@
+=== Circular Queue ===
+
+Circular Queue is empty
+
+Enqueuing elements:
+Successfully enqueued: 10 (rear = 0, size = 1)
+Successfully enqueued: 20 (rear = 1, size = 2)
+Successfully enqueued: 30 (rear = 2, size = 3)
+Successfully enqueued: 40 (rear = 3, size = 4)
+Successfully enqueued: 50 (rear = 4, size = 5)
+
+Circular Queue: 10 20 30 40 50 
+
+Dequeuing 2 elements:
+Successfully dequeued: 10 (front = 0, size = 4)
+Successfully dequeued: 20 (front = 1, size = 3)
+
+Circular Queue: 30 40 50 
+
+Enqueuing 2 more elements (circular reuse):
+Successfully enqueued: 100 (rear = 5, size = 4)
+Successfully enqueued: 200 (rear = 6, size = 5)
+
+Circular Queue: 30 40 50 100 200 
+
+Complexity Analysis:
+Enqueue: O(1)
+Dequeue: O(1)
+Peek: O(1)
+Space: O(n)
+Advantage: Efficient space reuse in circular manner

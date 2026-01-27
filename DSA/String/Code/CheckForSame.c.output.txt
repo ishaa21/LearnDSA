@@ -1,0 +1,13 @@
+strcmp() function:
+strcmp(str1, str2): 0
+strcmp(str1, str3): -32
+strcmp(str1, str4): -15
+
+Manual case-insensitive comparison:
+Strings are equal (case-insensitive)
+
+Comparing first 3 characters:
+strncmp(str5, str6, 3): 0
+
+Manual character comparison:
+str1 and str2 are the same

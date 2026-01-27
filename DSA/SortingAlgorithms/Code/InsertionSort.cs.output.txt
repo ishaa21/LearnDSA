@@ -1,0 +1,36 @@
+
+Original Array: 
+64 34 25 12 22 11 90
+Sorted Array: 
+11 12 22 25 34 64 90
+
+Insertion Sort with statistics:
+Comparisons: 20, Shifts: 16
+11 12 22 25 34 64 90
+
+Already sorted: 
+1 2 3 4 5
+After Insertion Sort: 
+1 2 3 4 5
+
+Reverse sorted: 
+5 4 3 2 1
+After Insertion Sort: 
+1 2 3 4 5
+
+Descending order:
+90 64 34 25 22 12 11
+
+Array with duplicates: 
+5 2 8 2 9 1 5 5
+After Insertion Sort: 
+1 2 2 5 5 5 8 9
+
+Complexity Analysis:
+Time Complexity: O(n^2) - Quadratic
+Space Complexity: O(1) - In-place
+Best Case: O(n) - Already sorted
+Worst Case: O(n^2) - Reverse sorted
+Average Case: O(n^2)
+Stable: Yes
+Adaptive: Yes - performs well on nearly sorted data

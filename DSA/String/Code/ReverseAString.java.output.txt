@@ -1,0 +1,19 @@
+Method 1: Using StringBuilder
+Original: Hello World
+Reversed: dlroW olleH
+
+Method 2: Using loop
+Original: Programming
+Reversed: gnimmargorP
+
+Method 3: Using char array
+Original: Java
+Reversed: avaJ
+
+Method 4: Using recursion
+Original: Recursion
+Reversed: noisruceR
+
+Method 5: Using streams
+Original: Stream
+Reversed: maertS

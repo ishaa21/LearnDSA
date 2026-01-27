@@ -1,0 +1,6 @@
+=== 0/1 Knapsack (Python) ===
+
+Max value: 220
+
+Time Complexity: O(nW)
+Space Complexity: O(nW)

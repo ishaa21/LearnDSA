@@ -1,0 +1,8 @@
+arr1: [1, 2, 3, 4, 5]
+arr2 (empty): []
+arr3 (repeated): [0, 0, 0, 0, 0]
+arr4 (list comprehension): [1, 2, 3, 4, 5]
+arr5 (using range): [10, 20, 30, 40]
+arr6 (2D list): [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+arr7 (string to list): ['h', 'e', 'l', 'l', 'o']
+arr8 (after append/extend): [10, 20, 30, 40]

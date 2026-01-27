@@ -1,0 +1,5 @@
+-> Printer job scheduling
+-> CPU task scheduling
+-> Call center systems
+-> Data buffering
+-> Breadth-first search

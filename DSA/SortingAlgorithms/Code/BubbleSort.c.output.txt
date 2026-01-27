@@ -1,0 +1,16 @@
+Original Array: 64 34 25 12 22 11 90 
+Sorted Array (Bubble Sort): 11 12 22 25 34 64 90 
+Sorted Array (Optimized): 11 12 22 25 34 64 90 
+
+Already sorted array: 1 2 3 4 5 
+After Bubble Sort: 1 2 3 4 5 
+
+Reverse sorted array: 5 4 3 2 1 
+After Bubble Sort: 1 2 3 4 5 
+
+Complexity Analysis:
+Time Complexity: O(n^2) - Quadratic
+Space Complexity: O(1) - In-place
+Best Case: O(n) - Already sorted (with optimization)
+Worst Case: O(n^2) - Reverse sorted
+Stable: Yes

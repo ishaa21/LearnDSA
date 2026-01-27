@@ -1,0 +1,22 @@
+=== Preorder Traversal (C) ===
+
+Tree structure:
+         1
+        / \
+       2   3
+      / \ / \
+     4  5 6  7
+
+Recursive Preorder (Root-Left-Right): 1 2 4 5 3 6 7
+Iterative Preorder (using stack):     1 2 4 5 3 6 7
+
+=== Preorder Characteristics ===
+1. Root → Left subtree → Right subtree
+2. Root is processed first
+3. Useful for creating copy of tree
+4. Useful for prefix expression evaluation
+
+=== Complexity Analysis ===
+Time Complexity:  O(n) - visit each node once
+Space Complexity: O(h) - h = height (recursion/stack)
+                   O(n) worst case (skewed tree)

@@ -1,0 +1,21 @@
+=== BFS in Graph (Java) ===
+
+Graph (5 vertices, 7 edges)
+Edges: 0-1, 0-4, 1-2, 1-3, 1-4, 2-3, 3-4
+
+BFS Traversal: 0 1 4 2 3 
+
+=== BFS Algorithm ===
+1. Initialize queue with start vertex
+2. Mark start vertex as visited
+3. While queue is not empty:
+   a. Dequeue and process vertex
+   b. For all unvisited neighbors:
+      - Mark as visited
+      - Enqueue the neighbor
+4. Continue until queue is empty
+
+=== BFS Complexity ===
+Time Complexity:  O(V + E)
+Space Complexity: O(V)
+Applications: Shortest path, Level-order, Connected components

@@ -1,0 +1,5 @@
+-> Text processing
+-> User input handling
+-> Messaging systems
+-> File handling
+-> Web content management

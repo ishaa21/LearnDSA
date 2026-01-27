@@ -1,0 +1,206 @@
+{
+  "topics": [
+    {
+      "name": "Arrays",
+      "description": "An array is like a row of boxes.\nEach box has a number and holds one item.\nYou can quickly find an item if you know its number.\nIt keeps data organized in a straight line.",
+      "realWorldApps": "📚 Books on a shelf: Fixed spots, easy to find.\n🎵 Music Playlist: Songs playing in order.",
+      "timeComplexity": "⚡ Access: Instant (O(1))\n🐢 Search: Slow (O(N))",
+      "subtopics": [
+        "1_IntroductionToArrays",
+        "2_ArrayDeclarationInitialization",
+        "3_1DArrays",
+        "4_2DArrays",
+        "5_ArrayInsertion",
+        "6_ArrayDeletion",
+        "7_ArrayUpdate",
+        "8_ArrayTraversal",
+        "9_SearchingInArrays",
+        "10_SortingInArrays"
+      ]
+    },
+    {
+      "name": "Stack",
+      "description": "A stack is like a pile of plates.\nYou only touch the top one.\nLast In, First Out (LIFO).",
+      "realWorldApps": "🥞 Cafeteria Plates: Take from the top.\n↩️ Undo Button: Reverses the last action.",
+      "timeComplexity": "⚡ Push/Pop: Instant (O(1))",
+      "prerequisites": [
+        "Arrays",
+        "Linked List"
+      ],
+      "subtopics": [
+        "EvaluationOfInfixExpression",
+        "EvaluationOfPostfixExpression",
+        "EvaluationOfPrefixExpression",
+        "InfixToPostfix",
+        "InfixToPrefix",
+        "PeekOperation",
+        "PopOperation",
+        "PostfixToInfix",
+        "PostfixToPrefix",
+        "PrefixToInfix",
+        "PrefixToPostfix",
+        "PushOperation",
+        "StackImplementationArray",
+        "StackImplementionLinkedList",
+        "ValidParantheses"
+      ]
+    },
+    {
+      "name": "Queue",
+      "description": "A queue is like a line at a shop.\nFirst person in line is served first.\nFirst In, First Out (FIFO).",
+      "realWorldApps": "🎫 Ticket Counter: First come, first served.\n🖨️ Printer: Prints documents in order.",
+      "timeComplexity": "⚡ Enqueue/Dequeue: Instant (O(1))",
+      "subtopics": [
+        "CircularQueue",
+        "Deque",
+        "PriorityQueue",
+        "SimpleQueue"
+      ]
+    },
+    {
+      "name": "Linkedlist",
+      "description": "A chain of nodes connected together.\nEach node holds data and points to the next one.\nItems are not stored side-by-side in memory.",
+      "realWorldApps": "🚂 Train Wagons: Each car connects to the next.\n🔗 Scavenger Hunt: Each clue leads to the next location.",
+      "timeComplexity": "🐢 Accessing Item: Slow (Must walk the chain, O(N))\n⚡ Insert at Start: Instant (Just update one link, O(1))",
+      "subtopics": [
+        "CircularLinkedList",
+        "DeletionInDoublyLinkedList",
+        "DeletionInLinkedList",
+        "DetectCycleInDoublyLinkedList",
+        "DetectCycleInLinkedList",
+        "DoublyLinkedList",
+        "InsertionInDoublyLinkedList",
+        "InsertionInLinkedList",
+        "IntroductionToLinkedList",
+        "ReverseDoublyLinkedList",
+        "ReverseLinkedList",
+        "SinglyLinkedList",
+        "TraversalInDoublyLinkedList",
+        "TraversalInLinkedList"
+      ]
+    },
+    {
+      "name": "Tree",
+      "description": "A tree is like a folder structure.\nIt has a root folder and many sub-folders.\nUsed for hierarchies.",
+      "realWorldApps": "📂 File Explorer: Folders inside folders.\n🧬 Family Tree: Ancestors and descendants.",
+      "prerequisites": [
+        "Recursion",
+        "Queue"
+      ],
+      "subtopics": [
+        "BinarySearchTree",
+        "BinaryTree",
+        "DeletionBST",
+        "DiameterOfTree",
+        "HeightOfTree",
+        "InorderTraversal",
+        "InsertionBST",
+        "LevelOrderTraversal",
+        "PreorderTraversal",
+        "PostorderTraversal"
+      ]
+    },
+    {
+      "name": "Graph",
+      "subtopics": [
+        "BFS_Graph",
+        "ConnectedComponents",
+        "CycleDetection",
+        "DFS_Graph",
+        "GraphRepresentation",
+        "MinimunSpanningTree"
+      ]
+    },
+    {
+      "name": "SortingAlgorithms",
+      "subtopics": [
+        "BubbleSort",
+        "CountingSort",
+        "HeapSort",
+        "InsertionSort",
+        "MergeSort",
+        "QuickSort",
+        "RadixSort",
+        "SelectionSort"
+      ]
+    },
+    {
+      "name": "SearchingAlgorithms",
+      "description": "Searching is finding a specific item in a collection.\nIt answers: 'Is it here?' and 'Where is it?'.\nEssential for retrieving data.",
+      "realWorldApps": "📞 Phonebook: Finding a contact by name.\n🛒 E-commerce: Finding a product by name.",
+      "algorithm": "Example: Binary Search (Divide & Conquer)\n\n1. Start with a sorted list.\n2. Pick the middle item.\n3. Match? You found it! Stop.\n4. Too big? Discard the right half.\n5. Too small? Discard the left half.\n6. Repeat until found or empty.",
+      "timeComplexity": "⚡ Binary Search: Very Fast (O(log N))\n🐢 Linear Search: Slow (O(N))",
+      "subtopics": [
+        "BinarySearch",
+        "LinearSearch"
+      ]
+    },
+    {
+      "name": "Hashing",
+      "subtopics": [
+        "CollisionHandling",
+        "HashFunctions",
+        "HashMap",
+        "HashSet",
+        "HashTable"
+      ]
+    },
+    {
+      "name": "String",
+      "subtopics": [
+        "CheckForSame",
+        "ConcatenatingTwoStrings",
+        "GenerateAllSubstrings",
+        "InsertACharacter",
+        "LengthOfAString",
+        "RemoveACharacter",
+        "RemoveAllOccurrences",
+        "ReverseAString",
+        "SearchACharacter"
+      ]
+    },
+    {
+      "name": "StringAlgorithms",
+      "subtopics": [
+        "RabinKarp"
+      ]
+    },
+    {
+      "name": "DynamicProgramming",
+      "subtopics": [
+        "FibonacciDP",
+        "Knapsack01",
+        "LCS",
+        "LIS",
+        "MatrixChain",
+        "Memoization",
+        "Tabulation",
+        "UnboundedKnapsack"
+      ]
+    },
+    {
+      "name": "GreedyAlgo",
+      "subtopics": [
+        "ActivitySelection",
+        "CoinChange",
+        "FractionalKnapsack"
+      ]
+    },
+    {
+      "name": "Backtracking",
+      "subtopics": [
+        "Combinations",
+        "NQueens",
+        "Permutations"
+      ]
+    },
+    {
+      "name": "Heap",
+      "subtopics": [
+        "Heapify",
+        "MaxHeap",
+        "MinHeap"
+      ]
+    }
+  ]
+}

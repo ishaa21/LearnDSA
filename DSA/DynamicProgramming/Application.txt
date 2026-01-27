@@ -1,0 +1,6 @@
+-> Route optimization in maps and navigation systems
+-> Resource allocation and scheduling problems
+-> Financial planning and investment optimization
+-> Text comparison and spell checking
+-> Video and image compression
+-> Inventory and supply chain optimization

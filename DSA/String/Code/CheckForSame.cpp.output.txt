@@ -1,0 +1,17 @@
+Using == operator:
+(str1 == str2): 1
+(str1 == str3): 0
+(str1 == str4): 0
+
+Using compare() method:
+str1.compare(str2): 0
+str1.compare(str3): -32
+
+Case-insensitive comparison:
+Lower case equal: 1
+
+Comparing first 3 characters:
+substr comparison: 1
+
+C-style string comparison:
+strcmp result: 0

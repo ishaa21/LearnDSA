@@ -1,0 +1,19 @@
+=== DFS in Graph (Java) ===
+
+Graph (5 vertices, 7 edges)
+Edges: 0-1, 0-4, 1-2, 1-3, 1-4, 2-3, 3-4
+
+DFS Traversal (Recursive): 0 1 2 3 4 
+DFS Traversal (Iterative): 0 4 3 2 1 
+
+=== DFS Algorithm ===
+1. Mark current vertex as visited
+2. Process current vertex
+3. For all unvisited neighbors:
+   - Recursively call DFS
+4. Backtrack
+
+=== DFS Complexity ===
+Time Complexity:  O(V + E)
+Space Complexity: O(V)
+Applications: Cycle detection, Topological sort, Connectivity
