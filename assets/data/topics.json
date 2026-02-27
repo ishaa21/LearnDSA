@@ -6,16 +6,46 @@
       "realWorldApps": "📚 Books on a shelf: Fixed spots, easy to find.\n🎵 Music Playlist: Songs playing in order.",
       "timeComplexity": "⚡ Access: Instant (O(1))\n🐢 Search: Slow (O(N))",
       "subtopics": [
-        "1_IntroductionToArrays",
-        "2_ArrayDeclarationInitialization",
-        "3_1DArrays",
-        "4_2DArrays",
-        "5_ArrayInsertion",
-        "6_ArrayDeletion",
-        "7_ArrayUpdate",
-        "8_ArrayTraversal",
-        "9_SearchingInArrays",
-        "10_SortingInArrays"
+        {
+          "name": "1_IntroductionToArrays",
+          "practice": "Create and Print"
+        },
+        {
+          "name": "2_ArrayDeclarationInitialization",
+          "practice": "Init & Print"
+        },
+        {
+          "name": "3_1DArrays",
+          "practice": "Sum & Max"
+        },
+        {
+          "name": "4_2DArrays",
+          "practice": "Matrix Operations"
+        },
+        {
+          "name": "5_ArrayInsertion",
+          "practice": "Insert at Index"
+        },
+        {
+          "name": "6_ArrayDeletion",
+          "practice": "Delete"
+        },
+        {
+          "name": "7_ArrayUpdate",
+          "practice": "Update Evens"
+        },
+        {
+          "name": "8_ArrayTraversal",
+          "practice": "Count Evens"
+        },
+        {
+          "name": "9_SearchingInArrays",
+          "practice": "Find Index"
+        },
+        {
+          "name": "10_SortingInArrays",
+          "practice": "Basic Sort"
+        }
       ]
     },
     {
@@ -28,21 +58,66 @@
         "Linked List"
       ],
       "subtopics": [
-        "EvaluationOfInfixExpression",
-        "EvaluationOfPostfixExpression",
-        "EvaluationOfPrefixExpression",
-        "InfixToPostfix",
-        "InfixToPrefix",
-        "PeekOperation",
-        "PopOperation",
-        "PostfixToInfix",
-        "PostfixToPrefix",
-        "PrefixToInfix",
-        "PrefixToPostfix",
-        "PushOperation",
-        "StackImplementationArray",
-        "StackImplementionLinkedList",
-        "ValidParantheses"
+        {
+          "name": "EvaluationOfInfixExpression",
+          "practice": "Simple Sum"
+        },
+        {
+          "name": "EvaluationOfPostfixExpression",
+          "practice": "Evaluate"
+        },
+        {
+          "name": "EvaluationOfPrefixExpression",
+          "practice": "Eval Prefix"
+        },
+        {
+          "name": "InfixToPostfix",
+          "practice": "Convert"
+        },
+        {
+          "name": "InfixToPrefix",
+          "practice": "Convert"
+        },
+        {
+          "name": "PeekOperation",
+          "practice": "Peek Top"
+        },
+        {
+          "name": "PopOperation",
+          "practice": "Pop Element"
+        },
+        {
+          "name": "PostfixToInfix",
+          "practice": "Convert"
+        },
+        {
+          "name": "PostfixToPrefix",
+          "practice": "Convert"
+        },
+        {
+          "name": "PrefixToInfix",
+          "practice": "Convert"
+        },
+        {
+          "name": "PrefixToPostfix",
+          "practice": "Convert"
+        },
+        {
+          "name": "PushOperation",
+          "practice": "Push Elements"
+        },
+        {
+          "name": "StackImplementationArray",
+          "practice": "Array Stack"
+        },
+        {
+          "name": "StackImplementionLinkedList",
+          "practice": "LL Stack"
+        },
+        {
+          "name": "ValidParantheses",
+          "practice": "Check Balance"
+        }
       ]
     },
     {
@@ -51,10 +126,22 @@
       "realWorldApps": "🎫 Ticket Counter: First come, first served.\n🖨️ Printer: Prints documents in order.",
       "timeComplexity": "⚡ Enqueue/Dequeue: Instant (O(1))",
       "subtopics": [
-        "CircularQueue",
-        "Deque",
-        "PriorityQueue",
-        "SimpleQueue"
+        {
+          "name": "CircularQueue",
+          "practice": "Wrap Around"
+        },
+        {
+          "name": "Deque",
+          "practice": "Both Ends"
+        },
+        {
+          "name": "PriorityQueue",
+          "practice": "Priority"
+        },
+        {
+          "name": "SimpleQueue",
+          "practice": "Basic Queue"
+        }
       ]
     },
     {
@@ -63,20 +150,62 @@
       "realWorldApps": "🚂 Train Wagons: Each car connects to the next.\n🔗 Scavenger Hunt: Each clue leads to the next location.",
       "timeComplexity": "🐢 Accessing Item: Slow (Must walk the chain, O(N))\n⚡ Insert at Start: Instant (Just update one link, O(1))",
       "subtopics": [
-        "CircularLinkedList",
-        "DeletionInDoublyLinkedList",
-        "DeletionInLinkedList",
-        "DetectCycleInDoublyLinkedList",
-        "DetectCycleInLinkedList",
-        "DoublyLinkedList",
-        "InsertionInDoublyLinkedList",
-        "InsertionInLinkedList",
-        "IntroductionToLinkedList",
-        "ReverseDoublyLinkedList",
-        "ReverseLinkedList",
-        "SinglyLinkedList",
-        "TraversalInDoublyLinkedList",
-        "TraversalInLinkedList"
+        {
+          "name": "CircularLinkedList",
+          "practice": "Full Cycle"
+        },
+        {
+          "name": "DeletionInDoublyLinkedList",
+          "practice": "Delete Middle"
+        },
+        {
+          "name": "DeletionInLinkedList",
+          "practice": "Delete Head"
+        },
+        {
+          "name": "DetectCycleInDoublyLinkedList",
+          "practice": "Is Cyclic"
+        },
+        {
+          "name": "DetectCycleInLinkedList",
+          "practice": "Has Cycle?"
+        },
+        {
+          "name": "DoublyLinkedList",
+          "practice": "Backward Travel"
+        },
+        {
+          "name": "InsertionInDoublyLinkedList",
+          "practice": "Insert Head"
+        },
+        {
+          "name": "InsertionInLinkedList",
+          "practice": "Insert at Head"
+        },
+        {
+          "name": "IntroductionToLinkedList",
+          "practice": "Create Node"
+        },
+        {
+          "name": "ReverseDoublyLinkedList",
+          "practice": "Reverse DLL"
+        },
+        {
+          "name": "ReverseLinkedList",
+          "practice": "Reverse"
+        },
+        {
+          "name": "SinglyLinkedList",
+          "practice": "Insert & Print"
+        },
+        {
+          "name": "TraversalInDoublyLinkedList",
+          "practice": "Print Backward"
+        },
+        {
+          "name": "TraversalInLinkedList",
+          "practice": "Print All"
+        }
       ]
     },
     {
@@ -88,40 +217,112 @@
         "Queue"
       ],
       "subtopics": [
-        "BinarySearchTree",
-        "BinaryTree",
-        "DeletionBST",
-        "DiameterOfTree",
-        "HeightOfTree",
-        "InorderTraversal",
-        "InsertionBST",
-        "LevelOrderTraversal",
-        "PreorderTraversal",
-        "PostorderTraversal"
+        {
+          "name": "BinarySearchTree",
+          "practice": "Search"
+        },
+        {
+          "name": "BinaryTree",
+          "practice": "Create & Print"
+        },
+        {
+          "name": "DeletionBST",
+          "practice": "Delete Leaf"
+        },
+        {
+          "name": "DiameterOfTree",
+          "practice": "Diameter"
+        },
+        {
+          "name": "HeightOfTree",
+          "practice": "Height"
+        },
+        {
+          "name": "InorderTraversal",
+          "practice": "Get Sorted"
+        },
+        {
+          "name": "InsertionBST",
+          "practice": "Insert 5"
+        },
+        {
+          "name": "LevelOrderTraversal",
+          "practice": "BFS"
+        },
+        {
+          "name": "PreorderTraversal",
+          "practice": "Print Preorder"
+        },
+        {
+          "name": "PostorderTraversal",
+          "practice": "Print Postorder"
+        }
       ]
     },
     {
       "name": "Graph",
       "subtopics": [
-        "BFS_Graph",
-        "ConnectedComponents",
-        "CycleDetection",
-        "DFS_Graph",
-        "GraphRepresentation",
-        "MinimunSpanningTree"
+        {
+          "name": "BFS_Graph",
+          "practice": "BFS Order"
+        },
+        {
+          "name": "ConnectedComponents",
+          "practice": "Count"
+        },
+        {
+          "name": "CycleDetection",
+          "practice": "Has Cycle?"
+        },
+        {
+          "name": "DFS_Graph",
+          "practice": "DFS Order"
+        },
+        {
+          "name": "GraphRepresentation",
+          "practice": "Adj List"
+        },
+        {
+          "name": "MinimunSpanningTree",
+          "practice": "MST Cost"
+        }
       ]
     },
     {
       "name": "SortingAlgorithms",
       "subtopics": [
-        "BubbleSort",
-        "CountingSort",
-        "HeapSort",
-        "InsertionSort",
-        "MergeSort",
-        "QuickSort",
-        "RadixSort",
-        "SelectionSort"
+        {
+          "name": "BubbleSort",
+          "practice": "Bubble Up"
+        },
+        {
+          "name": "CountingSort",
+          "practice": "Count"
+        },
+        {
+          "name": "HeapSort",
+          "practice": "Max Heap"
+        },
+        {
+          "name": "InsertionSort",
+          "practice": "Insert"
+        },
+        {
+          "name": "MergeSort",
+          "practice": "Merge"
+        },
+        {
+          "name": "QuickSort",
+          "practice": "Partition"
+        },
+        {
+          "name": "RadixSort",
+          "practice": "Digit Sort"
+        },
+        {
+          "name": "SelectionSort",
+          "practice": "Select Min"
+        }
       ]
     },
     {
@@ -131,75 +332,177 @@
       "algorithm": "Example: Binary Search (Divide & Conquer)\n\n1. Start with a sorted list.\n2. Pick the middle item.\n3. Match? You found it! Stop.\n4. Too big? Discard the right half.\n5. Too small? Discard the left half.\n6. Repeat until found or empty.",
       "timeComplexity": "⚡ Binary Search: Very Fast (O(log N))\n🐢 Linear Search: Slow (O(N))",
       "subtopics": [
-        "BinarySearch",
-        "LinearSearch"
+        {
+          "name": "BinarySearch",
+          "practice": "Find Target"
+        },
+        {
+          "name": "LinearSearch",
+          "practice": "Simple Search"
+        }
       ]
     },
     {
       "name": "Hashing",
       "subtopics": [
-        "CollisionHandling",
-        "HashFunctions",
-        "HashMap",
-        "HashSet",
-        "HashTable"
+        {
+          "name": "CollisionHandling",
+          "practice": "Chain"
+        },
+        {
+          "name": "HashFunctions",
+          "practice": "Simple Mod"
+        },
+        {
+          "name": "HashMap",
+          "practice": "Frequency"
+        },
+        {
+          "name": "HashSet",
+          "practice": "Unique"
+        },
+        {
+          "name": "HashTable",
+          "practice": "Basic Table"
+        }
       ]
     },
     {
       "name": "String",
       "subtopics": [
-        "CheckForSame",
-        "ConcatenatingTwoStrings",
-        "GenerateAllSubstrings",
-        "InsertACharacter",
-        "LengthOfAString",
-        "RemoveACharacter",
-        "RemoveAllOccurrences",
-        "ReverseAString",
-        "SearchACharacter"
+        {
+          "name": "CheckForSame",
+          "practice": "Equal?"
+        },
+        {
+          "name": "ConcatenatingTwoStrings",
+          "practice": "Join"
+        },
+        {
+          "name": "GenerateAllSubstrings",
+          "practice": "Substrings"
+        },
+        {
+          "name": "InsertACharacter",
+          "practice": "Insert"
+        },
+        {
+          "name": "LengthOfAString",
+          "practice": "Manual Count"
+        },
+        {
+          "name": "RemoveACharacter",
+          "practice": "Delete"
+        },
+        {
+          "name": "RemoveAllOccurrences",
+          "practice": "Remove All"
+        },
+        {
+          "name": "ReverseAString",
+          "practice": "Reverse"
+        },
+        {
+          "name": "SearchACharacter",
+          "practice": "Find Index"
+        }
       ]
     },
     {
       "name": "StringAlgorithms",
       "subtopics": [
-        "RabinKarp"
+        {
+          "name": "RabinKarp",
+          "practice": "Input: \"abc\" in \"ababcab\""
+        }
       ]
     },
     {
       "name": "DynamicProgramming",
       "subtopics": [
-        "FibonacciDP",
-        "Knapsack01",
-        "LCS",
-        "LIS",
-        "MatrixChain",
-        "Memoization",
-        "Tabulation",
-        "UnboundedKnapsack"
+        {
+          "name": "FibonacciDP",
+          "practice": "Input: N=10"
+        },
+        {
+          "name": "Knapsack01",
+          "practice": "Input: Weights=[1,2,3], Values=[10,15,40], Capacity=6"
+        },
+        {
+          "name": "LCS",
+          "practice": "Input: \"abcde\", \"ace\""
+        },
+        {
+          "name": "LIS",
+          "practice": "Input: [10,9,2,5,3,7,101,18]"
+        },
+        {
+          "name": "MatrixChain",
+          "practice": "Input: Matrices [10x20], [20x30], [30x40]"
+        },
+        {
+          "name": "Memoization",
+          "practice": "Input: Fibonacci(10) with memoization"
+        },
+        {
+          "name": "Tabulation",
+          "practice": "Input: Fibonacci(10) with tabulation"
+        },
+        {
+          "name": "UnboundedKnapsack",
+          "practice": "Input: Coins=[1,2,5], Amount=11"
+        }
       ]
     },
     {
       "name": "GreedyAlgo",
       "subtopics": [
-        "ActivitySelection",
-        "CoinChange",
-        "FractionalKnapsack"
+        {
+          "name": "ActivitySelection",
+          "practice": "Input: Activities [(1,3), (2,4), (3,5)]"
+        },
+        {
+          "name": "CoinChange",
+          "practice": "Input: Coins=[1, 5, 10, 25], Amount=30"
+        },
+        {
+          "name": "FractionalKnapsack",
+          "practice": "Input: Items=[(val:60, wt:10), (val:100, wt:20), (val:120, wt:30)], Cap=50"
+        }
       ]
     },
     {
       "name": "Backtracking",
       "subtopics": [
-        "Combinations",
-        "NQueens",
-        "Permutations"
+        {
+          "name": "Combinations",
+          "practice": "Input: [1,2,3], k=2"
+        },
+        {
+          "name": "NQueens",
+          "practice": "Input: N=4"
+        },
+        {
+          "name": "Permutations",
+          "practice": "Input: \"abc\""
+        }
       ]
     },
     {
       "name": "Heap",
       "subtopics": [
-        "Heapify",
-        "MaxHeap",
-        "MinHeap"
+        {
+          "name": "Heapify",
+          "practice": "Input: [1, 2, 3]"
+        },
+        {
+          "name": "MaxHeap",
+          "practice": "Input: [10, 20, 15] insert one by one"
+        },
+        {
+          "name": "MinHeap",
+          "practice": "Input: [10, 20, 5] insert one by one"
+        }
       ]
     }
   ]

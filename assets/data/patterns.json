@@ -1,0 +1,242 @@
+{
+    "Two Pointers": {
+        "icon": "👆",
+        "description": "Uses two index pointers that move towards or away from each other to solve array/string problems without nested loops.",
+        "when_to_use": [
+            "Sorted array pair-sum problems",
+            "Removing duplicates from sorted arrays",
+            "Palindrome checking",
+            "Container with most water",
+            "Merging two sorted arrays"
+        ],
+        "common_traps": [
+            "Forgetting the sorted pre-condition",
+            "Pointer collision — check left < right, not left <= right",
+            "Off-by-one on boundary checks",
+            "Not handling duplicates correctly"
+        ],
+        "time_complexity_idea": "O(n) — each element visited at most once",
+        "space_complexity_idea": "O(1) — no extra space needed",
+        "color": "#4FC3F7"
+    },
+    "Sliding Window": {
+        "icon": "🪟",
+        "description": "Maintains a window over a subarray/substring and slides it forward, avoiding redundant recalculation.",
+        "when_to_use": [
+            "Maximum/minimum sum subarray of size k",
+            "Longest substring without repeating characters",
+            "Minimum window substring",
+            "Count of subarrays satisfying a condition",
+            "Fixed vs variable-size window problems"
+        ],
+        "common_traps": [
+            "Not shrinking the window when condition is violated",
+            "Forgetting to update the answer before shrinking",
+            "Using fixed-size pattern for variable-size problems",
+            "Wrong frequency map updates when window shrinks"
+        ],
+        "time_complexity_idea": "O(n) — each element enters and leaves window once",
+        "space_complexity_idea": "O(k) where k is window size or alphabet size",
+        "color": "#80CBC4"
+    },
+    "Binary Search on Answer": {
+        "icon": "🔍",
+        "description": "Applies binary search on the answer space (not the array index) to find the optimal value satisfying a monotonic condition.",
+        "when_to_use": [
+            "Minimize the maximum / maximize the minimum",
+            "Find the smallest k satisfying a condition",
+            "Koko eating bananas, painter partition",
+            "Capacity to ship packages",
+            "Finding square root"
+        ],
+        "common_traps": [
+            "Choosing wrong lo/hi boundary",
+            "Off-by-one in the mid calculation (use lo + (hi-lo)/2)",
+            "Not defining the check function correctly",
+            "Infinite loop due to wrong boundary updates"
+        ],
+        "time_complexity_idea": "O(n log(answer_range))",
+        "space_complexity_idea": "O(1)",
+        "color": "#CE93D8"
+    },
+    "Greedy Choice": {
+        "icon": "💰",
+        "description": "Makes the locally optimal choice at each step, trusting it leads to a globally optimal solution.",
+        "when_to_use": [
+            "Activity selection / interval scheduling",
+            "Fractional knapsack",
+            "Huffman encoding",
+            "Minimum spanning tree (Kruskal/Prim)",
+            "Jump game"
+        ],
+        "common_traps": [
+            "Applying greedy to 0/1 Knapsack (doesn't work — use DP)",
+            "Not sorting intervals by the correct field (end vs start)",
+            "Assuming greedy works without a proof of the exchange argument",
+            "Missing edge cases with ties"
+        ],
+        "time_complexity_idea": "Usually O(n log n) due to sorting",
+        "space_complexity_idea": "O(1) to O(n)",
+        "color": "#FFCC80"
+    },
+    "DFS / BFS": {
+        "icon": "🌳",
+        "description": "DFS explores depth-first (recursion/stack); BFS explores breadth-first (queue). Both traverse graphs/trees systematically.",
+        "when_to_use": [
+            "BFS: shortest path in unweighted graphs",
+            "BFS: level-order traversal",
+            "DFS: cycle detection, connected components",
+            "DFS: maze solving, path existence",
+            "Both: flood fill, island counting"
+        ],
+        "common_traps": [
+            "Forgetting to mark nodes visited → infinite loop",
+            "Using DFS when BFS guarantees shortest path",
+            "Stack overflow with deep DFS (use iterative for large inputs)",
+            "Not handling disconnected graphs"
+        ],
+        "time_complexity_idea": "O(V + E) — visit every vertex and edge once",
+        "space_complexity_idea": "O(V) for the visited set / call stack",
+        "color": "#A5D6A7"
+    },
+    "Topological Sort": {
+        "icon": "📐",
+        "description": "Linear ordering of vertices such that for every directed edge u→v, u comes before v. Only applicable to DAGs.",
+        "when_to_use": [
+            "Course schedule / prerequisite ordering",
+            "Build system dependency resolution",
+            "Deadlock detection",
+            "Alien dictionary ordering",
+            "Compilation order"
+        ],
+        "common_traps": [
+            "Cycle in graph → no valid topological order",
+            "Confusing in-degree with out-degree in Kahn's algorithm",
+            "Not initializing all nodes with zero in-degree",
+            "Using on undirected graphs"
+        ],
+        "time_complexity_idea": "O(V + E)",
+        "space_complexity_idea": "O(V) for queue and in-degree array",
+        "color": "#EF9A9A"
+    },
+    "Backtracking": {
+        "icon": "↩️",
+        "description": "Explores all candidate solutions recursively and abandons (backtracks) paths that cannot lead to a valid solution.",
+        "when_to_use": [
+            "N-Queens problem",
+            "Sudoku solver",
+            "Generating all permutations / combinations / subsets",
+            "Rat in a maze",
+            "Word search in a grid"
+        ],
+        "common_traps": [
+            "Forgetting to undo the choice (unmark/remove) before returning",
+            "Not adding a proper base case",
+            "Modifying state without restoring it (not truly backtracking)",
+            "Exponential time — add pruning where possible"
+        ],
+        "time_complexity_idea": "Exponential — O(n!) or O(2ⁿ) depending on problem",
+        "space_complexity_idea": "O(n) recursive stack depth",
+        "color": "#FFAB91"
+    },
+    "DP Memoization": {
+        "icon": "🗂️",
+        "description": "Top-down Dynamic Programming: solve recursively and cache results to avoid recomputation of overlapping subproblems.",
+        "when_to_use": [
+            "Fibonacci, climbing stairs",
+            "Longest Common Subsequence",
+            "0/1 Knapsack",
+            "Partition equal subset sum",
+            "Edit distance"
+        ],
+        "common_traps": [
+            "Cache key doesn't uniquely identify the subproblem",
+            "Forgetting to check cache before recursing",
+            "Stack overflow on large inputs — prefer tabulation",
+            "Mutable default argument as cache in Python"
+        ],
+        "time_complexity_idea": "O(states × transition_cost)",
+        "space_complexity_idea": "O(states) for the cache + O(n) stack",
+        "color": "#B39DDB"
+    },
+    "DP Tabulation": {
+        "icon": "📊",
+        "description": "Bottom-up Dynamic Programming: fill a table iteratively from base cases, eliminating recursion overhead.",
+        "when_to_use": [
+            "When stack overflow is a concern",
+            "Coin change, longest increasing subsequence",
+            "Matrix chain multiplication",
+            "When all subproblems must be solved anyway",
+            "Space-optimized rolling array technique"
+        ],
+        "common_traps": [
+            "Wrong iteration order (must solve smaller problems first)",
+            "Off-by-one in table dimensions (size n vs n+1)",
+            "Forgetting to initialize base cases correctly",
+            "Optimizing space before correctness is proven"
+        ],
+        "time_complexity_idea": "O(states × transition_cost)",
+        "space_complexity_idea": "O(states); can be reduced with rolling array",
+        "color": "#80DEEA"
+    },
+    "Heap Pattern": {
+        "icon": "⛰️",
+        "description": "Uses a min-heap or max-heap to efficiently access the smallest or largest element in a dynamic dataset.",
+        "when_to_use": [
+            "K largest / K smallest elements",
+            "Merge K sorted lists",
+            "Sliding window maximum",
+            "Task scheduling / CPU burst",
+            "Dijkstra's shortest path"
+        ],
+        "common_traps": [
+            "Using a max-heap when a min-heap is needed (negate values in languages without max-heap)",
+            "Not handling ties in priority",
+            "O(n log n) insertion — consider heapify O(n) for bulk build",
+            "Heap vs sorted array tradeoff for static data"
+        ],
+        "time_complexity_idea": "O(n log k) for top-k problems",
+        "space_complexity_idea": "O(k) for the heap",
+        "color": "#F48FB1"
+    },
+    "Monotonic Stack": {
+        "icon": "📈",
+        "description": "Maintains a stack in monotonically increasing or decreasing order to answer next-greater/smaller element queries in O(n).",
+        "when_to_use": [
+            "Next greater element",
+            "Stock span problem",
+            "Largest rectangle in histogram",
+            "Trapping rain water",
+            "Daily temperatures"
+        ],
+        "common_traps": [
+            "Choosing increasing vs decreasing stack incorrectly",
+            "Forgetting to pop elements when a smaller/larger one arrives",
+            "Not handling the remaining stack elements after full traversal",
+            "Index vs value stored in the stack"
+        ],
+        "time_complexity_idea": "O(n) — each element pushed and popped at most once",
+        "space_complexity_idea": "O(n) worst case",
+        "color": "#FFE082"
+    },
+    "Prefix Sum": {
+        "icon": "➕",
+        "description": "Precomputes cumulative sums to answer range-sum queries in O(1) after O(n) preprocessing.",
+        "when_to_use": [
+            "Range sum queries",
+            "Subarray sum equals k",
+            "Count subarrays with given sum",
+            "2D matrix range sum",
+            "Equilibrium index"
+        ],
+        "common_traps": [
+            "Off-by-one — prefix[i] usually represents sum of first i elements",
+            "Not initializing prefix[0] = 0 as base case",
+            "Forgetting to use modular arithmetic for large sums",
+            "2D prefix sum formula: careful with inclusion-exclusion"
+        ],
+        "time_complexity_idea": "O(n) preprocessing, O(1) per query",
+        "space_complexity_idea": "O(n) for the prefix array",
+        "color": "#BCAAA4"
+    }
+}

@@ -35,11 +35,13 @@ class TopicContent {
           final headerEnd = content.indexOf('\n', start);
           if (headerEnd == -1) return content.substring(start + variant.length).trim();
           
-          // Look for the next header (any line starting with #) to find the end of the current section
-          final nextHeaderOffset = content.indexOf('\n#', headerEnd);
-          final section = (nextHeaderOffset == -1)
+          // Look for the next main header (level 1 or 2) to find the end of the current section
+          // This avoids stopping at ### sub-headers
+          final nextHeaderMatch = RegExp(r'\r?\n#{1,2}\s').firstMatch(content.substring(headerEnd));
+          
+          final section = (nextHeaderMatch == null)
               ? content.substring(headerEnd)
-              : content.substring(headerEnd, nextHeaderOffset);
+              : content.substring(headerEnd, headerEnd + nextHeaderMatch.start);
           return section.trim();
         }
       }

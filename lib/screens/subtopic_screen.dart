@@ -325,6 +325,17 @@ class _SubtopicScreenState extends State<SubtopicScreen> with SingleTickerProvid
               ],
             ),
           ),
+          const SizedBox(height: 24),
+
+          // 7. Mini Practice Preview
+          if (_content!.practices.isNotEmpty)
+            _LearnContentCard(
+              title: "Quick Challenge",
+              icon: Icons.fitness_center_rounded,
+              content: _content!.practices.first.question,
+              color: AppColors.warning,
+            ),
+          
           const SizedBox(height: 40),
         ],
       ),

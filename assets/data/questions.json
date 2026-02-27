@@ -1,0 +1,379 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "topic": "Arrays",
+            "difficulty": "Easy",
+            "question": "What is the time complexity of accessing an element in an array by index?",
+            "hint": "Think about how arrays are stored in memory — contiguous blocks.",
+            "solution": "O(1) — Arrays allow direct index-based access. Since memory is contiguous, the address of any element can be computed instantly as: base_address + (index × element_size).",
+            "options": [
+                "O(1)",
+                "O(n)",
+                "O(log n)",
+                "O(n²)"
+            ],
+            "correct": 0
+        },
+        {
+            "id": "q2",
+            "topic": "Arrays",
+            "difficulty": "Easy",
+            "question": "What is the worst-case time complexity of inserting an element at the beginning of an array?",
+            "hint": "You need to shift all existing elements to make room.",
+            "solution": "O(n) — Inserting at the beginning requires shifting all n elements one position to the right.",
+            "options": [
+                "O(1)",
+                "O(n)",
+                "O(log n)",
+                "O(n log n)"
+            ],
+            "correct": 1
+        },
+        {
+            "id": "q3",
+            "topic": "Stack",
+            "difficulty": "Easy",
+            "question": "Which data structure uses LIFO (Last In, First Out) principle?",
+            "hint": "Think of a pile of plates — you always take from the top.",
+            "solution": "Stack — The last element pushed is the first one popped. Example: function call stack, undo operations.",
+            "options": [
+                "Queue",
+                "Stack",
+                "Graph",
+                "Tree"
+            ],
+            "correct": 1
+        },
+        {
+            "id": "q4",
+            "topic": "Stack",
+            "difficulty": "Easy",
+            "question": "What is the time complexity of push and pop operations in a Stack?",
+            "hint": "You only ever touch the top of the stack.",
+            "solution": "O(1) — Both push and pop operate on the top of the stack, so no traversal is needed.",
+            "options": [
+                "O(n)",
+                "O(log n)",
+                "O(1)",
+                "O(n²)"
+            ],
+            "correct": 2
+        },
+        {
+            "id": "q5",
+            "topic": "Queue",
+            "difficulty": "Easy",
+            "question": "Which principle does a Queue follow?",
+            "hint": "Think of a line at a ticket counter — who gets served first?",
+            "solution": "FIFO (First In, First Out) — The first element added is the first one removed.",
+            "options": [
+                "LIFO",
+                "FIFO",
+                "Random Access",
+                "Priority Based"
+            ],
+            "correct": 1
+        },
+        {
+            "id": "q6",
+            "topic": "Linked List",
+            "difficulty": "Easy",
+            "question": "What is the time complexity of inserting a node at the head of a Linked List?",
+            "hint": "You only need to update a few pointers.",
+            "solution": "O(1) — Inserting at the head only requires updating the new node's next pointer and the head pointer.",
+            "options": [
+                "O(1)",
+                "O(n)",
+                "O(log n)",
+                "O(n²)"
+            ],
+            "correct": 0
+        },
+        {
+            "id": "q7",
+            "topic": "Linked List",
+            "difficulty": "Medium",
+            "question": "What is the time complexity of finding the middle element of a singly linked list?",
+            "hint": "Think about the two-pointer (slow & fast) technique.",
+            "solution": "O(n) — You must traverse at least half the list. Using slow & fast pointers: slow moves 1 step, fast moves 2 steps. When fast reaches end, slow is at the middle.",
+            "options": [
+                "O(1)",
+                "O(log n)",
+                "O(n)",
+                "O(n²)"
+            ],
+            "correct": 2
+        },
+        {
+            "id": "q8",
+            "topic": "Binary Search",
+            "difficulty": "Easy",
+            "question": "What is the prerequisite for Binary Search to work?",
+            "hint": "Binary Search divides the search space in half each time.",
+            "solution": "The array must be sorted. Binary Search compares the target with the middle element and eliminates half the search space.",
+            "options": [
+                "Array must be sorted",
+                "Array must have even length",
+                "Array must be in descending order",
+                "No prerequisite"
+            ],
+            "correct": 0
+        },
+        {
+            "id": "q9",
+            "topic": "Binary Search",
+            "difficulty": "Easy",
+            "question": "What is the time complexity of Binary Search?",
+            "hint": "Each step halves the remaining search space.",
+            "solution": "O(log n) — At each step, the search space is halved. So for n elements, at most log₂(n) steps are needed.",
+            "options": [
+                "O(n)",
+                "O(n²)",
+                "O(log n)",
+                "O(1)"
+            ],
+            "correct": 2
+        },
+        {
+            "id": "q10",
+            "topic": "Tree",
+            "difficulty": "Medium",
+            "question": "What traversal of a BST gives elements in sorted order?",
+            "hint": "Think: left subtree, root, right subtree.",
+            "solution": "Inorder traversal (Left → Root → Right) of a BST gives elements in sorted ascending order.",
+            "options": [
+                "Preorder",
+                "Postorder",
+                "Inorder",
+                "Level Order"
+            ],
+            "correct": 2
+        },
+        {
+            "id": "q11",
+            "topic": "Tree",
+            "difficulty": "Medium",
+            "question": "What is the height of a balanced binary tree with n nodes?",
+            "hint": "At each level, the number of nodes can double.",
+            "solution": "O(log n) — In a balanced binary tree, each level doubles the nodes. So the height is approximately log₂(n).",
+            "options": [
+                "O(n)",
+                "O(log n)",
+                "O(n log n)",
+                "O(1)"
+            ],
+            "correct": 1
+        },
+        {
+            "id": "q12",
+            "topic": "Graph",
+            "difficulty": "Medium",
+            "question": "Which algorithm is used for finding the shortest path in an unweighted graph?",
+            "hint": "It explores nodes level by level.",
+            "solution": "BFS (Breadth-First Search) — It explores all neighbors at the present depth before going deeper, finding shortest path (in terms of edges) in unweighted graphs.",
+            "options": [
+                "DFS",
+                "BFS",
+                "Dijkstra",
+                "Bellman-Ford"
+            ],
+            "correct": 1
+        },
+        {
+            "id": "q13",
+            "topic": "Dynamic Programming",
+            "difficulty": "Medium",
+            "question": "What is memoization in Dynamic Programming?",
+            "hint": "It avoids recomputing results you've already calculated.",
+            "solution": "Memoization is top-down DP — store results of expensive function calls and return the cached result when the same inputs occur again. It uses recursion + a cache (usually a hashmap or array).",
+            "options": [
+                "Bottom-up iterative approach",
+                "Top-down recursive with caching",
+                "Greedy optimization",
+                "Divide and conquer"
+            ],
+            "correct": 1
+        },
+        {
+            "id": "q14",
+            "topic": "Sorting",
+            "difficulty": "Easy",
+            "question": "What is the best-case time complexity of Bubble Sort?",
+            "hint": "What happens when the array is already sorted?",
+            "solution": "O(n) — With the optimization of tracking swaps, if no swap occurs in a pass, the array is already sorted and we stop early.",
+            "options": [
+                "O(n²)",
+                "O(n log n)",
+                "O(n)",
+                "O(log n)"
+            ],
+            "correct": 2
+        },
+        {
+            "id": "q15",
+            "topic": "Sorting",
+            "difficulty": "Medium",
+            "question": "Which sorting algorithm has the best average-case time complexity among the comparison-based sorts listed?",
+            "hint": "This algorithm uses a pivot element to partition the array.",
+            "solution": "Quick Sort — Average case: O(n log n). It uses divide-and-conquer with a pivot. Best when pivot divides array evenly.",
+            "options": [
+                "Bubble Sort O(n²)",
+                "Selection Sort O(n²)",
+                "Quick Sort O(n log n)",
+                "Insertion Sort O(n²)"
+            ],
+            "correct": 2
+        },
+        {
+            "id": "q16",
+            "topic": "Hashing",
+            "difficulty": "Easy",
+            "question": "What is the average-case time complexity for lookup in a Hash Table?",
+            "hint": "Hash tables are designed for fast retrieval.",
+            "solution": "O(1) — The hash function maps a key directly to an index, so lookup is nearly instantaneous on average (collision-free).",
+            "options": [
+                "O(n)",
+                "O(log n)",
+                "O(1)",
+                "O(n²)"
+            ],
+            "correct": 2
+        },
+        {
+            "id": "q17",
+            "topic": "Recursion",
+            "difficulty": "Medium",
+            "question": "What is the space complexity of a recursive solution that makes n recursive calls?",
+            "hint": "Each recursive call adds a frame to the call stack.",
+            "solution": "O(n) — Each recursive call is added to the call stack. For n recursive calls, the stack holds up to n frames simultaneously.",
+            "options": [
+                "O(1)",
+                "O(log n)",
+                "O(n)",
+                "O(n²)"
+            ],
+            "correct": 2
+        },
+        {
+            "id": "q18",
+            "topic": "Sliding Window",
+            "difficulty": "Medium",
+            "question": "What technique is best suited to find the maximum sum subarray of size k?",
+            "hint": "Avoid recalculating the sum from scratch for each window.",
+            "solution": "Sliding Window — Compute the sum for the first window, then slide: subtract the outgoing element and add the incoming element. Time: O(n).",
+            "options": [
+                "Binary Search",
+                "Sliding Window",
+                "Dynamic Programming",
+                "Brute Force O(n²)"
+            ],
+            "correct": 1
+        },
+        {
+            "id": "q19",
+            "topic": "Two Pointers",
+            "difficulty": "Medium",
+            "question": "What is the time complexity of finding a pair with a given sum in a sorted array using two pointers?",
+            "hint": "One pointer starts at the left, another at the right.",
+            "solution": "O(n) — Two pointers start from both ends. If sum is too large, move right pointer left. If too small, move left pointer right. Each pointer moves at most n times.",
+            "options": [
+                "O(n²)",
+                "O(n log n)",
+                "O(n)",
+                "O(log n)"
+            ],
+            "correct": 2
+        },
+        {
+            "id": "q20",
+            "topic": "Greedy",
+            "difficulty": "Medium",
+            "question": "Which of the following problems can NOT be solved optimally with a greedy approach?",
+            "hint": "One of these requires considering all possible combinations.",
+            "solution": "0/1 Knapsack — Unlike Fractional Knapsack, you cannot take fractions of items. The greedy choice (highest value/weight ratio) doesn't always yield the optimal answer. DP is required.",
+            "options": [
+                "Activity Selection",
+                "Fractional Knapsack",
+                "0/1 Knapsack",
+                "Coin Change (specific denominations)"
+            ],
+            "correct": 2
+        },
+        {
+            "id": "q21",
+            "topic": "Backtracking",
+            "difficulty": "Hard",
+            "question": "What is the time complexity of generating all permutations of a string of length n?",
+            "hint": "How many permutations of n distinct characters are there?",
+            "solution": "O(n × n!) — There are n! permutations, and each takes O(n) time to construct/print. Backtracking explores all branches of this recursion tree.",
+            "options": [
+                "O(n²)",
+                "O(2ⁿ)",
+                "O(n × n!)",
+                "O(n log n)"
+            ],
+            "correct": 2
+        },
+        {
+            "id": "q22",
+            "topic": "Arrays",
+            "difficulty": "Medium",
+            "question": "What is the time complexity of the Two Sum problem using a HashMap?",
+            "hint": "You can check for the complement in a single pass.",
+            "solution": "O(n) — Iterate through the array once. For each element, check if its complement (target - element) exists in the HashMap. Insert each element into the map.",
+            "options": [
+                "O(n²)",
+                "O(n log n)",
+                "O(n)",
+                "O(log n)"
+            ],
+            "correct": 2
+        },
+        {
+            "id": "q23",
+            "topic": "Graph",
+            "difficulty": "Hard",
+            "question": "What is the time complexity of Dijkstra's algorithm with a min-heap?",
+            "hint": "Each vertex and each edge is processed with heap operations.",
+            "solution": "O((V + E) log V) — Using a min-heap: each vertex is inserted/extracted once (O(V log V)), and each edge triggers a decrease-key operation (O(E log V)).",
+            "options": [
+                "O(V²)",
+                "O(E log V)",
+                "O((V + E) log V)",
+                "O(VE)"
+            ],
+            "correct": 2
+        },
+        {
+            "id": "q24",
+            "topic": "Tree",
+            "difficulty": "Hard",
+            "question": "What is the worst-case time complexity of searching in an unbalanced BST?",
+            "hint": "What happens if every node has only one child?",
+            "solution": "O(n) — In the worst case, the BST degenerates into a linked list (e.g., inserting sorted elements). Searching requires traversing all n nodes.",
+            "options": [
+                "O(log n)",
+                "O(n log n)",
+                "O(n)",
+                "O(1)"
+            ],
+            "correct": 2
+        },
+        {
+            "id": "q25",
+            "topic": "Heap",
+            "difficulty": "Medium",
+            "question": "What is the time complexity of building a heap from an array of n elements?",
+            "hint": "It's more efficient than inserting elements one by one.",
+            "solution": "O(n) — Using heapify bottom-up (Floyd's algorithm) builds the heap in linear time. This is better than O(n log n) for n individual insertions.",
+            "options": [
+                "O(n log n)",
+                "O(n²)",
+                "O(n)",
+                "O(log n)"
+            ],
+            "correct": 2
+        }
+    ]
+}

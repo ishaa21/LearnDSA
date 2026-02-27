@@ -29,33 +29,63 @@ class _TopicScreenState extends State<TopicScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final bg = isDark ? AppColors.background : AppColors.lightBackground;
+    final textMain = isDark ? AppColors.textMain : AppColors.lightTextMain;
+    final accentColor = isDark ? AppColors.accent : AppColors.lightAccent;
+
     return Scaffold(
-      backgroundColor: AppColors.background,
+      backgroundColor: bg,
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
             expandedHeight: 120,
             pinned: true,
-            backgroundColor: AppColors.background,
+            backgroundColor: bg,
             elevation: 0,
             leading: IconButton(
-              icon: const Icon(Icons.arrow_back_ios_new_rounded, color: AppColors.textMain),
+              icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
               onPressed: () => Navigator.pop(context),
             ),
             actions: [
               Consumer<UserProgressProvider>(
                 builder: (context, progress, _) {
+                  final isWeak = progress.isWeakTopic(widget.topic.name);
+                  final isRevision = progress.isRevisionTopic(widget.topic.name);
                   final isBookmarked = progress.isTopicBookmarked(widget.topic.name);
-                  return IconButton(
-                    icon: Icon(
-                      isBookmarked ? Icons.bookmark_rounded : Icons.bookmark_border_rounded,
-                      color: isBookmarked ? AppColors.accent : AppColors.textMain,
-                    ),
-                    onPressed: () => progress.toggleTopicBookmark(widget.topic.name),
+                  return Row(
+                    children: [
+                      // Weak toggle
+                      IconButton(
+                        tooltip: isWeak ? 'Remove from Weak' : 'Mark as Weak',
+                        icon: Icon(
+                          Icons.warning_amber_rounded,
+                          color: isWeak ? AppColors.error : textMain.withOpacity(0.5),
+                        ),
+                        onPressed: () => progress.toggleWeakTopic(widget.topic.name),
+                      ),
+                      // Revision toggle
+                      IconButton(
+                        tooltip: isRevision ? 'Remove from Revision' : 'Add to Revision',
+                        icon: Icon(
+                          Icons.refresh_rounded,
+                          color: isRevision ? AppColors.warning : textMain.withOpacity(0.5),
+                        ),
+                        onPressed: () => progress.toggleRevisionTopic(widget.topic.name),
+                      ),
+                      // Bookmark toggle
+                      IconButton(
+                        icon: Icon(
+                          isBookmarked ? Icons.bookmark_rounded : Icons.bookmark_border_rounded,
+                          color: isBookmarked ? accentColor : textMain,
+                        ),
+                        onPressed: () => progress.toggleTopicBookmark(widget.topic.name),
+                      ),
+                    ],
                   );
                 },
               ),
-              const SizedBox(width: 8),
+              const SizedBox(width: 4),
             ],
             flexibleSpace: FlexibleSpaceBar(
               centerTitle: true,
@@ -63,7 +93,7 @@ class _TopicScreenState extends State<TopicScreen> {
               title: Text(
                 widget.topic.name,
                 style: GoogleFonts.outfit(
-                  color: AppColors.textMain,
+                  color: isDark ? AppColors.textMain : AppColors.lightTextMain,
                   fontWeight: FontWeight.bold,
                   fontSize: 24,
                 ),
@@ -73,7 +103,7 @@ class _TopicScreenState extends State<TopicScreen> {
           SliverToBoxAdapter(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
-              child: Divider(color: AppColors.textSub.withOpacity(0.1), thickness: 1),
+              child: Divider(color: (isDark ? AppColors.textSub : AppColors.lightTextSub).withOpacity(0.1), thickness: 1),
             ),
           ),
           
@@ -136,7 +166,7 @@ class _TopicScreenState extends State<TopicScreen> {
                 style: GoogleFonts.outfit(
                   fontSize: 20, 
                   fontWeight: FontWeight.bold, 
-                  color: AppColors.textMain
+                  color: isDark ? AppColors.textMain : AppColors.lightTextMain,
                 )
               ),
             ),
@@ -238,7 +268,7 @@ class _SectionCard extends StatelessWidget {
 
 class _SubtopicCard extends StatelessWidget {
   final String topic;
-  final String subtopic;
+  final SubTopic subtopic;
   final int index;
 
   const _SubtopicCard({required this.topic, required this.subtopic, required this.index});
@@ -247,8 +277,8 @@ class _SubtopicCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer<UserProgressProvider>(
       builder: (context, progress, _) {
-        final isOpened = progress.openedSubtopics.contains(subtopic);
-        final isBookmarked = progress.isSubtopicBookmarked(subtopic);
+        final isOpened = progress.openedSubtopics.contains(subtopic.name);
+        final isBookmarked = progress.isSubtopicBookmarked(subtopic.name);
 
         return Card(
           elevation: 0,
@@ -264,7 +294,7 @@ class _SubtopicCard extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (_) => SubtopicScreen(topic: topic, subtopic: subtopic),
+                  builder: (_) => SubtopicScreen(topic: topic, subtopic: subtopic.name),
                 ),
               );
             },
@@ -273,27 +303,51 @@ class _SubtopicCard extends StatelessWidget {
               child: Row(
                 children: [
                   Container(
-                    width: 40,
-                    height: 40,
+                    width: 44,
+                    height: 44,
                     decoration: BoxDecoration(
                       color: isOpened ? AppColors.accent.withOpacity(0.1) : AppColors.surface,
                       shape: BoxShape.circle,
                     ),
                     child: Center(
                       child: isOpened 
-                        ? const Icon(Icons.check_circle_rounded, color: AppColors.accent, size: 20)
-                        : Text("${index + 1}", style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.textSub)),
+                        ? const Icon(Icons.check_circle_rounded, color: AppColors.accent, size: 22)
+                        : Text("${index + 1}", style: GoogleFonts.outfit(fontWeight: FontWeight.bold, color: AppColors.textSub, fontSize: 16)),
                     ),
                   ),
                   const SizedBox(width: 16),
                   Expanded(
-                    child: Text(
-                      _prettify(subtopic),
-                      style: GoogleFonts.outfit(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                        color: isOpened ? AppColors.textMain : AppColors.textMain.withOpacity(0.8),
-                      ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          _prettify(subtopic.name),
+                          style: GoogleFonts.outfit(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: isOpened ? AppColors.textMain : AppColors.textMain.withOpacity(0.9),
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Row(
+                          children: [
+                            const Icon(Icons.fitness_center_rounded, size: 12, color: AppColors.warning),
+                            const SizedBox(width: 4),
+                            Expanded(
+                              child: Text(
+                                subtopic.practice,
+                                style: GoogleFonts.inter(
+                                  fontSize: 12,
+                                  color: AppColors.textSub,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
                   ),
                   if (isBookmarked)
@@ -308,6 +362,7 @@ class _SubtopicCard extends StatelessWidget {
       },
     );
   }
+
   
   String _prettify(String raw) {
     String text = raw.replaceFirst(RegExp(r'^\d+_'), '');

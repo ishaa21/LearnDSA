@@ -1,0 +1,353 @@
+[
+    {
+        "id": "pq1",
+        "title": "Two Sum (Sorted Array)",
+        "pattern": "Two Pointers",
+        "difficulty": "Easy",
+        "question": "Given a sorted array of integers and a target sum, find two numbers that add up to the target. Return their 1-indexed positions.",
+        "hint": "Start one pointer at the left end and another at the right end. Adjust based on the current sum.",
+        "solution": "Use left and right pointers. If nums[left]+nums[right] == target, return [left+1, right+1]. If sum < target, move left pointer right. If sum > target, move right pointer left. O(n) time, O(1) space."
+    },
+    {
+        "id": "pq2",
+        "title": "Remove Duplicates from Sorted Array",
+        "pattern": "Two Pointers",
+        "difficulty": "Easy",
+        "question": "Given a sorted array nums, remove duplicates in-place such that each element appears only once and return the new length.",
+        "hint": "Use a slow pointer to track the position for the next unique element.",
+        "solution": "Pointer slow starts at 0. Loop fast from 1 to end. If nums[fast] != nums[slow], increment slow and copy nums[fast] to nums[slow]. Return slow+1. O(n) time, O(1) space."
+    },
+    {
+        "id": "pq3",
+        "title": "3Sum",
+        "pattern": "Two Pointers",
+        "difficulty": "Medium",
+        "question": "Find all unique triplets in the array which gives the sum of zero.",
+        "hint": "Sort the array first, then fix one element and use two pointers for the rest.",
+        "solution": "Sort array. For each i from 0 to n-3: fix nums[i], use two pointers left=i+1, right=n-1. Skip duplicates at each level. O(n²) time."
+    },
+    {
+        "id": "pq4",
+        "title": "Container With Most Water",
+        "pattern": "Two Pointers",
+        "difficulty": "Medium",
+        "question": "Given n vertical lines at various heights, find two lines that together with the x-axis forms a container holding the most water.",
+        "hint": "Always move the pointer pointing to the shorter line inward.",
+        "solution": "left=0, right=n-1. At each step: area = min(h[left],h[right]) * (right-left). Update maxArea. Move the pointer with the smaller height. O(n) time."
+    },
+    {
+        "id": "pq5",
+        "title": "Valid Palindrome",
+        "pattern": "Two Pointers",
+        "difficulty": "Easy",
+        "question": "Given a string s, determine if it is a palindrome considering only alphanumeric characters and ignoring cases.",
+        "hint": "Compare characters from both ends, skip non-alphanumeric characters.",
+        "solution": "left=0, right=len-1. Skip non-alphanumeric on both sides. Compare lowercased characters. If mismatch, return false. O(n) time, O(1) space."
+    },
+    {
+        "id": "pq6",
+        "title": "Maximum Sum Subarray of Size K",
+        "pattern": "Sliding Window",
+        "difficulty": "Easy",
+        "question": "Given an array of integers and a number k, find the maximum sum of a subarray of size k.",
+        "hint": "Compute first window sum, then slide: subtract outgoing, add incoming.",
+        "solution": "Compute sum of first k elements. Then for i in range(k, n): windowSum += nums[i] - nums[i-k]. Track max. O(n) time, O(1) space."
+    },
+    {
+        "id": "pq7",
+        "title": "Longest Substring Without Repeating Characters",
+        "pattern": "Sliding Window",
+        "difficulty": "Medium",
+        "question": "Find the length of the longest substring without repeating characters.",
+        "hint": "Use a set or map to track characters in the current window. Shrink from left when duplicate found.",
+        "solution": "left=0, use a HashMap of char:index. For each right, if char exists and its index >= left, move left to charIndex+1. Update maxLen each step. O(n) time."
+    },
+    {
+        "id": "pq8",
+        "title": "Minimum Window Substring",
+        "pattern": "Sliding Window",
+        "difficulty": "Hard",
+        "question": "Given strings s and t, return the minimum window in s which contains all characters in t.",
+        "hint": "Expand right pointer to include all t chars, then shrink left as much as possible while still valid.",
+        "solution": "Use two frequency maps. Expand right until window is valid (have >= need). Then shrink left, updating answer. Repeat. O(n) time."
+    },
+    {
+        "id": "pq9",
+        "title": "Fruits Into Baskets",
+        "pattern": "Sliding Window",
+        "difficulty": "Medium",
+        "question": "You have two baskets, each capable of holding only one type of fruit. Find the longest subarray with at most 2 distinct fruit types.",
+        "hint": "Maintain a window with at most 2 distinct values using a frequency map.",
+        "solution": "Use a map to count each fruit in window. When map size > 2, shrink from left: subtract count, remove if 0. Track max window size. O(n) time."
+    },
+    {
+        "id": "pq10",
+        "title": "Koko Eating Bananas",
+        "pattern": "Binary Search on Answer",
+        "difficulty": "Medium",
+        "question": "Koko must eat all bananas in h hours. Find the minimum eating speed k (bananas/hour).",
+        "hint": "Binary search on the answer space [1, max(piles)]. Define a check function for feasibility.",
+        "solution": "lo=1, hi=max(piles). For mid speed: hours = sum(ceil(p/mid) for p in piles). If hours <= h, try smaller (hi=mid). Else lo=mid+1. O(n log(max)) time."
+    },
+    {
+        "id": "pq11",
+        "title": "Find Square Root (Integer)",
+        "pattern": "Binary Search on Answer",
+        "difficulty": "Easy",
+        "question": "Given a non-negative integer x, compute and return the square root of x. The decimal digits are truncated.",
+        "hint": "Binary search in range [0, x] for the largest n where n*n <= x.",
+        "solution": "lo=0, hi=x. While lo <= hi: mid = (lo+hi)//2. If mid*mid == x return mid. If mid*mid < x: ans=mid, lo=mid+1. Else hi=mid-1. Return ans. O(log x)."
+    },
+    {
+        "id": "pq12",
+        "title": "Capacity To Ship Packages",
+        "pattern": "Binary Search on Answer",
+        "difficulty": "Medium",
+        "question": "A conveyor belt ships packages over D days. Find the minimum weight capacity of the ship to ship all packages within D days.",
+        "hint": "Search the answer space [max(weight), sum(weights)]. Check if a given capacity ships within D days.",
+        "solution": "lo=max(weights), hi=sum(weights). Binary search: for capacity mid, greedily check if feasible in D days. Move lo/hi accordingly. O(n log(sum)) time."
+    },
+    {
+        "id": "pq13",
+        "title": "Activity Selection",
+        "pattern": "Greedy Choice",
+        "difficulty": "Easy",
+        "question": "Given start and end times of activities, select the maximum number of non-overlapping activities.",
+        "hint": "Sort by end time. Greedily select activities that end earliest and don't conflict.",
+        "solution": "Sort by end time. Select first activity. For each subsequent: if start >= end of last selected, select it. O(n log n) time."
+    },
+    {
+        "id": "pq14",
+        "title": "Jump Game",
+        "pattern": "Greedy Choice",
+        "difficulty": "Medium",
+        "question": "Given an array where each element is the max jump length from that position, determine if you can reach the last index.",
+        "hint": "Track the farthest reachable index. If current position exceeds it, you're stuck.",
+        "solution": "maxReach=0. For i from 0 to n-1: if i > maxReach return false. maxReach = max(maxReach, i+nums[i]). Return true. O(n) time."
+    },
+    {
+        "id": "pq15",
+        "title": "Assign Cookies",
+        "pattern": "Greedy Choice",
+        "difficulty": "Easy",
+        "question": "Assign cookies to children to maximize the number of satisfied children. Each child has a greed factor; each cookie has a size.",
+        "hint": "Sort both. Match the smallest sufficient cookie to the least greedy child.",
+        "solution": "Sort greed[] and size[]. Use two pointers. If size[j] >= greed[i], satisfy child i, move both pointers. Else move j only. O(n log n)."
+    },
+    {
+        "id": "pq16",
+        "title": "Number of Islands",
+        "pattern": "DFS / BFS",
+        "difficulty": "Medium",
+        "question": "Given a 2D grid of '1's (land) and '0's (water), count the number of islands.",
+        "hint": "For each unvisited land cell, start a DFS/BFS to mark all connected land as visited.",
+        "solution": "Iterate grid. On finding '1': increment count, run DFS to mark all connected cells as '0'. DFS explores 4 directions. O(m×n) time."
+    },
+    {
+        "id": "pq17",
+        "title": "Binary Tree Level Order Traversal",
+        "pattern": "DFS / BFS",
+        "difficulty": "Medium",
+        "question": "Given the root of a binary tree, return its level-order traversal as a list of lists.",
+        "hint": "BFS with a queue. Track level boundaries by recording queue size at start of each level.",
+        "solution": "Queue starts with root. For each level: snapshot size = queue.size(). Process that many nodes, add their children. Collect values per level. O(n)."
+    },
+    {
+        "id": "pq18",
+        "title": "Find if Path Exists in Graph",
+        "pattern": "DFS / BFS",
+        "difficulty": "Easy",
+        "question": "Given a graph of n nodes and edges, find if there's a valid path between source and destination.",
+        "hint": "Build an adjacency list and run DFS or BFS from source.",
+        "solution": "Build adjacency list. DFS/BFS from source with visited set. Return true if destination is reached. O(V+E) time."
+    },
+    {
+        "id": "pq19",
+        "title": "Course Schedule",
+        "pattern": "Topological Sort",
+        "difficulty": "Medium",
+        "question": "There are numCourses to take. Prerequisites are given as pairs. Determine if you can finish all courses.",
+        "hint": "Build a directed graph. A cycle means you cannot finish. Use Kahn's algorithm (BFS with in-degrees).",
+        "solution": "Build adjacency list and in-degree array. Add all 0-in-degree nodes to queue. BFS: dequeue, reduce in-degree of neighbors. If count == numCourses: no cycle. O(V+E)."
+    },
+    {
+        "id": "pq20",
+        "title": "Alien Dictionary",
+        "pattern": "Topological Sort",
+        "difficulty": "Hard",
+        "question": "Given a sorted list of words in an alien language, derive the character order.",
+        "hint": "Compare adjacent words to extract ordering edges. Topologically sort the characters.",
+        "solution": "Compare adjacent words pairwise to find first differing char → edge. Build graph. Run topological sort (Kahn's). If cycle, return ''. O(C) where C is total chars."
+    },
+    {
+        "id": "pq21",
+        "title": "Task Scheduler",
+        "pattern": "Topological Sort",
+        "difficulty": "Medium",
+        "question": "Given CPU tasks and a cooldown n, find the minimum time to execute all tasks.",
+        "hint": "The answer is determined by the most frequent task. Use greedy with a conceptual topological ordering.",
+        "solution": "Count frequencies. maxFreq = max frequency. Compute slots = (maxFreq-1)*(n+1) + count_of_tasks_with_maxFreq. Answer = max(slots, len(tasks)). O(n)."
+    },
+    {
+        "id": "pq22",
+        "title": "Subsets",
+        "pattern": "Backtracking",
+        "difficulty": "Medium",
+        "question": "Given a set of distinct integers, return all possible subsets.",
+        "hint": "At each recursive step, decide to include or exclude the current element.",
+        "solution": "Recursive backtracking: at index i, add current subset to result. Then recurse by including each nums[j] (j from i). No need to undo if we pass a copy. O(2^n) subsets."
+    },
+    {
+        "id": "pq23",
+        "title": "Permutations",
+        "pattern": "Backtracking",
+        "difficulty": "Medium",
+        "question": "Given a collection of distinct integers, return all possible permutations.",
+        "hint": "Swap each element with the current position, recurse, then swap back to restore state.",
+        "solution": "For each index i: swap nums[curr] with nums[i], recurse on curr+1, swap back. Base: curr == n-1, add copy of nums. O(n × n!) time."
+    },
+    {
+        "id": "pq24",
+        "title": "N-Queens",
+        "pattern": "Backtracking",
+        "difficulty": "Hard",
+        "question": "Place n queens on an n×n chessboard so no two queens attack each other. Return all valid board configurations.",
+        "hint": "Place one queen per row. Track attacked columns and diagonals. Backtrack on conflict.",
+        "solution": "For each row, try each column. Check if column, diagonal (row-col), anti-diagonal (row+col) are free. Place queen, recurse next row, remove queen. O(n!) time."
+    },
+    {
+        "id": "pq25",
+        "title": "Climbing Stairs",
+        "pattern": "DP Memoization",
+        "difficulty": "Easy",
+        "question": "You can climb 1 or 2 steps at a time. In how many distinct ways can you climb to the top (n steps)?",
+        "hint": "ways(n) = ways(n-1) + ways(n-2). Recognize the Fibonacci pattern and memoize.",
+        "solution": "Memoize: memo={0:1, 1:1}. f(n) = f(n-1)+f(n-2). Return memo hit if exists. O(n) time, O(n) space."
+    },
+    {
+        "id": "pq26",
+        "title": "Longest Common Subsequence",
+        "pattern": "DP Memoization",
+        "difficulty": "Medium",
+        "question": "Given two strings text1 and text2, find the length of their longest common subsequence.",
+        "hint": "If characters match, extend LCS by 1. Otherwise take max of skipping either character.",
+        "solution": "lcs(i,j): if text1[i]==text2[j]: 1+lcs(i+1,j+1). Else max(lcs(i+1,j), lcs(i,j+1)). Memoize on (i,j). O(m×n) time and space."
+    },
+    {
+        "id": "pq27",
+        "title": "0/1 Knapsack",
+        "pattern": "DP Memoization",
+        "difficulty": "Medium",
+        "question": "Given weights and values of n items and a capacity W, find the maximum value you can put in the knapsack.",
+        "hint": "For each item, decide to include it (if weight fits) or skip it. Memoize on (index, remaining capacity).",
+        "solution": "knap(i, w): if i==n or w==0 return 0. If weights[i]>w: skip. Else max(knap(i+1,w), values[i]+knap(i+1,w-weights[i])). Memoize on (i,w). O(n×W)."
+    },
+    {
+        "id": "pq28",
+        "title": "Coin Change",
+        "pattern": "DP Tabulation",
+        "difficulty": "Medium",
+        "question": "Given coins of different denominations and target amount, find minimum coins needed to make up that amount.",
+        "hint": "Build a dp table where dp[i] = minimum coins to make amount i. Try each coin for each amount.",
+        "solution": "dp[0]=0, dp[1..amount]=INF. For each amount i from 1 to amount: for each coin c: if c<=i, dp[i] = min(dp[i], dp[i-c]+1). O(amount × coins) time."
+    },
+    {
+        "id": "pq29",
+        "title": "Longest Increasing Subsequence",
+        "pattern": "DP Tabulation",
+        "difficulty": "Medium",
+        "question": "Find the length of the longest strictly increasing subsequence in an array.",
+        "hint": "dp[i] = LIS ending at index i. For each j < i where nums[j] < nums[i]: dp[i] = max(dp[i], dp[j]+1).",
+        "solution": "dp[i]=1 for all i. For i 1..n-1: for j 0..i-1: if nums[j]<nums[i], dp[i]=max(dp[i],dp[j]+1). Answer=max(dp). O(n²) time. O(n log n) possible with patience sorting."
+    },
+    {
+        "id": "pq30",
+        "title": "Triangle (Minimum Path Sum)",
+        "pattern": "DP Tabulation",
+        "difficulty": "Medium",
+        "question": "Given a triangle array, find the minimum path sum from top to bottom, moving to adjacent numbers on the row below.",
+        "hint": "Start from the bottom row. Work upward: each cell is min of two children + itself.",
+        "solution": "dp = triangle's last row. For row from n-2 down to 0: for col in row: dp[col] = triangle[row][col] + min(dp[col], dp[col+1]). Answer = dp[0]. O(n²) time, O(n) space."
+    },
+    {
+        "id": "pq31",
+        "title": "K Closest Points to Origin",
+        "pattern": "Heap Pattern",
+        "difficulty": "Medium",
+        "question": "Given an array of points, find the k closest points to the origin (0, 0).",
+        "hint": "Use a max-heap of size k. Eject the farthest when heap exceeds k.",
+        "solution": "Maintain a max-heap of size k by distance. For each point, push (-dist, point). When size > k, pop. Return remaining k points. O(n log k) time."
+    },
+    {
+        "id": "pq32",
+        "title": "Merge K Sorted Lists",
+        "pattern": "Heap Pattern",
+        "difficulty": "Hard",
+        "question": "Merge k sorted linked lists and return the merged list.",
+        "hint": "Use a min-heap to always extract the smallest available node across all lists.",
+        "solution": "Push heads of all lists into min-heap keyed by value. Pop min, add to result, push next node if exists. O(n log k) where n is total nodes."
+    },
+    {
+        "id": "pq33",
+        "title": "Top K Frequent Elements",
+        "pattern": "Heap Pattern",
+        "difficulty": "Medium",
+        "question": "Given an array of integers, return the k most frequent elements.",
+        "hint": "Use a frequency map then a min-heap of size k to track the top k frequencies.",
+        "solution": "Count frequencies with a HashMap. Use a min-heap of (freq, num). Push each entry; pop when size > k. Return heap elements. O(n log k) time."
+    },
+    {
+        "id": "pq34",
+        "title": "Daily Temperatures",
+        "pattern": "Monotonic Stack",
+        "difficulty": "Medium",
+        "question": "Given daily temperatures, return an array where answer[i] is the number of days until a warmer temperature.",
+        "hint": "Use a monotonically decreasing stack of indices. When a warmer day is found, pop and record the difference.",
+        "solution": "stack of indices (decreasing temp order). For each i: while stack not empty and T[i] > T[stack.top()]: idx=pop; ans[idx]=i-idx. Push i. O(n) time."
+    },
+    {
+        "id": "pq35",
+        "title": "Largest Rectangle in Histogram",
+        "pattern": "Monotonic Stack",
+        "difficulty": "Hard",
+        "question": "Given an array representing bar heights, find the area of the largest rectangle in the histogram.",
+        "hint": "Use a monotonically increasing stack to find the nearest smaller bar on both sides for each bar.",
+        "solution": "Maintain increasing stack of indices. When heights[i] < heights[stack.top()]: pop h; width = i - stack.top() - 1 (or i if empty). area = h * width. Update max. O(n)."
+    },
+    {
+        "id": "pq36",
+        "title": "Next Greater Element",
+        "pattern": "Monotonic Stack",
+        "difficulty": "Easy",
+        "question": "For each element in nums1, find the next greater element in nums2. Return -1 if no such element exists.",
+        "hint": "Process nums2 with a decreasing stack. When a greater element is found, record the mapping.",
+        "solution": "Decreasing stack over nums2. When nums2[i] > stack.top(): map[stack.pop()] = nums2[i]. Then for each in nums1: return map.get(x, -1). O(n) time."
+    },
+    {
+        "id": "pq37",
+        "title": "Subarray Sum Equals K",
+        "pattern": "Prefix Sum",
+        "difficulty": "Medium",
+        "question": "Given an array of integers and k, find the total number of continuous subarrays whose sum equals k.",
+        "hint": "Use prefix sums. If prefixSum[j] - prefixSum[i] == k, then subarray i+1..j sums to k.",
+        "solution": "Use a HashMap counting prefix sum frequencies. Initialize {0:1}. For each element: prefix += num. Count += map.get(prefix-k, 0). map[prefix]++. O(n) time."
+    },
+    {
+        "id": "pq38",
+        "title": "Range Sum Query",
+        "pattern": "Prefix Sum",
+        "difficulty": "Easy",
+        "question": "Given an array nums, handle multiple queries of the form: return sum of elements between indices i and j.",
+        "hint": "Precompute a prefix sum array. Answer each query in O(1).",
+        "solution": "prefix[0]=0; prefix[i] = prefix[i-1] + nums[i-1]. Query(i,j) = prefix[j+1] - prefix[i]. O(n) preprocessing, O(1) per query."
+    },
+    {
+        "id": "pq39",
+        "title": "Find Pivot Index",
+        "pattern": "Prefix Sum",
+        "difficulty": "Easy",
+        "question": "Find the index where the sum of all numbers to its left equals the sum of all numbers to its right.",
+        "hint": "Total sum is known. Left sum grows as you iterate. Right sum = total - leftSum - nums[i].",
+        "solution": "total = sum(nums). leftSum = 0. For each i: if leftSum == total - leftSum - nums[i]: return i. leftSum += nums[i]. Return -1. O(n)."
+    }
+]

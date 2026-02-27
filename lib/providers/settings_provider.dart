@@ -5,8 +5,10 @@ enum AppFontSize { small, medium, large }
 
 class SettingsProvider with ChangeNotifier {
   AppFontSize _fontSize = AppFontSize.medium;
+  bool _isDarkMode = true;
 
   AppFontSize get fontSize => _fontSize;
+  bool get isDarkMode => _isDarkMode;
 
   SettingsProvider() {
     _loadSettings();
@@ -14,8 +16,9 @@ class SettingsProvider with ChangeNotifier {
 
   Future<void> _loadSettings() async {
     final prefs = await SharedPreferences.getInstance();
-    final fontSizeIndex = prefs.getInt('fontSizeIndex') ?? 1; // Default to medium
+    final fontSizeIndex = prefs.getInt('fontSizeIndex') ?? 1;
     _fontSize = AppFontSize.values[fontSizeIndex];
+    _isDarkMode = prefs.getBool('isDarkMode') ?? true;
     notifyListeners();
   }
 
@@ -26,7 +29,13 @@ class SettingsProvider with ChangeNotifier {
     notifyListeners();
   }
 
-  // Helper getters for specific values
+  Future<void> setDarkMode(bool value) async {
+    _isDarkMode = value;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool('isDarkMode', value);
+    notifyListeners();
+  }
+
   double get titleSize {
     switch (_fontSize) {
       case AppFontSize.small: return 18.0;
