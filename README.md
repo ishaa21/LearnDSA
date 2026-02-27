@@ -77,8 +77,11 @@ Built **for students, by students** ❤️
 
 ## 🧑‍💻 Developer
 
-- **Name:** Your Name  
-- **Email:** your.email@example.com  
+- **Name:** Isha Zalavadia
+- **Email:** ishazalavadia@gmail.com
+
+- **Name:** Rushika Kalariya
+- **Email:** rushikakalariya@gmail.com  
 
 If you have suggestions or feedback, feel free to reach out!
 
