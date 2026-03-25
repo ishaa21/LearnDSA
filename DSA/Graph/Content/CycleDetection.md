@@ -1,4 +1,4 @@
-# Cycle Detection
+﻿# Cycle Detection
 
 ## What is this?
 Checking if graph contains a loop (A path starts and ends at same node).
@@ -28,10 +28,6 @@ O(V)
 ## Key Takeaways
 - Different logic for directed/undirected
 - Back-edge detection
-
-## Recommended Problems
-- Course Schedule (LeetCode)
-- Detect Cycle in Graph (GFG)
 
 ## Mini Practice
 ### Problem: Has Cycle?

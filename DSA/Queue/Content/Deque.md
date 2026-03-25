@@ -1,4 +1,4 @@
-# Deque (Double Ended Queue)
+﻿# Deque (Double Ended Queue)
 
 ## What is this?
 A deque allows insertion and deletion at both ends.
@@ -27,10 +27,6 @@ O(n)
 ## Key Takeaways
 - Very flexible
 - Can act as stack or queue
-
-## Recommended Problems
-- Design Circular Deque (LeetCode)
-- Sliding Window Maximum (LeetCode)
 
 ## Mini Practice
 ### Problem: Both Ends

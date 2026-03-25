@@ -1,0 +1,106 @@
+{
+  "categories": [
+    {
+      "id": "dsa_interview",
+      "name": "DSA Questions",
+      "icon": "code",
+      "color": "#7C3AED",
+      "subcategories": [
+        {
+          "name": "Arrays & Strings",
+          "questions": [
+            {"id": "di1", "question": "How do you find the missing number in an array of 1 to N?", "answer": "Use the formula Sum = N*(N+1)/2. Subtract the actual sum of array elements from this expected sum. The difference is the missing number. Time: O(n), Space: O(1).\n\nAlternative: XOR all numbers 1 to N, then XOR with all array elements. The result is the missing number.", "difficulty": "Easy", "tags": ["Arrays", "Math"]},
+            {"id": "di2", "question": "Explain Kadane's Algorithm for Maximum Subarray Sum.", "answer": "Kadane's Algorithm maintains two variables:\n- currentMax: max subarray ending at current position\n- globalMax: overall maximum found so far\n\nFor each element:\n  currentMax = max(element, currentMax + element)\n  globalMax = max(globalMax, currentMax)\n\nTime: O(n), Space: O(1)\n\nExample: [-2, 1, -3, 4, -1, 2, 1, -5, 4]\nAnswer: 6 (subarray [4, -1, 2, 1])", "difficulty": "Medium", "tags": ["Arrays", "DP"]},
+            {"id": "di3", "question": "How do you check if two strings are anagrams?", "answer": "Method 1: Sort both strings and compare. Time: O(n log n)\n\nMethod 2: Use a frequency count array (size 26 for lowercase). Increment for first string, decrement for second. If all zeros, they're anagrams. Time: O(n), Space: O(1)\n\nMethod 3: Use a HashMap to count character frequencies.", "difficulty": "Easy", "tags": ["Strings", "Hashing"]},
+            {"id": "di4", "question": "Find the longest palindromic substring.", "answer": "Approach 1: Expand Around Center\n- For each character (and between characters), expand outward while characters match\n- Track the longest palindrome found\n- Time: O(n²), Space: O(1)\n\nApproach 2: Manacher's Algorithm\n- Uses previously computed palindromes to skip redundant checks\n- Time: O(n), Space: O(n)\n\nDynamic Programming: dp[i][j] = true if s[i..j] is palindrome\n- Time: O(n²), Space: O(n²)", "difficulty": "Hard", "tags": ["Strings", "DP"]}
+          ]
+        },
+        {
+          "name": "Trees & Graphs",
+          "questions": [
+            {"id": "di5", "question": "How do you find the diameter of a binary tree?", "answer": "The diameter is the longest path between any two nodes (may or may not pass through root).\n\nApproach: For each node, the longest path through it = leftHeight + rightHeight.\n\n```\nint diameter(Node root) {\n  if (root == null) return 0;\n  int leftH = height(root.left);\n  int rightH = height(root.right);\n  return max(leftH + rightH, \n    max(diameter(root.left), diameter(root.right)));\n}\n```\n\nOptimized: Compute height and diameter in single traversal. Time: O(n)", "difficulty": "Medium", "tags": ["Tree", "DFS"]},
+            {"id": "di6", "question": "Explain Topological Sort and its applications.", "answer": "Topological Sort orders vertices in a DAG such that for every edge (u,v), u comes before v.\n\nKahn's Algorithm (BFS):\n1. Calculate in-degree of all vertices\n2. Add all vertices with in-degree 0 to queue\n3. Process queue: remove vertex, reduce in-degree of neighbors\n4. If neighbor's in-degree becomes 0, add to queue\n\nDFS Approach:\n1. Do DFS, push vertex to stack after processing all neighbors\n2. Pop stack for topological order\n\nApplications: Build systems, course prerequisites, task scheduling", "difficulty": "Hard", "tags": ["Graph", "BFS", "DFS"]},
+            {"id": "di7", "question": "How do you detect a cycle in a directed graph?", "answer": "Method 1: DFS with coloring\n- White (unvisited), Gray (in current path), Black (fully processed)\n- If we encounter a Gray node → cycle exists\n\nMethod 2: Topological Sort (Kahn's)\n- If topological sort doesn't include all vertices → cycle exists\n\nMethod 3: Union-Find (for undirected graphs)\n- If two nodes in same set share an edge → cycle\n\nTime: O(V+E) for all methods", "difficulty": "Medium", "tags": ["Graph", "DFS"]}
+          ]
+        },
+        {
+          "name": "Dynamic Programming",
+          "questions": [
+            {"id": "di8", "question": "Explain the 0/1 Knapsack problem and its solution.", "answer": "Given N items with weights and values, and a knapsack of capacity W, find maximum value.\n\nDP Approach:\ndp[i][w] = max value using first i items with capacity w\n\nRecurrence:\nif weight[i] <= w:\n  dp[i][w] = max(dp[i-1][w], dp[i-1][w-weight[i]] + value[i])\nelse:\n  dp[i][w] = dp[i-1][w]\n\nTime: O(N×W), Space: O(N×W) → can be optimized to O(W)\n\nBase case: dp[0][w] = 0 for all w", "difficulty": "Hard", "tags": ["DP", "Classic"]},
+            {"id": "di9", "question": "How do you find the Longest Increasing Subsequence (LIS)?", "answer": "Method 1: DP O(n²)\ndp[i] = length of LIS ending at index i\nFor each i, check all j < i: if arr[j] < arr[i], dp[i] = max(dp[i], dp[j]+1)\n\nMethod 2: Binary Search O(n log n)\nMaintain a 'tails' array where tails[i] = smallest tail element for IS of length i+1\nFor each element, binary search for its position in tails.\n\nExample: [10, 9, 2, 5, 3, 7, 101, 18]\nLIS = [2, 3, 7, 18], Length = 4", "difficulty": "Hard", "tags": ["DP", "Binary Search"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hr_questions",
+      "name": "HR Questions",
+      "icon": "people",
+      "color": "#E67E22",
+      "subcategories": [
+        {
+          "name": "Common HR Questions",
+          "questions": [
+            {"id": "hr1", "question": "Tell me about yourself.", "answer": "Structure your answer as: Present → Past → Future\n\n'I'm a final-year Computer Science student at [University], currently focusing on full-stack development and data structures. In my previous internship at [Company], I built a REST API that reduced response time by 40%. I've also completed projects in [tech stack]. I'm passionate about building scalable systems and am looking for a role where I can contribute to challenging engineering problems.'\n\nTips:\n- Keep it under 2 minutes\n- Focus on professional life, not personal\n- Tailor to the job description\n- End with why this role excites you", "difficulty": "Easy", "tags": ["Introduction"]},
+            {"id": "hr2", "question": "What are your strengths and weaknesses?", "answer": "Strengths (pick 2-3 relevant ones):\n- 'I'm a fast learner. During my internship, I picked up React in a week and delivered a feature ahead of schedule.'\n- 'I'm good at breaking down complex problems into smaller, manageable tasks.'\n\nWeaknesses (genuine but managed):\n- 'I sometimes spend too much time perfecting code. I've learned to balance quality with deadlines by setting time limits for tasks.'\n- 'Public speaking used to intimidate me. I've been practicing by presenting in team meetings and it's improved significantly.'\n\nTips:\n- Never say 'I'm a perfectionist' (overused)\n- Show self-awareness and growth\n- Always mention how you're working on your weakness", "difficulty": "Easy", "tags": ["Self-Assessment"]},
+            {"id": "hr3", "question": "Why should we hire you?", "answer": "Framework: Match your skills to their needs\n\n'Based on this role's requirements, you need someone who can [specific skill from JD]. In my project [project name], I demonstrated this by [specific achievement]. Additionally, my experience with [relevant tech] means I can contribute from day one. I'm also passionate about [company's mission/product], which drives me to go above and beyond.'\n\nTips:\n- Research the company thoroughly\n- Reference specific requirements from the job description\n- Quantify achievements where possible\n- Show enthusiasm for THEIR company specifically", "difficulty": "Medium", "tags": ["Value Proposition"]},
+            {"id": "hr4", "question": "Where do you see yourself in 5 years?", "answer": "Show ambition aligned with the company:\n\n'In 5 years, I see myself as a senior engineer who has deep expertise in [relevant domain]. I want to have led meaningful projects, mentored junior developers, and contributed to architectural decisions. I'm looking for a company where I can grow technically while taking on increasing responsibility.'\n\nTips:\n- Don't say 'I want your job' or 'I want to start my own company'\n- Show you plan to stay and grow\n- Align your goals with what the company offers\n- Be realistic but ambitious", "difficulty": "Easy", "tags": ["Career Goals"]},
+            {"id": "hr5", "question": "Describe a challenging situation and how you handled it.", "answer": "Use the STAR Method:\n\nSituation: 'During my final year project, our team lead dropped out 2 weeks before the deadline.'\n\nTask: 'As the most technically experienced member, I needed to take over coordination while still completing my module.'\n\nAction: 'I reorganized the remaining work, held daily 15-minute standups, and redistributed tasks based on each member's strengths. I also worked extra hours to ensure my critical module was completed.'\n\nResult: 'We delivered on time and received an A grade. The professor commended our team's resilience.'\n\nTips:\n- Be specific, not generic\n- Focus on YOUR actions and decisions\n- Quantify the result if possible", "difficulty": "Medium", "tags": ["Behavioral", "STAR"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "core_subjects",
+      "name": "Core Subjects",
+      "icon": "school",
+      "color": "#2ECC71",
+      "subcategories": [
+        {
+          "name": "Operating Systems",
+          "questions": [
+            {"id": "cs1", "question": "What is the difference between Process and Thread?", "answer": "Process:\n- Independent execution unit with its own memory space\n- Has its own code, data, stack, heap\n- Inter-process communication is costly (pipes, sockets)\n- Context switching is expensive\n- Isolated: crash of one doesn't affect others\n\nThread:\n- Lightweight unit within a process\n- Shares code, data, and heap with other threads in same process\n- Has own stack and registers\n- Communication via shared memory (faster)\n- Context switching is cheaper\n- Less isolated: one thread crash can bring down the process\n\nKey: Multiple threads in one process share resources, multiple processes are isolated.", "difficulty": "Easy", "tags": ["OS", "Fundamentals"]},
+            {"id": "cs2", "question": "Explain Deadlock and its conditions.", "answer": "Deadlock: A state where two or more processes are waiting for each other indefinitely.\n\nFour necessary conditions (Coffman):\n1. Mutual Exclusion: Resource can be held by only one process\n2. Hold and Wait: Process holds resources while waiting for more\n3. No Preemption: Resources can't be forcibly taken away\n4. Circular Wait: A circular chain of processes waiting for each other\n\nPrevention (break any condition):\n- Mutual Exclusion: Make resources shareable (not always possible)\n- Hold and Wait: Request all resources at once\n- No Preemption: Allow resource preemption\n- Circular Wait: Impose ordering on resource requests\n\nDetection: Resource allocation graph, Banker's algorithm (avoidance)", "difficulty": "Medium", "tags": ["OS", "Concurrency"]}
+          ]
+        },
+        {
+          "name": "DBMS",
+          "questions": [
+            {"id": "cs3", "question": "What are ACID properties?", "answer": "ACID ensures reliable database transactions:\n\nAtomicity: Transaction is all-or-nothing. If any part fails, entire transaction is rolled back.\nExample: Bank transfer - debit AND credit must both succeed.\n\nConsistency: Database moves from one valid state to another. All constraints/rules are maintained.\nExample: After transfer, total money in system remains same.\n\nIsolation: Concurrent transactions don't interfere with each other. Each appears to execute alone.\nLevels: Read Uncommitted < Read Committed < Repeatable Read < Serializable\n\nDurability: Once committed, changes persist even if system crashes.\nImplementation: Write-ahead logging (WAL)", "difficulty": "Easy", "tags": ["DBMS", "Transactions"]},
+            {"id": "cs4", "question": "Explain different types of SQL JOINs.", "answer": "INNER JOIN: Returns only matching rows from both tables.\nSELECT * FROM A INNER JOIN B ON A.id = B.id\n\nLEFT JOIN: All rows from left table + matching from right (NULL if no match).\nSELECT * FROM A LEFT JOIN B ON A.id = B.id\n\nRIGHT JOIN: All rows from right table + matching from left.\n\nFULL OUTER JOIN: All rows from both tables (NULL where no match).\n\nCROSS JOIN: Cartesian product (every row of A × every row of B).\nResult has |A| × |B| rows.\n\nSELF JOIN: Table joined with itself.\nExample: Find employees who earn more than their manager.", "difficulty": "Medium", "tags": ["DBMS", "SQL"]}
+          ]
+        },
+        {
+          "name": "Computer Networks",
+          "questions": [
+            {"id": "cs5", "question": "What is the difference between TCP and UDP?", "answer": "TCP (Transmission Control Protocol):\n- Connection-oriented (3-way handshake)\n- Reliable delivery (acknowledgments, retransmission)\n- Ordered data delivery\n- Flow control and congestion control\n- Slower but guaranteed\n- Use cases: HTTP, FTP, Email, SSH\n\nUDP (User Datagram Protocol):\n- Connectionless\n- Unreliable (no acknowledgments)\n- No ordering guarantee\n- No flow/congestion control\n- Faster, lower latency\n- Use cases: DNS, video streaming, gaming, VoIP\n\nKey: Use TCP when reliability matters, UDP when speed matters.", "difficulty": "Easy", "tags": ["CN", "Protocols"]},
+            {"id": "cs6", "question": "Explain the OSI Model layers.", "answer": "7 Layers (top to bottom):\n\n7. Application: End-user interface (HTTP, FTP, SMTP, DNS)\n6. Presentation: Data format, encryption, compression (SSL/TLS, JPEG)\n5. Session: Session management, authentication (NetBIOS, RPC)\n4. Transport: End-to-end delivery, segmentation (TCP, UDP)\n3. Network: Routing, logical addressing (IP, ICMP, routers)\n2. Data Link: Frame delivery, MAC addressing (Ethernet, switches)\n1. Physical: Bit transmission, cables, signals (fiber, copper)\n\nMnemonic: 'All People Seem To Need Data Processing'\n\nTCP/IP Model (simplified): Application → Transport → Internet → Network Access", "difficulty": "Easy", "tags": ["CN", "Fundamentals"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coding_patterns",
+      "name": "Coding Patterns",
+      "icon": "pattern",
+      "color": "#E74C3C",
+      "subcategories": [
+        {
+          "name": "Essential Patterns",
+          "questions": [
+            {"id": "cp1", "question": "Sliding Window Pattern", "answer": "Use when: Finding subarrays/substrings that satisfy a condition.\n\nFixed Window:\n- Window size is fixed (e.g., max sum of k elements)\n- Slide by adding right element, removing left element\n\nVariable Window:\n- Window size changes based on condition\n- Expand right to include, shrink left to exclude\n\nTemplate:\n```\nint left = 0;\nfor (int right = 0; right < n; right++) {\n  // Add arr[right] to window\n  while (window condition violated) {\n    // Remove arr[left] from window\n    left++;\n  }\n  // Update answer\n}\n```\n\nProblems: Max sum subarray of size k, Longest substring without repeating characters, Minimum window substring", "difficulty": "Medium", "tags": ["Pattern", "Arrays"]},
+            {"id": "cp2", "question": "Two Pointers Pattern", "answer": "Use when: Sorted arrays, finding pairs, or partition problems.\n\nTypes:\n1. Opposite Direction: left=0, right=n-1, move towards center\n   - Two Sum in sorted array\n   - Container with most water\n\n2. Same Direction: slow and fast pointers\n   - Remove duplicates\n   - Linked list cycle detection\n\n3. Merge: Two arrays/lists\n   - Merge sorted arrays\n   - Intersection of arrays\n\nTemplate (opposite):\n```\nint left = 0, right = n-1;\nwhile (left < right) {\n  if (condition met) return result;\n  else if (need more) left++;\n  else right--;\n}\n```", "difficulty": "Medium", "tags": ["Pattern", "Arrays"]},
+            {"id": "cp3", "question": "Binary Search Variations", "answer": "Beyond basic search:\n\n1. Find first/last occurrence:\n   - Don't return immediately when found\n   - Continue searching left (first) or right (last)\n\n2. Search in rotated sorted array:\n   - Determine which half is sorted\n   - Check if target is in sorted half\n\n3. Search on answer space:\n   - When answer is in a range [lo, hi]\n   - Binary search on the answer, verify with a check function\n   - Examples: Koko eating bananas, Split array largest sum\n\n4. Find peak element:\n   - Compare mid with mid+1\n   - Move towards the larger neighbor\n\nKey insight: Binary search works whenever the search space can be divided in halves with a monotonic condition.", "difficulty": "Hard", "tags": ["Pattern", "Binary Search"]},
+            {"id": "cp4", "question": "Backtracking Template", "answer": "Use when: Need to explore all combinations/permutations/subsets.\n\nTemplate:\n```\nvoid backtrack(state, choices) {\n  if (isGoal(state)) {\n    addToResult(state);\n    return;\n  }\n  for (choice in choices) {\n    if (isValid(choice)) {\n      makeChoice(choice);\n      backtrack(newState, remainingChoices);\n      undoChoice(choice); // backtrack\n    }\n  }\n}\n```\n\nCommon problems:\n- Permutations: Choose from remaining elements\n- Combinations: Choose from index onwards (avoid duplicates)\n- Subsets: Include or exclude each element\n- N-Queens: Place queens row by row, check constraints\n- Sudoku: Fill cell by cell, validate board\n\nOptimization: Pruning (skip invalid branches early)", "difficulty": "Hard", "tags": ["Pattern", "Recursion"]}
+          ]
+        }
+      ]
+    }
+  ],
+  "tips": [
+    {"id": "t1", "category": "Interview", "title": "Before the Interview", "content": "1. Research the company thoroughly (products, culture, recent news)\n2. Review the job description and match your skills\n3. Prepare 3-4 STAR stories for behavioral questions\n4. Practice coding on paper/whiteboard (not just IDE)\n5. Prepare thoughtful questions to ask the interviewer"},
+    {"id": "t2", "category": "Technical", "title": "During Coding Rounds", "content": "1. Clarify the problem before coding (edge cases, constraints)\n2. Think out loud — explain your approach\n3. Start with brute force, then optimize\n4. Write clean, readable code\n5. Test with examples, including edge cases\n6. Analyze time and space complexity"},
+    {"id": "t3", "category": "HR", "title": "Salary Negotiation", "content": "1. Research market salary for the role (Glassdoor, Levels.fyi)\n2. Let the company make the first offer\n3. Consider total compensation (base + bonus + stock + benefits)\n4. Be confident but respectful\n5. Have a walkaway number in mind\n6. Get the final offer in writing"},
+    {"id": "t4", "category": "Technical", "title": "System Design Tips", "content": "1. Clarify requirements and scope\n2. Estimate scale (users, data, QPS)\n3. Start with high-level design\n4. Deep dive into components\n5. Address bottlenecks and trade-offs\n6. Common topics: Load balancing, Caching, Sharding, CDN, Message queues"}
+  ]
+}

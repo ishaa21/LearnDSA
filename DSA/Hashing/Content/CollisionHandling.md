@@ -1,4 +1,4 @@
-# Collision Handling
+﻿# Collision Handling
 
 ## What is this?
 Collision happens when two keys map to the same index.
@@ -29,9 +29,6 @@ O(n)
 ## Key Takeaways
 - Collisions are unavoidable (Pigeonhole principle)
 - Handling technique defines performance under load
-
-## Recommended Problems
-- Collision Handling in Hashing (GFG)
 
 ## Mini Practice
 ### Problem: Chain

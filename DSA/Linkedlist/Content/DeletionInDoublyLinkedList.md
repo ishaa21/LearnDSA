@@ -1,4 +1,4 @@
-# Deletion in Doubly Linked List
+﻿# Deletion in Doubly Linked List
 
 ## What is this?
 Removing node from DLL.
@@ -25,9 +25,6 @@ O(1)
 ## Key Takeaways
 - Patch both directions
 - Easier deletion than Singly (as we have prev)
-
-## Recommended Problems
-- Delete in Doubly Linked List (GFG)
 
 ## Mini Practice
 ### Problem: Delete Middle

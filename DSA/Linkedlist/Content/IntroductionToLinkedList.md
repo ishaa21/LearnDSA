@@ -1,4 +1,4 @@
-# Introduction to Linked List
+﻿# Introduction to Linked List
 
 ## What is this?
 Introduction to nodes and links. A Linked List is a dynamic data structure where items are stored in nodes, connected by pointers.
@@ -27,9 +27,6 @@ O(n)
 ## Key Takeaways
 - Nodes are building blocks
 - Dynamic size (can grow/shrink)
-
-## Recommended Problems
-- Introduction to Linked List (GFG)
 
 ## Mini Practice
 ### Problem: Create Node

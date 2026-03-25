@@ -1,4 +1,4 @@
-# Radix Sort
+﻿# Radix Sort
 
 ## What is this?
 Radix Sort sorts numbers digit by digit (LSD to MSD).
@@ -28,10 +28,6 @@ O(n + k)
 ## Key Takeaways
 - Non-comparison sort
 - Depends on digit count
-
-## Recommended Problems
-- Radix Sort (GFG)
-- Maximum Gap (LeetCode)
 
 ## Mini Practice
 ### Problem: Digit Sort

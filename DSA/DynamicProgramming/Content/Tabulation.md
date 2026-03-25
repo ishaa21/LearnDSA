@@ -1,4 +1,4 @@
-# Tabulation
+﻿# Tabulation
 
 ## What is this?
 Bottom-up DP approach.
@@ -25,9 +25,6 @@ Optimizing iterative calculations.
 ## Key Takeaways
 - Iterative DP
 - Can save memory
-
-## Recommended Problems
-- LeetCode: House Robber
 
 ## Mini Practice
 ### Problem

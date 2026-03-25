@@ -1,4 +1,4 @@
-# Hash Functions
+﻿# Hash Functions
 
 ## What is this?
 A hash function converts a key (string, object) into an integer index.
@@ -28,9 +28,6 @@ O(1)
 ## Key Takeaways
 - Good hash function is crucial for HashMap performance
 - Should be deterministic
-
-## Recommended Problems
-- Hash Function Design (GFG)
 
 ## Mini Practice
 ### Problem: Simple Mod

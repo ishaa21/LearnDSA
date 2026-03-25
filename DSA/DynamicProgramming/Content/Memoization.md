@@ -1,4 +1,4 @@
-# Memoization
+﻿# Memoization
 
 ## What is this?
 Top-down DP using recursion + cache.
@@ -24,9 +24,6 @@ Caching computed results (e.g. API responses).
 
 ## Key Takeaways
 - Recursion + memory
-
-## Recommended Problems
-- LeetCode: Climbing Stairs
 
 ## Mini Practice
 ### Problem

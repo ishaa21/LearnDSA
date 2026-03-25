@@ -1,4 +1,4 @@
-# Singly Linked List
+﻿# Singly Linked List
 
 ## What is this?
 Each node points to the next node only. It moves in only one direction.
@@ -26,9 +26,6 @@ O(n)
 ## Key Takeaways
 - One-direction traversal
 - Simple structure
-
-## Recommended Problems
-- Design Linked List (LeetCode)
 
 ## Mini Practice
 ### Problem: Insert & Print

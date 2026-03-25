@@ -1,4 +1,4 @@
-# Combinations
+﻿# Combinations
 
 ## What is this?
 Selecting k items from n without order.
@@ -26,9 +26,6 @@ Analysis of choices, probability.
 ## Key Takeaways
 - Order doesn't matter
 - No duplicates typically
-
-## Recommended Problems
-- LeetCode: Combinations
 
 ## Mini Practice
 ### Problem

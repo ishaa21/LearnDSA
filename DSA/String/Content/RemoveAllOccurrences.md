@@ -1,4 +1,4 @@
-# Remove All Occurrences
+﻿# Remove All Occurrences
 
 ## What is this?
 Removing all instances of a character or substring.
@@ -28,9 +28,6 @@ O(n)
 ## Key Takeaways
 - Clean string operations
 - Often uses StringBuilder
-
-## Recommended Problems
-- Remove All Adjacent Duplicates in String (LeetCode)
 
 ## Mini Practice
 ### Problem: Remove All

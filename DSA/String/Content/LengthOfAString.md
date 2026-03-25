@@ -1,4 +1,4 @@
-# Length of a String
+﻿# Length of a String
 
 ## What is this?
 Finding total number of characters in a string.
@@ -27,10 +27,6 @@ O(1)
 ## Key Takeaways
 - Fundamental string operation
 - Strings are arrays of characters
-
-## Recommended Problems
-- Length of Last Word (LeetCode)
-- Find Length of String (GFG)
 
 ## Mini Practice
 ### Problem: Manual Count

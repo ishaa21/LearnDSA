@@ -1,4 +1,4 @@
-# Postfix to Infix
+﻿# Postfix to Infix
 
 ## What is this?
 Converting Postfix (A B +) back to human-readable Infix (A + B).
@@ -27,9 +27,6 @@ O(n)
 ## Key Takeaways
 - Stack simplifies expression handling
 - Adds parentheses back
-
-## Recommended Problems
-- Expression Conversion Problems (GFG)
 
 ## Mini Practice
 ### Problem: Convert

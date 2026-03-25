@@ -1,4 +1,4 @@
-# Heap Sort
+﻿# Heap Sort
 
 ## What is this?
 Heap Sort uses Max-Heap data structure to sort elements.
@@ -30,10 +30,6 @@ O(1)
 ## Key Takeaways
 - In-place sort
 - Not stable
-
-## Recommended Problems
-- Sort an Array (LeetCode)
-- Heap Sort (GFG)
 
 ## Mini Practice
 ### Problem: Max Heap

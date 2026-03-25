@@ -1,4 +1,4 @@
-# Detect Cycle in Doubly Linked List
+﻿# Detect Cycle in Doubly Linked List
 
 ## What is this?
 Detect loop in doubly linked list.
@@ -23,9 +23,6 @@ O(1)
 
 ## Key Takeaways
 - Similar to singly but with extra care
-
-## Recommended Problems
-- Detect Loop in DLL (GFG)
 
 ## Mini Practice
 ### Problem: Is Cyclic

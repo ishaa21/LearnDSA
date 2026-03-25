@@ -1,4 +1,4 @@
-# HashSet
+﻿# HashSet
 
 ## What is this?
 A HashSet stores unique elements only.
@@ -28,10 +28,6 @@ O(n)
 ## Key Takeaways
 - No duplicates
 - Fast lookup
-
-## Recommended Problems
-- Contains Duplicate (LeetCode)
-- Happy Number (LeetCode)
 
 ## Mini Practice
 ### Problem: Unique

@@ -1,4 +1,4 @@
-# Stack Implementation (Array)
+﻿# Stack Implementation (Array)
 
 ## What is this?
 Stack implemented using array.
@@ -26,9 +26,6 @@ O(n)
 ## Key Takeaways
 - Fast but fixed size
 - Easy to code
-
-## Recommended Problems
-- Implement Stack using Array (LeetCode)
 
 ## Mini Practice
 ### Problem: Array Stack

@@ -1,4 +1,4 @@
-# Reverse a String
+﻿# Reverse a String
 
 ## What is this?
 Reversing character order in a string (First becomes last).
@@ -28,9 +28,6 @@ O(1) (In-place for mutable strings) / O(n) (For immutable)
 ## Key Takeaways
 - Two-pointer technique
 - Strings can be immutable
-
-## Recommended Problems
-- Reverse String (LeetCode)
 
 ## Mini Practice
 ### Problem: Reverse

@@ -1,4 +1,4 @@
-# Reverse Linked List
+﻿# Reverse Linked List
 
 ## What is this?
 Reversing the direction of links. Head becomes tail, tail becomes head.
@@ -31,9 +31,6 @@ O(1)
 - Pointer manipulation magic
 - Standard interview question
 
-## Recommended Problems
-- Reverse Linked List (LeetCode)
-
 ## Mini Practice
 ### Problem: Reverse
 Reverse 1 -> 2 -> 3.
@@ -41,3 +38,17 @@ Input: 1 -> 2 -> 3
 Output: 3 -> 2 -> 1
 Hint: prev=null, curr=head. loop.
 Solution: next=curr.next; curr.next=prev; prev=curr; curr=next;
+
+### Problem: Reverse Using Stack
+Reverse 1->2->3 using a stack.
+Input: 1->2->3
+Output: 3->2->1
+Hint: Push all elements to stack, then pop to create new list.
+Solution: Push 1,2,3. Pop: 3,2,1. Create new linked list.
+
+### Problem: Check Palindrome
+Check if linked list 1->2->1 is a palindrome using reverse.
+Input: 1->2->1
+Output: Yes, palindrome
+Hint: Reverse the second half and compare with first half.
+Solution: Find middle, reverse second half, compare element by element.

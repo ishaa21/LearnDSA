@@ -1,4 +1,4 @@
-# LIS
+﻿# LIS
 
 ## What is this?
 Longest Increasing Subsequence in an array (strictly increasing, can skip elements).
@@ -26,9 +26,6 @@ Analysis of trends, optimization.
 ## Key Takeaways
 - Order preserved
 - Subproblem structure
-
-## Recommended Problems
-- LeetCode: Longest Increasing Subsequence
 
 ## Mini Practice
 ### Problem

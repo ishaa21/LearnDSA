@@ -1,4 +1,4 @@
-# Circular Linked List
+﻿# Circular Linked List
 
 ## What is this?
 Last node points back to first node. There is no NULL end.
@@ -26,9 +26,6 @@ O(n)
 ## Key Takeaways
 - No null end
 - Cycle by definition
-
-## Recommended Problems
-- Circular Linked List (GFG)
 
 ## Mini Practice
 ### Problem: Full Cycle

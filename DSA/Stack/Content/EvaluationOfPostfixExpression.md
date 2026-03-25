@@ -1,4 +1,4 @@
-# Evaluation of Postfix Expression
+﻿# Evaluation of Postfix Expression
 
 ## What is this?
 Evaluating expressions where operator comes after operands (e.g., 2 3 +).
@@ -30,9 +30,6 @@ O(n)
 ## Key Takeaways
 - No parentheses needed
 - Efficient for computers
-
-## Recommended Problems
-- Evaluation of Postfix Expression (GFG)
 
 ## Mini Practice
 ### Problem: Evaluate

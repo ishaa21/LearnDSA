@@ -1,4 +1,4 @@
-# Graph Representation
+﻿# Graph Representation
 
 ## What is this?
 Ways to store a graph in memory. A graph consists of Vertices (V) and Edges (E).
@@ -30,10 +30,6 @@ Ways to store a graph in memory. A graph consists of Vertices (V) and Edges (E).
 ## Key Takeaways
 - Adjacency list is preferred for most problems
 - Representation affects algorithm performance
-
-## Recommended Problems
-- Graph Representation (GFG)
-- Find the Town Judge (LeetCode)
 
 ## Mini Practice
 ### Problem: Adj List

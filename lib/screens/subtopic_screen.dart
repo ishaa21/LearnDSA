@@ -468,10 +468,9 @@ class _SubtopicScreenState extends State<SubtopicScreen> with SingleTickerProvid
   }
 
   Widget _buildPracticeTab() {
-    final hasProblems = _content != null && _content!.recommendedProblems.isNotEmpty;
     final hasPractices = _content != null && _content!.practices.isNotEmpty;
 
-    if (!hasProblems && !hasPractices) {
+    if (!hasPractices) {
       return Center(child: Text("Practice content coming soon!", style: GoogleFonts.inter(color: AppColors.textSub)));
     }
 
@@ -480,42 +479,7 @@ class _SubtopicScreenState extends State<SubtopicScreen> with SingleTickerProvid
        child: Column(
          crossAxisAlignment: CrossAxisAlignment.start,
          children: [
-           // 1. Recommended Problems
-           if (hasProblems) ...[
-             Text("Recommended Problems", style: GoogleFonts.outfit(fontSize: 20, fontWeight: FontWeight.bold, color: AppColors.textMain)),
-             const SizedBox(height: 4),
-             Text("Master this topic with these classics:", style: GoogleFonts.inter(fontSize: 14, color: AppColors.textSub)),
-             const SizedBox(height: 16),
-             ..._content!.recommendedProblems.map((p) => Container(
-               margin: const EdgeInsets.only(bottom: 12),
-               decoration: BoxDecoration(
-                 color: AppColors.card,
-                 borderRadius: BorderRadius.circular(12),
-                 border: Border.all(color: AppColors.textSub.withOpacity(0.05)),
-                 boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.02), blurRadius: 4, offset: const Offset(0, 2))],
-               ),
-               child: ListTile(
-                 contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-                 leading: Container(
-                   padding: const EdgeInsets.all(8),
-                   decoration: BoxDecoration(color: AppColors.accent.withOpacity(0.1), borderRadius: BorderRadius.circular(8)),
-                   child: const Icon(Icons.code, color: AppColors.accent, size: 20),
-                 ),
-                 title: Consumer<SettingsProvider>(
-                   builder: (context, settings, _) {
-                     return Text(p, style: GoogleFonts.inter(fontWeight: FontWeight.w600, color: AppColors.textMain, fontSize: settings.bodySize - 1));
-                   }
-                 ),
-                 trailing: const Icon(Icons.open_in_new_rounded, size: 18, color: AppColors.textSub),
-                 onTap: () {
-                   // Open Link logic (mock for now)
-                 },
-               ),
-             )),
-             const SizedBox(height: 32),
-           ],
-
-           // 2. Mini Practice
+           // Mini Practice
            if (hasPractices) ...[
              Text("Mini Practice", style: GoogleFonts.outfit(fontSize: 20, fontWeight: FontWeight.bold, color: AppColors.textMain)),
              const SizedBox(height: 16),

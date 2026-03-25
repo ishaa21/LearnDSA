@@ -1,4 +1,4 @@
-# Detect Cycle in Linked List
+﻿# Detect Cycle in Linked List
 
 ## What is this?
 Checking if loop exists (node points back to previous node).
@@ -30,9 +30,6 @@ O(1)
 ## Key Takeaways
 - Floyd’s cycle detection
 - Fast/Slow pointers
-
-## Recommended Problems
-- Linked List Cycle (LeetCode)
 
 ## Mini Practice
 ### Problem: Has Cycle?

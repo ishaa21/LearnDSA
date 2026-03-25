@@ -1,4 +1,4 @@
-# Remove A Character
+﻿# Remove A Character
 
 ## What is this?
 Removing a character from a string.
@@ -27,9 +27,6 @@ O(n)
 ## Key Takeaways
 - New string is created usually
 - Requires copying
-
-## Recommended Problems
-- Remove Element (LeetCode)
 
 ## Mini Practice
 ### Problem: Delete

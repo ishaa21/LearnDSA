@@ -1,4 +1,4 @@
-# Infix to Prefix
+﻿# Infix to Prefix
 
 ## What is this?
 Convert infix (A + B) to prefix (+ A B).
@@ -28,9 +28,6 @@ O(n)
 ## Key Takeaways
 - Operator comes first
 - Logic similar to Postfix
-
-## Recommended Problems
-- Infix to Prefix Conversion (GFG)
 
 ## Mini Practice
 ### Problem: Convert

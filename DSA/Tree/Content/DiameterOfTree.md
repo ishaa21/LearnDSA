@@ -1,4 +1,4 @@
-# Diameter of a Tree
+﻿# Diameter of a Tree
 
 ## What is this?
 Diameter is the longest path between **any** two nodes in a tree.
@@ -26,9 +26,6 @@ O(h)
 ## Key Takeaways
 - Path may not pass root
 - Related to height
-
-## Recommended Problems
-- Diameter of Binary Tree (LeetCode)
 
 ## Mini Practice
 ### Problem: Diameter

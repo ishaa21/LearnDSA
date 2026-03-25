@@ -1,0 +1,135 @@
+{
+  "roadmaps": [
+    {
+      "id": "sde",
+      "title": "Software Development Engineer",
+      "description": "Complete roadmap to become an SDE at top tech companies",
+      "icon": "code",
+      "color": "#7C3AED",
+      "stages": [
+        {
+          "name": "Foundation (Month 1-2)",
+          "items": [
+            {"title": "Learn a Programming Language", "description": "Master C++, Java, or Python. Focus on syntax, OOP, STL/Collections.", "status": "required"},
+            {"title": "Data Structures Basics", "description": "Arrays, Strings, Linked Lists, Stacks, Queues, Hash Maps", "status": "required"},
+            {"title": "Basic Algorithms", "description": "Sorting (Merge, Quick, Heap), Searching (Binary Search), Recursion", "status": "required"},
+            {"title": "Version Control", "description": "Git basics: clone, commit, push, pull, branch, merge", "status": "required"}
+          ]
+        },
+        {
+          "name": "Intermediate DSA (Month 3-4)",
+          "items": [
+            {"title": "Trees & Graphs", "description": "Binary Trees, BST, Heaps, Graph BFS/DFS, Shortest Path", "status": "required"},
+            {"title": "Dynamic Programming", "description": "Memoization, Tabulation, Common patterns (Knapsack, LCS, LIS)", "status": "required"},
+            {"title": "Advanced Data Structures", "description": "Tries, Segment Trees, Disjoint Set Union", "status": "optional"},
+            {"title": "Problem Solving", "description": "Solve 150+ problems on LeetCode/Codeforces. Focus on Medium difficulty.", "status": "required"}
+          ]
+        },
+        {
+          "name": "CS Fundamentals (Month 5)",
+          "items": [
+            {"title": "Operating Systems", "description": "Processes, Threads, Scheduling, Memory, Deadlocks, File Systems", "status": "required"},
+            {"title": "DBMS", "description": "SQL, Normalization, ACID, Indexing, Transactions", "status": "required"},
+            {"title": "Computer Networks", "description": "OSI, TCP/IP, HTTP, DNS, Sockets", "status": "required"},
+            {"title": "Object-Oriented Design", "description": "SOLID principles, Design Patterns (Factory, Singleton, Observer)", "status": "optional"}
+          ]
+        },
+        {
+          "name": "System Design (Month 6)",
+          "items": [
+            {"title": "HLD Basics", "description": "Load Balancing, Caching, CDN, Message Queues, Microservices", "status": "required"},
+            {"title": "Database Design", "description": "SQL vs NoSQL, Sharding, Replication, CAP Theorem", "status": "required"},
+            {"title": "Practice Designs", "description": "URL Shortener, Twitter, Chat System, Netflix", "status": "required"},
+            {"title": "LLD Practice", "description": "Parking Lot, Elevator, Library Management", "status": "optional"}
+          ]
+        },
+        {
+          "name": "Interview Prep (Month 7-8)",
+          "items": [
+            {"title": "Mock Interviews", "description": "Practice with peers, use Pramp/Interviewing.io", "status": "required"},
+            {"title": "Company Research", "description": "Study target companies, their tech stack, culture", "status": "required"},
+            {"title": "Resume Building", "description": "Highlight projects, quantify achievements, tailor to roles", "status": "required"},
+            {"title": "Behavioral Prep", "description": "STAR method, leadership principles, conflict resolution", "status": "required"}
+          ]
+        }
+      ],
+      "skills": ["C++/Java/Python", "Data Structures", "Algorithms", "System Design", "SQL", "Git", "Problem Solving"],
+      "salaryRange": "₹6-45 LPA (India) | $80K-200K (US)",
+      "companies": ["Google", "Amazon", "Microsoft", "Meta", "Apple", "Flipkart", "Uber"]
+    },
+    {
+      "id": "data_analyst",
+      "title": "Data Analyst",
+      "description": "Roadmap to become a Data Analyst",
+      "icon": "analytics",
+      "color": "#2ECC71",
+      "stages": [
+        {
+          "name": "Foundation (Month 1-2)",
+          "items": [
+            {"title": "Statistics & Probability", "description": "Mean, Median, Mode, Standard Deviation, Distributions, Hypothesis Testing", "status": "required"},
+            {"title": "Excel / Spreadsheets", "description": "VLOOKUP, Pivot Tables, Charts, Conditional Formatting, Data Validation", "status": "required"},
+            {"title": "SQL Fundamentals", "description": "SELECT, JOINs, GROUP BY, HAVING, Subqueries, Window Functions", "status": "required"},
+            {"title": "Basic Python", "description": "Python basics, Data types, Libraries (NumPy, Pandas)", "status": "required"}
+          ]
+        },
+        {
+          "name": "Data Analysis (Month 3-4)",
+          "items": [
+            {"title": "Python for Data Analysis", "description": "Pandas for data manipulation, NumPy for numerical computing, Data cleaning techniques", "status": "required"},
+            {"title": "Data Visualization", "description": "Matplotlib, Seaborn, Plotly. Learn to tell stories with data.", "status": "required"},
+            {"title": "Tableau / Power BI", "description": "Dashboard creation, Interactive visualizations, Publishing reports", "status": "required"},
+            {"title": "Advanced SQL", "description": "Window functions, CTEs, Query optimization, Stored procedures", "status": "required"}
+          ]
+        },
+        {
+          "name": "Advanced Skills (Month 5-6)",
+          "items": [
+            {"title": "Machine Learning Basics", "description": "Linear Regression, Classification, Clustering (using scikit-learn)", "status": "optional"},
+            {"title": "Big Data Basics", "description": "Understanding Hadoop, Spark basics, Cloud platforms (AWS/GCP)", "status": "optional"},
+            {"title": "A/B Testing", "description": "Experiment design, Statistical significance, Interpreting results", "status": "required"},
+            {"title": "Business Acumen", "description": "KPIs, Metrics, Business case analysis, Stakeholder communication", "status": "required"}
+          ]
+        },
+        {
+          "name": "Portfolio & Job Prep (Month 7-8)",
+          "items": [
+            {"title": "Projects", "description": "Build 3-4 portfolio projects: EDA, Dashboard, Prediction model, Business report", "status": "required"},
+            {"title": "Resume & LinkedIn", "description": "Showcase projects, certifications (Google Data Analytics, IBM)", "status": "required"},
+            {"title": "Interview Prep", "description": "SQL interview questions, Case studies, Guesstimates", "status": "required"},
+            {"title": "Networking", "description": "LinkedIn connections, Data community events, Kaggle participation", "status": "optional"}
+          ]
+        }
+      ],
+      "skills": ["SQL", "Python", "Excel", "Tableau/Power BI", "Statistics", "Data Visualization", "Communication"],
+      "salaryRange": "₹4-20 LPA (India) | $55K-120K (US)",
+      "companies": ["Google", "Amazon", "Deloitte", "McKinsey", "Accenture", "TCS", "Infosys"]
+    }
+  ],
+  "resumeTemplates": [
+    {
+      "id": "sde_resume",
+      "title": "SDE Resume Template",
+      "sections": [
+        {"name": "Header", "bullets": ["Full Name", "Phone | Email | LinkedIn | GitHub", "Location (City, State)"]},
+        {"name": "Education", "bullets": ["B.Tech in Computer Science, [University Name], [Year]", "CGPA: X.XX / 10", "Relevant coursework: DS & Algorithms, DBMS, OS, Computer Networks"]},
+        {"name": "Skills", "bullets": ["Languages: C++, Python, Java, JavaScript", "Frameworks: React, Node.js, Spring Boot", "Tools: Git, Docker, AWS, Linux", "Databases: MySQL, MongoDB, Redis"]},
+        {"name": "Experience", "bullets": ["[Role] at [Company] | [Duration]", "Built [feature] using [tech] resulting in [metric] improvement", "Optimized [system] reducing [metric] by X%", "Collaborated with [team size] engineers on [project]"]},
+        {"name": "Projects", "bullets": ["[Project Name] | [Tech Stack]", "Developed [what] that [does what] for [whom]", "Implemented [feature] using [algorithm/technique]", "Achieved [metric/outcome]"]},
+        {"name": "Achievements", "bullets": ["Ranked top X% in [coding contest]", "[Hackathon name] — [Prize/Position]", "[Certification name] — [Platform]"]}
+      ]
+    },
+    {
+      "id": "da_resume",
+      "title": "Data Analyst Resume Template",
+      "sections": [
+        {"name": "Header", "bullets": ["Full Name", "Phone | Email | LinkedIn | Portfolio", "Location (City, State)"]},
+        {"name": "Education", "bullets": ["B.Tech/BSc in [Field], [University], [Year]", "CGPA: X.XX / 10", "Relevant coursework: Statistics, Data Mining, Machine Learning"]},
+        {"name": "Skills", "bullets": ["Tools: Excel, SQL, Tableau, Power BI", "Languages: Python (Pandas, NumPy, Matplotlib), R", "Databases: MySQL, PostgreSQL, BigQuery", "Other: A/B Testing, ETL, Data Modeling"]},
+        {"name": "Experience", "bullets": ["[Role] at [Company] | [Duration]", "Analyzed [data type] identifying [insight] that drove [business outcome]", "Built dashboards tracking [KPIs] for [stakeholders]", "Reduced [metric] by X% through data-driven recommendations"]},
+        {"name": "Projects", "bullets": ["[Project Name] | [Tools Used]", "Performed EDA on [dataset] with [X rows] identifying [key findings]", "Created interactive dashboard visualizing [metrics]", "Built predictive model achieving [accuracy]% accuracy"]},
+        {"name": "Certifications", "bullets": ["Google Data Analytics Professional Certificate", "IBM Data Science Professional Certificate", "Tableau Desktop Specialist"]}
+      ]
+    }
+  ]
+}

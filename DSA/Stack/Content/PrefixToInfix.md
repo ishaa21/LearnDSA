@@ -1,4 +1,4 @@
-# Prefix to Infix
+﻿# Prefix to Infix
 
 ## What is this?
 Converting Prefix (+ A B) to Infix (A + B).
@@ -26,9 +26,6 @@ O(n)
 ## Key Takeaways
 - Use stack for operands
 - Reverse scan makes it easier
-
-## Recommended Problems
-- Prefix to Infix Conversion (GFG)
 
 ## Mini Practice
 ### Problem: Convert

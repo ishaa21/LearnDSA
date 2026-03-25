@@ -436,8 +436,10 @@ class SettingsScreen extends StatelessWidget {
       path: 'ishazalavadia@gmail.com',
       queryParameters: {'subject': 'DSA App Feedback'},
     );
-    if (await canLaunchUrl(emailLaunchUri)) {
+    try {
       await launchUrl(emailLaunchUri);
+    } catch (e) {
+      debugPrint('Could not launch email: $e');
     }
   }
 }

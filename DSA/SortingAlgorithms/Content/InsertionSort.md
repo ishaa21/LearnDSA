@@ -1,4 +1,4 @@
-# Insertion Sort
+﻿# Insertion Sort
 
 ## What is this?
 Insertion Sort builds sorted array one element at a time by picking element and inserting it into correct position.
@@ -31,10 +31,6 @@ O(1)
 - Stable sort
 - Used in real systems for small data
 
-## Recommended Problems
-- Insertion Sort (LeetCode)
-- Insertion Sort (GFG)
-
 ## Mini Practice
 ### Problem: Insert
 Sort [2, 3, 1].
@@ -42,3 +38,17 @@ Input: [2, 3, 1]
 Output: [1, 2, 3]
 Hint: 1 is smaller than 3 (shift), smaller than 2 (shift). Insert at 0.
 Solution: while(prev >= 0 && arr[prev] > key) shift;
+
+### Problem: Partially Sorted
+Apply insertion sort on [2, 1, 3, 5, 4].
+Input: [2, 1, 3, 5, 4]
+Output: Only 2 shifts needed: 1 shifts left once, 4 shifts left once.
+Hint: Nearly sorted arrays are best case for insertion sort.
+Solution: Step1: insert 1 before 2 -> [1,2,3,5,4]. Step2: 3,5 already in place. Step3: insert 4 before 5 -> [1,2,3,4,5].
+
+### Problem: Sort Strings
+Use insertion sort to sort ["banana", "apple", "cherry"].
+Input: ["banana", "apple", "cherry"]
+Output: ["apple", "banana", "cherry"]
+Hint: Compare strings lexicographically instead of numerically.
+Solution: Same algorithm, use string comparison: "apple" < "banana" < "cherry".

@@ -1,4 +1,4 @@
-# Evaluation of Prefix Expression
+﻿# Evaluation of Prefix Expression
 
 ## What is this?
 Prefix expression evaluation (Operator before operands, e.g., + 2 3).
@@ -27,9 +27,6 @@ O(n)
 ## Key Takeaways
 - Operator before operands
 - Scan Right to Left
-
-## Recommended Problems
-- Evaluation of Prefix Expression (GFG)
 
 ## Mini Practice
 ### Problem: Eval Prefix

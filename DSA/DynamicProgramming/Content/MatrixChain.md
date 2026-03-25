@@ -1,4 +1,4 @@
-# MatrixChain
+﻿# MatrixChain
 
 ## What is this?
 Optimal order of matrix multiplication (parenthesization).
@@ -26,9 +26,6 @@ Computer graphics, scientific computing.
 ## Key Takeaways
 - Order matters
 - Not multiplying, just finding cost
-
-## Recommended Problems
-- GFG: Matrix Chain Multiplication
 
 ## Mini Practice
 ### Problem

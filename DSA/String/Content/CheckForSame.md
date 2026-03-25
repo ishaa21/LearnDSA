@@ -1,4 +1,4 @@
-# Check For Same
+﻿# Check For Same
 
 ## What is this?
 Checking if two strings are identical in content.
@@ -28,9 +28,6 @@ O(1)
 ## Key Takeaways
 - Character-wise comparison
 - Comparison stops at first mismatch
-
-## Recommended Problems
-- Valid Anagram (LeetCode)
 
 ## Mini Practice
 ### Problem: Equal?

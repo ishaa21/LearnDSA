@@ -1,4 +1,4 @@
-# UnboundedKnapsack
+﻿# UnboundedKnapsack
 
 ## What is this?
 Items can be taken multiple times (unlimited supply).
@@ -24,9 +24,6 @@ Making change, cutting rods.
 ## Key Takeaways
 - Repetition allowed
 - Often O(W) space
-
-## Recommended Problems
-- LeetCode: Coin Change
 
 ## Mini Practice
 ### Problem

@@ -1,4 +1,4 @@
-# MaxHeap
+﻿# MaxHeap
 
 ## What is this?
 A binary tree where parent node is always >= children.
@@ -31,12 +31,23 @@ Dijkstra's & Prim's Algorithm.
 - Root is max
 - Complete Binary Tree
 
-## Recommended Problems
-- LeetCode: Kth Largest Element in an Array (using MaxHeap)
-
 ## Mini Practice
 ### Problem
 Input: [10, 20, 15] insert one by one
 Output: [20, 10, 15]
 Hint: Insert 10. Insert 20 -> swap(10,20). Insert 15 -> 15 < 20 ok.
 Solution: Root is 20.
+
+### Problem: Extract Max Twice
+From MaxHeap [50, 30, 40, 10, 20], extract max twice.
+Input: MaxHeap = [50, 30, 40, 10, 20]
+Output: First extract: 50, Heap becomes [40, 30, 20, 10]. Second extract: 40.
+Hint: Remove root, replace with last element, heapify down.
+Solution: Extract 50, move 20 to root [20,30,40,10], heapify: [40,30,20,10]. Extract 40.
+
+### Problem: Kth Largest Element
+Find 3rd largest in [3, 2, 1, 5, 6, 4] using max heap.
+Input: [3, 2, 1, 5, 6, 4], k=3
+Output: 4
+Hint: Build max heap, extract max k times.
+Solution: Build heap: [6,5,4,2,3,1]. Extract 6, then 5, then 4. Answer = 4.

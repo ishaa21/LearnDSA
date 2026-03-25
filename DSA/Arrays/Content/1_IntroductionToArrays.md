@@ -1,4 +1,4 @@
-# Introduction to Arrays
+﻿# Introduction to Arrays
 
 ## What is this?
 An array is a collection of values stored together under one name.
@@ -32,11 +32,6 @@ O(n) where n is number of elements
 - Index-based access
 - Fixed size in most languages
 
-## Recommended Problems
-- Running Sum of 1d Array (LeetCode)
-- Build Array from Permutation (LeetCode)
-- Array Basics (GFG)
-
 ## Mini Practice
 ### Problem: Create and Print
 Create an array of 5 integers (e.g., 10, 20, 30, 40, 50) and print them.
@@ -44,3 +39,17 @@ Input: (None)
 Output: 10, 20, 30, 40, 50
 Hint: Use a loop or direct access. Indices are 0 to 4.
 Solution: Declare int[] arr = {10, 20, 30, 40, 50}; Loop and print.
+
+### Problem: Count Elements
+Count total elements in the array.
+Input: [10, 20, 30, 40]
+Output: 4
+Hint: Use a counter variable and loop through.
+Solution: Initialize count=0, loop through array, increment count each time.
+
+### Problem: First and Last
+Print the first and last element of an array.
+Input: [5, 8, 12, 3, 9]
+Output: First: 5, Last: 9
+Hint: Access index 0 and index length-1.
+Solution: print(arr[0], arr[len(arr)-1])

@@ -1,0 +1,844 @@
+{
+  "sections": [
+    {
+      "id": "quantitative",
+      "name": "Quantitative Aptitude",
+      "icon": "calculate",
+      "emoji": "📐",
+      "color": "#4A90D9",
+      "topics": [
+        {
+          "id": "number_system",
+          "name": "Number System",
+          "description": "Study of different types of numbers (natural, whole, integers, rational, irrational) and their properties like divisibility, remainders, and factorization.",
+          "keyPoints": [
+            "Natural Numbers: 1, 2, 3, ... (counting numbers)",
+            "Whole Numbers: 0, 1, 2, 3, ... (natural + zero)",
+            "Integers: ..., -2, -1, 0, 1, 2, ...",
+            "Prime Numbers: Divisible only by 1 and itself (2,3,5,7,11...)",
+            "Composite Numbers: Have more than 2 factors",
+            "Co-prime: Two numbers with HCF = 1",
+            "Divisibility Rules: 2(even), 3(digit sum÷3), 4(last 2 digits÷4), 5(ends 0/5), 6(÷2 and ÷3), 8(last 3 digits÷8), 9(digit sum÷9), 11(alternating sum÷11)"
+          ],
+          "formulas": [
+            "Sum of first n naturals = n(n+1)/2",
+            "Sum of squares of first n naturals = n(n+1)(2n+1)/6",
+            "Sum of cubes of first n naturals = [n(n+1)/2]²",
+            "Number of factors of N = (a+1)(b+1)... where N = p₁ᵃ × p₂ᵇ"
+          ],
+          "example": {
+            "question": "Find the number of factors of 360.",
+            "solution": "360 = 2³ × 3² × 5¹\nNumber of factors = (3+1)(2+1)(1+1) = 4×3×2 = 24\nAnswer: 360 has 24 factors."
+          }
+        },
+        {
+          "id": "simplification",
+          "name": "Simplification & Approximation",
+          "description": "Simplification involves solving mathematical expressions using BODMAS rule. Approximation involves rounding numbers for quick mental calculation.",
+          "keyPoints": [
+            "BODMAS: Brackets → Orders → Division → Multiplication → Addition → Subtraction",
+            "Vinculum (Bar) is solved first inside brackets",
+            "For approximation, round to nearest whole number or convenient value",
+            "Use percentage shortcuts: 10%=÷10, 25%=÷4, 50%=÷2, 1%=÷100"
+          ],
+          "formulas": [
+            "BODMAS order of operations",
+            "10% of x = x/10",
+            "Quick square: (a+b)² ≈ a² + 2ab when b is small"
+          ],
+          "example": {
+            "question": "Simplify: 25 - [2 + {3 × (5 - 2)}]",
+            "solution": "= 25 - [2 + {3 × 3}]\n= 25 - [2 + 9]\n= 25 - 11\n= 14"
+          }
+        },
+        {
+          "id": "hcf_lcm",
+          "name": "HCF & LCM",
+          "description": "HCF (Highest Common Factor) is the greatest number that divides two or more numbers. LCM (Least Common Multiple) is the smallest number divisible by two or more numbers.",
+          "keyPoints": [
+            "HCF: Find by prime factorization or division method",
+            "LCM: Find by prime factorization or common division",
+            "HCF divides the numbers; LCM is divisible by the numbers",
+            "HCF(a,b) × LCM(a,b) = a × b"
+          ],
+          "formulas": [
+            "HCF × LCM = Product of two numbers",
+            "HCF of fractions = HCF(numerators) / LCM(denominators)",
+            "LCM of fractions = LCM(numerators) / HCF(denominators)"
+          ],
+          "example": {
+            "question": "Find HCF and LCM of 12 and 18.",
+            "solution": "12 = 2² × 3\n18 = 2 × 3²\nHCF = 2¹ × 3¹ = 6 (take minimum powers)\nLCM = 2² × 3² = 36 (take maximum powers)\nVerify: 6 × 36 = 216 = 12 × 18 ✓"
+          }
+        },
+        {
+          "id": "ratio_proportion",
+          "name": "Ratio & Proportion",
+          "description": "Ratio compares two quantities. Proportion states that two ratios are equal. Used extensively in mixture, partnership, and age problems.",
+          "keyPoints": [
+            "Ratio a:b means a/b",
+            "Proportion: a:b :: c:d means a/b = c/d",
+            "Mean proportional of a and b = √(ab)",
+            "Third proportional of a and b = b²/a"
+          ],
+          "formulas": [
+            "If a:b = c:d then ad = bc (cross multiplication)",
+            "Componendo-Dividendo: (a+b)/(a-b) = (c+d)/(c-d)",
+            "Duplicate ratio of a:b = a²:b²",
+            "Sub-duplicate ratio = √a:√b"
+          ],
+          "example": {
+            "question": "If A:B = 3:4 and B:C = 5:6, find A:B:C.",
+            "solution": "Make B common: A:B = 3:4 → 15:20\nB:C = 5:6 → 20:24\nA:B:C = 15:20:24"
+          }
+        },
+        {
+          "id": "percentage",
+          "name": "Percentage",
+          "description": "Percentage means 'per hundred'. It is used to express ratios, changes, and comparisons in a standardized way out of 100.",
+          "keyPoints": [
+            "x% of y = y% of x",
+            "If A is x% more than B, then B is [x/(100+x)]×100% less than A",
+            "Successive discounts of a% and b% = (a + b - ab/100)%",
+            "Population formula: P = P₀(1 + r/100)ⁿ"
+          ],
+          "formulas": [
+            "Percentage = (Value/Total) × 100",
+            "% Increase = [(New-Old)/Old] × 100",
+            "Successive change = a + b + ab/100"
+          ],
+          "example": {
+            "question": "A's salary is 20% more than B's. By what % is B's salary less than A's?",
+            "solution": "If B = 100, then A = 120\nB is less by = (20/120) × 100 = 16.67%\nAnswer: B's salary is 16.67% less than A's."
+          }
+        },
+        {
+          "id": "profit_loss",
+          "name": "Profit & Loss",
+          "description": "Deals with buying and selling transactions. Profit when SP > CP, Loss when CP > SP.",
+          "keyPoints": [
+            "CP = Cost Price, SP = Selling Price, MP = Marked Price",
+            "Discount is always on Marked Price",
+            "Profit/Loss is always calculated on Cost Price",
+            "If two items sold at same price, one at x% profit and other at x% loss: Net loss = x²/100 %"
+          ],
+          "formulas": [
+            "Profit% = [(SP-CP)/CP] × 100",
+            "Loss% = [(CP-SP)/CP] × 100",
+            "SP = CP × (100+Profit%)/100",
+            "Discount% = [(MP-SP)/MP] × 100"
+          ],
+          "example": {
+            "question": "An article is marked at ₹500. After 20% discount, shopkeeper makes 25% profit. Find CP.",
+            "solution": "SP = 500 × (80/100) = ₹400\nSP = CP × (125/100)\n400 = CP × 1.25\nCP = 400/1.25 = ₹320"
+          }
+        },
+        {
+          "id": "simple_interest",
+          "name": "Simple Interest",
+          "description": "Interest calculated only on the original principal amount. The interest remains constant every year.",
+          "keyPoints": [
+            "Interest is same every year",
+            "SI is directly proportional to P, R, and T",
+            "Doubling time = 100/R years"
+          ],
+          "formulas": [
+            "SI = (P × R × T) / 100",
+            "Amount = P + SI = P(1 + RT/100)",
+            "P = (100 × SI)/(R × T)"
+          ],
+          "example": {
+            "question": "Find SI on ₹8000 at 12% p.a. for 3 years.",
+            "solution": "SI = (8000 × 12 × 3)/100\n= 288000/100\n= ₹2880\nAmount = 8000 + 2880 = ₹10880"
+          }
+        },
+        {
+          "id": "compound_interest",
+          "name": "Compound Interest",
+          "description": "Interest calculated on principal + accumulated interest. Interest grows each period as it compounds.",
+          "keyPoints": [
+            "CI > SI for same P, R, T (when T > 1)",
+            "For 2 years: CI - SI = P(R/100)²",
+            "Effective rate = (1+R/100)ⁿ - 1"
+          ],
+          "formulas": [
+            "A = P(1 + R/100)ⁿ",
+            "CI = A - P",
+            "Half-yearly: A = P(1 + R/200)²ⁿ",
+            "Quarterly: A = P(1 + R/400)⁴ⁿ"
+          ],
+          "example": {
+            "question": "Find CI on ₹10000 at 10% for 2 years compounded annually.",
+            "solution": "A = 10000(1 + 10/100)²\n= 10000 × 1.1 × 1.1\n= 10000 × 1.21 = ₹12100\nCI = 12100 - 10000 = ₹2100"
+          }
+        },
+        {
+          "id": "time_work",
+          "name": "Time & Work",
+          "description": "If a person can complete work in 'n' days, their 1 day's work = 1/n. Use LCM method for efficiency-based solutions.",
+          "keyPoints": [
+            "1 day's work = 1/Total days",
+            "LCM method: Total work = LCM of individual times",
+            "More men → less days (inverse proportion)",
+            "MDH/W formula for complex problems"
+          ],
+          "formulas": [
+            "1/T = 1/A + 1/B (A and B together)",
+            "M₁D₁H₁/W₁ = M₂D₂H₂/W₂",
+            "Total Work = LCM(individual times)"
+          ],
+          "example": {
+            "question": "A can do a work in 12 days, B in 15 days. In how many days will they finish it together?",
+            "solution": "LCM(12,15) = 60 (total work)\nA's efficiency = 60/12 = 5 units/day\nB's efficiency = 60/15 = 4 units/day\nTogether = 9 units/day\nTime = 60/9 = 6⅔ days"
+          }
+        },
+        {
+          "id": "pipes_cisterns",
+          "name": "Pipes & Cisterns",
+          "description": "Similar to Time & Work. Inlet pipe fills the tank (positive work), outlet pipe empties it (negative work).",
+          "keyPoints": [
+            "Inlet pipe: positive work (filling)",
+            "Outlet pipe: negative work (emptying)",
+            "Net work = Sum of all pipe rates",
+            "Use LCM method same as Time & Work"
+          ],
+          "formulas": [
+            "Net rate = 1/Fill₁ + 1/Fill₂ - 1/Drain",
+            "Time = Tank capacity / Net rate"
+          ],
+          "example": {
+            "question": "Pipe A fills a tank in 6 hours, Pipe B empties in 8 hours. If both are open, when will the tank fill?",
+            "solution": "LCM(6,8) = 24 (tank capacity)\nA fills = 24/6 = 4 units/hr\nB empties = 24/8 = 3 units/hr\nNet = 4-3 = 1 unit/hr\nTime = 24/1 = 24 hours"
+          }
+        },
+        {
+          "id": "time_speed_distance",
+          "name": "Time, Speed & Distance",
+          "description": "Fundamental relationship: Distance = Speed × Time. Covers train problems, relative speed, and average speed concepts.",
+          "keyPoints": [
+            "1 km/h = 5/18 m/s",
+            "1 m/s = 18/5 km/h",
+            "Relative speed: Same direction = difference, Opposite = sum",
+            "Train crosses pole: Time = Length/Speed",
+            "Train crosses platform: Time = (Train + Platform)/Speed"
+          ],
+          "formulas": [
+            "D = S × T",
+            "Average Speed = 2S₁S₂/(S₁+S₂) for equal distances",
+            "Relative Speed (same dir) = |S₁-S₂|",
+            "Relative Speed (opp dir) = S₁+S₂"
+          ],
+          "example": {
+            "question": "A train 150m long passes a pole in 15 seconds. Find its speed in km/h.",
+            "solution": "Speed = Distance/Time = 150/15 = 10 m/s\nConvert: 10 × 18/5 = 36 km/h"
+          }
+        },
+        {
+          "id": "boats_streams",
+          "name": "Boats & Streams",
+          "description": "Downstream (with current) speed increases, upstream (against current) speed decreases. Extension of speed-distance concepts.",
+          "keyPoints": [
+            "Downstream: boat and stream in same direction",
+            "Upstream: boat goes against stream",
+            "Still water speed = (Downstream + Upstream)/2",
+            "Stream speed = (Downstream - Upstream)/2"
+          ],
+          "formulas": [
+            "Downstream = B + S",
+            "Upstream = B - S",
+            "Speed of boat = (D+U)/2",
+            "Speed of stream = (D-U)/2"
+          ],
+          "example": {
+            "question": "A boat goes 24 km downstream in 4 hours and 16 km upstream in 4 hours. Find speed of boat and stream.",
+            "solution": "Downstream speed = 24/4 = 6 km/h\nUpstream speed = 16/4 = 4 km/h\nBoat speed = (6+4)/2 = 5 km/h\nStream speed = (6-4)/2 = 1 km/h"
+          }
+        },
+        {
+          "id": "average",
+          "name": "Average",
+          "description": "Average (Arithmetic Mean) is the sum of observations divided by number of observations.",
+          "keyPoints": [
+            "Average = Sum / Count",
+            "When a new member joins: New avg changes",
+            "Weighted average when groups have different sizes",
+            "Average of consecutive numbers = (First+Last)/2"
+          ],
+          "formulas": [
+            "Average = Sum of all values / Number of values",
+            "Weighted Avg = Σ(wᵢ×xᵢ) / Σwᵢ",
+            "If one value replaced: Change = (New-Old)/n"
+          ],
+          "example": {
+            "question": "Average of 5 numbers is 20. If one number is excluded, average becomes 18. Find the excluded number.",
+            "solution": "Total = 5 × 20 = 100\nRemaining total = 4 × 18 = 72\nExcluded number = 100 - 72 = 28"
+          }
+        },
+        {
+          "id": "mixture_alligation",
+          "name": "Mixture & Alligation",
+          "description": "Alligation is a rule to find the ratio in which two or more ingredients at different prices/concentrations must be mixed.",
+          "keyPoints": [
+            "Alligation diagram: cross-difference method",
+            "Mean price lies between cheaper and dearer",
+            "Replacement formula for repeated dilution"
+          ],
+          "formulas": [
+            "Cheaper:Dearer = (Dearer-Mean):(Mean-Cheaper)",
+            "After n replacements: Quantity = V(1-x/V)ⁿ"
+          ],
+          "example": {
+            "question": "Mix rice at ₹60/kg with rice at ₹90/kg to get mixture at ₹70/kg. Find the ratio.",
+            "solution": "Cheaper(60)    Dearer(90)\n         \\    /\n       Mean(70)\n         /    \\\n  (90-70)  (70-60)\n    20   :   10\n     2   :    1\nMix in ratio 2:1"
+          }
+        },
+        {
+          "id": "partnership",
+          "name": "Partnership",
+          "description": "When two or more people invest money in a business, profit/loss is shared in the ratio of their investment×time.",
+          "keyPoints": [
+            "Simple partnership: same time → profit ratio = investment ratio",
+            "Compound partnership: different times → ratio = capital × time",
+            "Working partner may get a salary + share of profit"
+          ],
+          "formulas": [
+            "Profit share ∝ Investment × Time",
+            "A's share = A's ratio part / Total ratio × Total profit"
+          ],
+          "example": {
+            "question": "A invests ₹5000 for 12 months, B invests ₹8000 for 6 months. Share ₹4500 profit.",
+            "solution": "A's share = 5000×12 = 60000\nB's share = 8000×6 = 48000\nRatio = 60:48 = 5:4\nA gets = (5/9)×4500 = ₹2500\nB gets = (4/9)×4500 = ₹2000"
+          }
+        },
+        {
+          "id": "problems_on_ages",
+          "name": "Problems on Ages",
+          "description": "Problems involving finding present, past, or future ages using linear equations. Age difference remains constant over time.",
+          "keyPoints": [
+            "Age difference is always constant",
+            "Ratio of ages changes over time",
+            "Set up linear equations with present age as variable"
+          ],
+          "formulas": [
+            "Age n years ago = Present - n",
+            "Age n years later = Present + n"
+          ],
+          "example": {
+            "question": "Father is 3 times son's age. After 12 years, he'll be twice the son's age. Find their ages.",
+            "solution": "Let son = x, father = 3x\nAfter 12: 3x+12 = 2(x+12)\n3x+12 = 2x+24\nx = 12\nSon = 12 years, Father = 36 years"
+          }
+        },
+        {
+          "id": "permutation_combination",
+          "name": "Permutation & Combination",
+          "description": "Permutation is arrangement (order matters). Combination is selection (order doesn't matter).",
+          "keyPoints": [
+            "ⁿPᵣ ≥ ⁿCᵣ always",
+            "ⁿCᵣ = ⁿCₙ₋ᵣ",
+            "ⁿC₀ = ⁿCₙ = 1",
+            "Circular arrangement of n = (n-1)!"
+          ],
+          "formulas": [
+            "ⁿPᵣ = n!/(n-r)!",
+            "ⁿCᵣ = n!/[r!(n-r)!]",
+            "Circular permutation = (n-1)!",
+            "With repetition: n!/(p!q!...)"
+          ],
+          "example": {
+            "question": "In how many ways can 4 books be selected from 7 books?",
+            "solution": "This is selection (order doesn't matter)\n⁷C₄ = 7!/(4!×3!)\n= 5040/(24×6)\n= 5040/144 = 35 ways"
+          }
+        },
+        {
+          "id": "probability",
+          "name": "Probability",
+          "description": "Probability measures the likelihood of an event occurring. Value ranges from 0 (impossible) to 1 (certain).",
+          "keyPoints": [
+            "P(E) ranges from 0 to 1",
+            "P(E) + P(E') = 1",
+            "Independent events: P(A∩B) = P(A)×P(B)",
+            "Mutually exclusive: P(A∩B) = 0"
+          ],
+          "formulas": [
+            "P(E) = Favorable outcomes / Total outcomes",
+            "P(A∪B) = P(A) + P(B) - P(A∩B)",
+            "Conditional: P(A|B) = P(A∩B)/P(B)",
+            "Bayes: P(A|B) = P(B|A)×P(A)/P(B)"
+          ],
+          "example": {
+            "question": "Two dice are thrown. What is the probability that sum is 7?",
+            "solution": "Total outcomes = 6×6 = 36\nFavorable: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) = 6\nP(sum=7) = 6/36 = 1/6"
+          }
+        },
+        {
+          "id": "mensuration",
+          "name": "Mensuration (2D & 3D)",
+          "description": "Measurement of geometric shapes — area, perimeter, volume, surface area of 2D and 3D figures.",
+          "keyPoints": [
+            "2D: Area and Perimeter of triangle, circle, rectangle, etc.",
+            "3D: Volume, CSA, TSA of cube, cuboid, cylinder, cone, sphere",
+            "Hemisphere SA = 3πr², Volume = 2/3 πr³"
+          ],
+          "formulas": [
+            "Triangle: A = ½bh, Heron's: √[s(s-a)(s-b)(s-c)]",
+            "Circle: A = πr², C = 2πr",
+            "Cylinder: V = πr²h, TSA = 2πr(r+h)",
+            "Sphere: V = 4/3πr³, SA = 4πr²",
+            "Cone: V = 1/3πr²h, l = √(r²+h²)"
+          ],
+          "example": {
+            "question": "Find the volume of a cylinder with radius 7cm and height 10cm.",
+            "solution": "V = πr²h\n= 22/7 × 7 × 7 × 10\n= 22 × 7 × 10\n= 1540 cm³"
+          }
+        },
+        {
+          "id": "geometry",
+          "name": "Geometry",
+          "description": "Study of shapes, angles, and their properties. Includes triangles, circles, quadrilaterals, and coordinate geometry.",
+          "keyPoints": [
+            "Sum of angles in triangle = 180°",
+            "Exterior angle = Sum of remote interior angles",
+            "Pythagoras: c² = a² + b²",
+            "Area of equilateral triangle = (√3/4)a²"
+          ],
+          "formulas": [
+            "Pythagoras: c² = a² + b²",
+            "Distance = √[(x₂-x₁)² + (y₂-y₁)²]",
+            "Midpoint = ((x₁+x₂)/2, (y₁+y₂)/2)",
+            "Slope = (y₂-y₁)/(x₂-x₁)"
+          ],
+          "example": {
+            "question": "Find the distance between points (3,4) and (7,1).",
+            "solution": "D = √[(7-3)² + (1-4)²]\n= √[16 + 9]\n= √25 = 5 units"
+          }
+        },
+        {
+          "id": "trigonometry",
+          "name": "Trigonometry",
+          "description": "Study of relationships between angles and sides of triangles. Essential for height and distance problems.",
+          "keyPoints": [
+            "sin²θ + cos²θ = 1",
+            "1 + tan²θ = sec²θ",
+            "1 + cot²θ = cosec²θ",
+            "Standard angles: 0°, 30°, 45°, 60°, 90°"
+          ],
+          "formulas": [
+            "sin = Opp/Hyp, cos = Adj/Hyp, tan = Opp/Adj",
+            "sin30°=1/2, cos30°=√3/2, tan30°=1/√3",
+            "sin45°=1/√2, cos45°=1/√2, tan45°=1",
+            "sin60°=√3/2, cos60°=1/2, tan60°=√3"
+          ],
+          "example": {
+            "question": "A tower is 50m tall. Find the angle of elevation from a point 50m from its base.",
+            "solution": "tan θ = Opposite/Adjacent = 50/50 = 1\nθ = tan⁻¹(1) = 45°\nAngle of elevation = 45°"
+          }
+        },
+        {
+          "id": "algebra",
+          "name": "Algebra",
+          "description": "Deals with equations, identities, and algebraic expressions. Covers linear equations, quadratics, and identities.",
+          "keyPoints": [
+            "(a+b)² = a² + 2ab + b²",
+            "(a-b)² = a² - 2ab + b²",
+            "a² - b² = (a+b)(a-b)",
+            "Quadratic: ax²+bx+c=0 → x = (-b±√(b²-4ac))/2a"
+          ],
+          "formulas": [
+            "(a+b)² = a² + 2ab + b²",
+            "a³+b³ = (a+b)(a²-ab+b²)",
+            "Sum of roots = -b/a, Product = c/a",
+            "Discriminant = b²-4ac"
+          ],
+          "example": {
+            "question": "Solve: x² - 7x + 12 = 0",
+            "solution": "x² - 7x + 12 = 0\nx² - 3x - 4x + 12 = 0\nx(x-3) - 4(x-3) = 0\n(x-3)(x-4) = 0\nx = 3 or x = 4"
+          }
+        },
+        {
+          "id": "logarithms",
+          "name": "Logarithms",
+          "description": "Logarithm is the inverse of exponentiation. log_b(x) = y means b^y = x.",
+          "keyPoints": [
+            "log(ab) = log a + log b",
+            "log(a/b) = log a - log b",
+            "log(aⁿ) = n log a",
+            "log_b(b) = 1, log_b(1) = 0"
+          ],
+          "formulas": [
+            "log(ab) = log a + log b",
+            "log(a/b) = log a - log b",
+            "log(aⁿ) = n × log a",
+            "Change of base: log_a(b) = log b / log a"
+          ],
+          "example": {
+            "question": "Find the value of log₂(32).",
+            "solution": "log₂(32) = log₂(2⁵) = 5 × log₂(2) = 5 × 1 = 5"
+          }
+        },
+        {
+          "id": "di",
+          "name": "Data Interpretation",
+          "description": "Interpreting data from tables, bar graphs, pie charts, and line graphs to answer questions.",
+          "keyPoints": [
+            "Read scales and labels carefully",
+            "Percentage change = (Difference/Base) × 100",
+            "In pie charts: angle = (value/total) × 360°",
+            "Approximate for faster calculation"
+          ],
+          "formulas": [
+            "% change = [(New-Old)/Old] × 100",
+            "Pie chart angle = (Part/Whole) × 360°",
+            "Average = Sum / Count"
+          ],
+          "example": {
+            "question": "If total expenditure is ₹50000 and food sector is 72° in a pie chart, find food expenditure.",
+            "solution": "Food expense = (72/360) × 50000\n= 0.2 × 50000\n= ₹10000"
+          }
+        },
+        {
+          "id": "data_sufficiency",
+          "name": "Data Sufficiency",
+          "description": "Determine whether given statements provide enough data to answer the question. You don't need to solve — just check sufficiency.",
+          "keyPoints": [
+            "Don't solve — check if solvable",
+            "Statement 1 alone sufficient?",
+            "Statement 2 alone sufficient?",
+            "Both together sufficient?",
+            "Neither sufficient?"
+          ],
+          "formulas": [],
+          "example": {
+            "question": "Is x > 0?\n(I) x² = 4\n(II) x = -2",
+            "solution": "Statement I: x² = 4 → x = 2 or -2 → Not sufficient\nStatement II: x = -2 → x < 0 → Sufficient to answer NO\nAnswer: Statement II alone is sufficient."
+          }
+        }
+      ]
+    },
+    {
+      "id": "logical",
+      "name": "Logical Reasoning",
+      "icon": "psychology",
+      "emoji": "🧠",
+      "color": "#7C3AED",
+      "topics": [
+        {
+          "id": "coding_decoding",
+          "name": "Coding-Decoding",
+          "description": "A word or number is coded in a pattern. Decode using the pattern to find the answer.",
+          "keyPoints": ["Letter shifting (A→C, B→D)", "Reverse order coding", "Number-letter substitution", "Position-based coding"],
+          "formulas": ["A=1, B=2, ..., Z=26", "Reverse: A=26, B=25, ..., Z=1"],
+          "example": {"question": "If APPLE is coded as DSSOH, how is MANGO coded?", "solution": "Each letter shifted by +3:\nA→D, P→S, P→S, L→O, E→H\nSimilarly: M→P, A→D, N→Q, G→J, O→R\nAnswer: PDQJR"}
+        },
+        {
+          "id": "blood_relations",
+          "name": "Blood Relations",
+          "description": "Determine family relationships based on given information. Draw family trees for complex problems.",
+          "keyPoints": ["Mother's/Father's son = Brother", "Mother's/Father's daughter = Sister", "Father's father = Grandfather", "Draw family tree diagrams"],
+          "formulas": [],
+          "example": {"question": "A is B's sister. C is B's mother. D is C's father. E is D's mother. How is A related to D?", "solution": "E → D (mother-son)\nD → C (father-daughter)\nC → B (mother-child)\nA is B's sister\nSo A is D's granddaughter."}
+        },
+        {
+          "id": "direction_sense",
+          "name": "Direction Sense",
+          "description": "Track movement in different directions to find final position or distance from starting point.",
+          "keyPoints": ["N-S-E-W compass", "Left turn from North = West", "Right turn from North = East", "Use Pythagoras for shortest distance"],
+          "formulas": ["Shortest distance = √(x² + y²)"],
+          "example": {"question": "A walks 3km North, then 4km East. How far from start?", "solution": "Distance = √(3² + 4²) = √(9+16) = √25 = 5 km"}
+        },
+        {
+          "id": "number_series",
+          "name": "Number Series",
+          "description": "Find the pattern in a sequence of numbers and predict the next term or find the wrong term.",
+          "keyPoints": ["Check differences between consecutive terms", "Check ratios", "Check alternating patterns", "Check squared/cubed patterns"],
+          "formulas": [],
+          "example": {"question": "Find next: 2, 6, 12, 20, 30, ?", "solution": "Differences: 4, 6, 8, 10, ?\nSecond differences: 2, 2, 2, 2\nNext difference = 12\nAnswer: 30 + 12 = 42"}
+        },
+        {
+          "id": "alphabet_series",
+          "name": "Alphabet Series",
+          "description": "Find patterns in sequences of letters or groups of letters.",
+          "keyPoints": ["Know positions: A=1 to Z=26", "Look for skip patterns", "Forward and backward series", "Mixed letter-number patterns"],
+          "formulas": [],
+          "example": {"question": "Find next: AZ, BY, CX, DW, ?", "solution": "First letter: A,B,C,D,E (increasing)\nSecond letter: Z,Y,X,W,V (decreasing)\nAnswer: EV"}
+        },
+        {
+          "id": "odd_one_out",
+          "name": "Odd One Out",
+          "description": "Identify the item that doesn't belong to the group based on a common property.",
+          "keyPoints": ["Check if numbers: prime, even, perfect square", "Check if words: category, spelling pattern", "Look for the commonality first"],
+          "formulas": [],
+          "example": {"question": "Find odd: 2, 5, 11, 17, 23, 27, 29", "solution": "All are prime except 27 (27 = 3³)\nAnswer: 27 is the odd one out."}
+        },
+        {
+          "id": "analogy",
+          "name": "Analogy",
+          "description": "Find a similar relationship: A is to B as C is to ?",
+          "keyPoints": ["Identify the relationship first", "Types: synonyms, antonyms, part-whole, cause-effect", "Apply same relationship to find answer"],
+          "formulas": [],
+          "example": {"question": "Pen : Write :: Knife : ?", "solution": "Pen is used to Write\nKnife is used to Cut\nAnswer: Cut"}
+        },
+        {
+          "id": "classification",
+          "name": "Classification",
+          "description": "Group items based on common properties and find the one that doesn't fit.",
+          "keyPoints": ["Similar to Odd One Out", "Items grouped by category/property", "Find the outlier"],
+          "formulas": [],
+          "example": {"question": "Group: Rose, Lotus, Jasmine, Carrot, Lily", "solution": "Rose, Lotus, Jasmine, Lily are flowers.\nCarrot is a vegetable.\nAnswer: Carrot doesn't belong."}
+        },
+        {
+          "id": "syllogism",
+          "name": "Syllogism",
+          "description": "Draw conclusions from given statements using Venn diagrams. Uses 'All', 'Some', 'No' type statements.",
+          "keyPoints": ["All A are B → draw A inside B", "Some A are B → partial overlap", "No A are B → no overlap", "Use Venn diagrams always"],
+          "formulas": [],
+          "example": {"question": "Statements: All dogs are animals. All animals are living. Conclusion: All dogs are living.", "solution": "Dogs ⊂ Animals ⊂ Living\nSince Dogs is inside Animals which is inside Living,\nAll dogs are living → TRUE ✓"}
+        },
+        {
+          "id": "statement_conclusion",
+          "name": "Statement & Conclusion",
+          "description": "Determine if the given conclusion logically follows from the statement.",
+          "keyPoints": ["Conclusion must follow from statement only", "Don't use general knowledge", "Check if conclusion is definitely true"],
+          "formulas": [],
+          "example": {"question": "Statement: All employees must attend the meeting.\nConclusion: Raj, an employee, will attend.", "solution": "Since ALL employees must attend and Raj is an employee,\nRaj will attend.\nConclusion FOLLOWS. ✓"}
+        },
+        {
+          "id": "statement_assumption",
+          "name": "Statement & Assumption",
+          "description": "An assumption is something taken for granted. Find what must be assumed for the statement to hold true.",
+          "keyPoints": ["Assumption is an unstated premise", "Must be necessary for the statement", "Should not be too broad or too narrow"],
+          "formulas": [],
+          "example": {"question": "Statement: 'Buy XYZ soap for glowing skin'\nAssumption: XYZ soap can make skin glow.", "solution": "For the ad to make sense, it must be assumed that XYZ soap can provide glowing skin.\nAssumption is VALID. ✓"}
+        },
+        {
+          "id": "seating_arrangement",
+          "name": "Seating Arrangement",
+          "description": "Arrange people in a row, circle, or around a table based on given conditions. Most important topic for bank exams.",
+          "keyPoints": ["Linear: Face same or opposite direction", "Circular: Clockwise/Anti-clockwise", "Start with definite clues first", "Draw diagrams always"],
+          "formulas": [],
+          "example": {"question": "A, B, C, D sit in a row facing north. B is to the right of A. C is between A and D. D is at the right end.", "solution": "Starting from definite info: D is at right end.\nB is right of A. C is between A and D.\nArrangement: A, B, C, D (left to right)\nOR: A, C, B is not possible since C between A and D.\nAnswer: A B C D"}
+        },
+        {
+          "id": "puzzles",
+          "name": "Puzzles",
+          "description": "Complex arrangement problems combining multiple parameters like floor, department, age etc.",
+          "keyPoints": ["Use tables/grids to organize info", "Start with definite clues", "Use elimination method", "Cross-reference conditions"],
+          "formulas": [],
+          "example": {"question": "5 people live on 5 floors. A is above B. C is on floor 3. D is below C. E is on top floor.", "solution": "E → Floor 5 (top)\nC → Floor 3\nD → Below C → Floor 1 or 2\nA above B, remaining floors 2 and 4\nIf A=4, B=2 → D=1\nAnswer: D(1), B(2), C(3), A(4), E(5)"}
+        },
+        {
+          "id": "input_output",
+          "name": "Input-Output",
+          "description": "A machine rearranges numbers/words step by step. Find the pattern and predict outputs.",
+          "keyPoints": ["Track what changes each step", "Usually sorting (ascending/descending)", "May involve both words and numbers", "Compare consecutive steps"],
+          "formulas": [],
+          "example": {"question": "Input: 45 based 17 glory 28\nStep 1: 17 45 based glory 28\nStep 2: 17 28 45 based glory\nWhat is the pattern?", "solution": "Numbers are being arranged in ascending order from left.\nStep 1: Smallest number (17) moves to front\nStep 2: Next smallest (28) moves to position 2\nPattern: Ascending sort of numbers, one per step."}
+        },
+        {
+          "id": "ranking_order",
+          "name": "Ranking & Order",
+          "description": "Find a person's rank from top/bottom or position in a row/queue.",
+          "keyPoints": ["Rank from top + Rank from bottom = Total + 1", "When comparing two people's ranks", "Account for shared ranks"],
+          "formulas": ["Total = Top rank + Bottom rank - 1"],
+          "example": {"question": "In a class of 40, Ram ranks 15th from top. What is his rank from bottom?", "solution": "Rank from bottom = Total - Rank from top + 1\n= 40 - 15 + 1 = 26th from bottom"}
+        },
+        {
+          "id": "inequalities",
+          "name": "Inequalities",
+          "description": "Compare values using >, <, ≥, ≤, = symbols. Chain multiple relationships to derive conclusions.",
+          "keyPoints": ["A > B > C means A > C (transitive)", "A ≥ B and B > C means A > C", "A > B and B < C → can't compare A and C", "Direction of inequality must be same to chain"],
+          "formulas": [],
+          "example": {"question": "If A > B ≥ C, D < B, E ≥ A. Which is definitely true? (a) E > C (b) D > C", "solution": "E ≥ A > B ≥ C → E > C ✓\nD < B ≥ C → D and C can't be compared\nAnswer: (a) E > C is definitely true."}
+        },
+        {
+          "id": "decision_making",
+          "name": "Decision Making",
+          "description": "Given a situation and criteria, decide the course of action. Tests judgment and reasoning ability.",
+          "keyPoints": ["Read all conditions carefully", "Check each criterion one by one", "Some criteria may be mandatory", "Apply elimination"],
+          "formulas": [],
+          "example": {"question": "Policy: Candidates must be 21-30 years, have 60%+ in graduation, and 2 years experience. A is 25, scored 72%, has 3 years experience.", "solution": "Age: 25 (21-30) ✓\nGraduation: 72% (≥60%) ✓\nExperience: 3 years (≥2) ✓\nDecision: Candidate A is SELECTED."}
+        }
+      ]
+    },
+    {
+      "id": "verbal",
+      "name": "Verbal Ability",
+      "icon": "translate",
+      "emoji": "🗣️",
+      "color": "#E67E22",
+      "topics": [
+        {
+          "id": "reading_comprehension", "name": "Reading Comprehension",
+          "description": "Read a passage and answer questions based on it. Tests understanding, inference, and vocabulary in context.",
+          "keyPoints": ["Read questions first, then passage", "Look for main idea in first/last paragraphs", "Don't assume beyond what's written", "Eliminate wrong options"],
+          "formulas": [],
+          "example": {"question": "Passage discusses global warming effects.\nQ: What is the main concern?", "solution": "Read for central theme — the primary concern discussed throughout the passage.\nTip: Main idea is usually in the first paragraph or conclusion."}
+        },
+        {
+          "id": "synonyms", "name": "Synonyms",
+          "description": "Find a word with the same or similar meaning.",
+          "keyPoints": ["Context matters — same word can have different meanings", "Eliminate clearly wrong options first", "Build vocabulary daily"],
+          "formulas": [],
+          "example": {"question": "Synonym of 'Benevolent':", "solution": "Benevolent = Kind, generous, charitable\nAnswer: Kind/Generous"}
+        },
+        {
+          "id": "antonyms", "name": "Antonyms",
+          "description": "Find a word with the opposite meaning.",
+          "keyPoints": ["Think of the word's meaning first", "Then find its opposite", "Watch for tricky prefixes: un-, in-, dis-, ir-"],
+          "formulas": [],
+          "example": {"question": "Antonym of 'Frugal':", "solution": "Frugal = being economical, spending little\nOpposite = Extravagant, wasteful\nAnswer: Extravagant"}
+        },
+        {
+          "id": "sentence_correction", "name": "Sentence Correction",
+          "description": "Find and fix grammatical errors in sentences.",
+          "keyPoints": ["Subject-verb agreement", "Tense consistency", "Pronoun reference", "Parallel structure", "Modifier placement"],
+          "formulas": [],
+          "example": {"question": "Correct: 'Each of the students have completed their work.'", "solution": "'Each' is singular → verb should be 'has'\nCorrect: 'Each of the students has completed his/her work.'"}
+        },
+        {
+          "id": "error_detection", "name": "Error Detection",
+          "description": "Identify the part of the sentence that contains a grammatical error.",
+          "keyPoints": ["Check subject-verb agreement first", "Check tense usage", "Check preposition usage", "Check articles (a/an/the)"],
+          "formulas": [],
+          "example": {"question": "Find error: 'He is one of the best player (A) / in the team (B) / who has ever played (C) / No error (D)'", "solution": "Part A: 'one of the best' requires plural → 'players'\nAnswer: Error in part A"}
+        },
+        {
+          "id": "fill_blanks", "name": "Fill in the Blanks",
+          "description": "Choose the correct word(s) to complete a sentence meaningfully.",
+          "keyPoints": ["Read complete sentence for context", "Check grammatical fit", "Check meaning fit", "Eliminate options that don't make sense"],
+          "formulas": [],
+          "example": {"question": "The manager was _____ with the team's _____ performance.\n(a) pleased, outstanding (b) angry, excellent", "solution": "The sentence needs words that go together logically.\n'pleased' goes with 'outstanding performance'\nAnswer: (a) pleased, outstanding"}
+        },
+        {
+          "id": "para_jumbles", "name": "Para Jumbles",
+          "description": "Rearrange jumbled sentences to form a coherent paragraph.",
+          "keyPoints": ["Find the opening sentence (introduces topic)", "Look for pronouns — they refer to previously mentioned nouns", "Connecting words: however, therefore, moreover", "Find the concluding sentence"],
+          "formulas": [],
+          "example": {"question": "Arrange: A-India is growing. B-This growth is driven by IT. C-The economy has changed. D-Initially, agriculture dominated.", "solution": "Logical order by flow:\nD (Initially, agriculture) → C (economy changed) → A (India growing) → B (driven by IT)\nAnswer: DCAB"}
+        },
+        {
+          "id": "cloze_test", "name": "Cloze Test",
+          "description": "A passage with blanks to fill. Tests vocabulary and contextual understanding.",
+          "keyPoints": ["Read full passage first", "Understand the theme and tone", "Fill easiest blanks first", "Check grammar and meaning both"],
+          "formulas": [],
+          "example": {"question": "The _____ of technology has _____ the way we communicate.", "solution": "The 'advancement/evolution' of technology has 'transformed/changed' the way we communicate.\nPick words that fit both grammar and meaning."}
+        },
+        {
+          "id": "idioms_phrases", "name": "Idioms & Phrases",
+          "description": "Common English expressions with figurative meanings different from literal interpretation.",
+          "keyPoints": ["Learn meaning, don't interpret literally", "Practice most commonly asked idioms", "Use in context to remember better"],
+          "formulas": [],
+          "example": {"question": "Meaning of 'Hit the nail on the head':", "solution": "Meaning: To describe exactly what is causing a situation.\nExample: 'You hit the nail on the head when you said the problem is poor communication.'"}
+        },
+        {
+          "id": "one_word_sub", "name": "One Word Substitution",
+          "description": "Replace a phrase or description with a single word.",
+          "keyPoints": ["Learn root words (Greek/Latin)", "Group by categories", "Practice regularly"],
+          "formulas": [],
+          "example": {"question": "A person who loves books:", "solution": "Bibliophile (biblio = book, phile = lover)\nOther examples:\nMisanthrope = one who hates mankind\nPhilanthropist = one who loves mankind"}
+        },
+        {
+          "id": "active_passive", "name": "Active & Passive Voice",
+          "description": "Convert between active voice (subject does action) and passive voice (action is done to subject).",
+          "keyPoints": ["Active: Subject + Verb + Object", "Passive: Object + be + Past Participle + by Subject", "Tense changes the form of 'be'", "Not all sentences can be converted"],
+          "formulas": [],
+          "example": {"question": "Convert to passive: 'The cat chased the mouse.'", "solution": "Active: The cat (S) chased (V) the mouse (O)\nPassive: The mouse was chased by the cat.\nTense: Simple Past → was/were + V3"}
+        },
+        {
+          "id": "direct_indirect", "name": "Direct & Indirect Speech",
+          "description": "Convert between quoted speech and reported speech with appropriate tense and pronoun changes.",
+          "keyPoints": ["Remove quotation marks in indirect", "Change tense one step back", "Change pronouns accordingly", "Change time/place references"],
+          "formulas": [],
+          "example": {"question": "Convert: He said, 'I am going home.'", "solution": "He said that he was going home.\nChanges: 'I' → 'he', 'am going' → 'was going', removed quotes, added 'that'"}
+        },
+        {
+          "id": "vocabulary", "name": "Vocabulary",
+          "description": "Building a strong vocabulary is essential for all verbal ability sections. Learn new words daily.",
+          "keyPoints": ["Learn 5-10 new words daily", "Use flashcards for revision", "Read newspapers for context", "Learn word roots for guessing meanings"],
+          "formulas": [],
+          "example": {"question": "Word: Ephemeral", "solution": "Meaning: Lasting for a very short time\nSynonym: Transient, fleeting, temporary\nAntonym: Permanent, enduring\nUsage: 'The beauty of cherry blossoms is ephemeral.'"}
+        }
+      ]
+    },
+    {
+      "id": "di_analysis",
+      "name": "Data Interpretation & Analysis",
+      "icon": "bar_chart",
+      "emoji": "📊",
+      "color": "#2ECC71",
+      "topics": [
+        {
+          "id": "tables", "name": "Tables",
+          "description": "Data presented in rows and columns. Calculate totals, averages, percentages, and ratios from tabular data.",
+          "keyPoints": ["Read row and column headers carefully", "Calculate row/column totals for verification", "Use approximation for speed"],
+          "formulas": ["Average = Sum/Count", "% = (Part/Total)×100"],
+          "example": {"question": "A table shows sales of 5 products across 4 quarters. Find which product had highest average quarterly sales.", "solution": "Calculate average for each product:\nProduct A: (10+15+12+13)/4 = 12.5\nCompare averages across all products to find the highest."}
+        },
+        {
+          "id": "bar_graphs", "name": "Bar Graphs",
+          "description": "Data shown as rectangular bars. Height/length represents value. Can be vertical, horizontal, or stacked.",
+          "keyPoints": ["Read Y-axis scale carefully", "Compare bar heights visually first", "Stacked bars: difference between sections = individual value"],
+          "formulas": ["% change = (Diff/Base)×100"],
+          "example": {"question": "Bar graph shows exports from 2018-2022. In which year was the growth rate highest?", "solution": "Calculate year-over-year growth rate:\nGrowth% = (Current-Previous)/Previous × 100\nCompare all years to find maximum growth rate."}
+        },
+        {
+          "id": "pie_charts", "name": "Pie Charts",
+          "description": "Circular chart divided into sectors. Each sector represents a proportion. Total = 360° or 100%.",
+          "keyPoints": ["Total of all sectors = 360° = 100%", "Central angle = (value/total) × 360°", "Value = (angle/360) × total"],
+          "formulas": ["Value = (Angle/360) × Total", "Angle = (Value/Total) × 360°"],
+          "example": {"question": "Total budget = ₹2,00,000. Education sector = 54°. Find amount spent on education.", "solution": "Amount = (54/360) × 200000\n= 0.15 × 200000\n= ₹30,000"}
+        },
+        {
+          "id": "line_graphs", "name": "Line Graphs",
+          "description": "Data points connected by lines showing trends over time. Used to identify patterns, peaks, and changes.",
+          "keyPoints": ["Slope indicates rate of change", "Steep line = rapid change", "Flat line = no change", "Compare parallel lines for relative performance"],
+          "formulas": ["Rate of change = (y₂-y₁)/(x₂-x₁)"],
+          "example": {"question": "Line graph shows temperature over 7 days. On which day was the rise maximum?", "solution": "Check day-to-day increase:\nDay 1→2: 25→28 = +3\nDay 2→3: 28→27 = -1\nFind the day with maximum positive change."}
+        },
+        {
+          "id": "caselets", "name": "Caselets",
+          "description": "Data given in paragraph form rather than visual charts. Extract numbers and organize into tables before solving.",
+          "keyPoints": ["Read carefully and extract all numbers", "Organize into a table", "Watch for hidden information", "Re-read if confused"],
+          "formulas": [],
+          "example": {"question": "A company has 500 employees. 60% are male. 30% of males and 40% of females are in IT dept. How many are in IT?", "solution": "Males = 60% of 500 = 300\nFemales = 500-300 = 200\nMales in IT = 30% of 300 = 90\nFemales in IT = 40% of 200 = 80\nTotal in IT = 90+80 = 170"}
+        },
+        {
+          "id": "data_comparison", "name": "Data Comparison",
+          "description": "Compare two quantities and determine the relationship between them without necessarily calculating exact values.",
+          "keyPoints": ["Quantity A vs Quantity B", "Options: A>B, A<B, A=B, Can't determine", "Use estimation rather than exact calculation", "Look for patterns"],
+          "formulas": [],
+          "example": {"question": "Quantity A: 15% of 240\nQuantity B: 25% of 140", "solution": "A = 15% × 240 = 36\nB = 25% × 140 = 35\nA > B\nAnswer: Quantity A is greater."}
+        }
+      ]
+    },
+    {
+      "id": "misc",
+      "name": "Miscellaneous",
+      "icon": "apps",
+      "emoji": "💻",
+      "color": "#E74C3C",
+      "topics": [
+        {
+          "id": "basic_math", "name": "Basic Mathematics",
+          "description": "Fundamental math concepts including arithmetic operations, fractions, decimals, and number properties.",
+          "keyPoints": ["Order of operations (PEMDAS/BODMAS)", "Fraction to decimal conversion", "LCM & HCF applications", "Divisibility shortcuts"],
+          "formulas": ["a/b + c/d = (ad+bc)/bd", "a/b × c/d = ac/bd"],
+          "example": {"question": "Simplify: 3/4 + 2/5", "solution": "LCM of 4 and 5 = 20\n3/4 = 15/20\n2/5 = 8/20\n15/20 + 8/20 = 23/20 = 1.15"}
+        },
+        {
+          "id": "basic_statistics", "name": "Basic Statistics",
+          "description": "Mean, median, mode, range, variance, and standard deviation — fundamental statistical measures.",
+          "keyPoints": ["Mean = Sum/n", "Median = Middle value (sorted)", "Mode = Most frequent value", "Range = Max - Min"],
+          "formulas": ["Mean = Σx/n", "Variance = Σ(x-x̄)²/n", "SD = √Variance"],
+          "example": {"question": "Find mean, median, mode of: 3, 5, 7, 5, 9, 5, 11", "solution": "Sorted: 3, 5, 5, 5, 7, 9, 11\nMean = 45/7 ≈ 6.43\nMedian = 5 (4th value in 7 items)\nMode = 5 (appears 3 times)"}
+        },
+        {
+          "id": "logical_data", "name": "Logical Data Analysis",
+          "description": "Combining logical reasoning with data analysis. Solve problems using both reasoning and mathematical calculations.",
+          "keyPoints": ["Read all conditions before starting", "Organize data in tables/grids", "Use elimination method", "Verify answer against all conditions"],
+          "formulas": [],
+          "example": {"question": "Three friends A, B, C scored differently in 3 subjects. Total of each is same. A scored highest in Math. B scored lowest in Science.", "solution": "Create a grid and use constraints:\nStep 1: Assign possible scores\nStep 2: Use 'A highest in Math' to fix Math scores\nStep 3: Use 'B lowest in Science' to fix Science scores\nStep 4: Fill remaining ensuring equal totals"}
+        }
+      ]
+    }
+  ]
+}

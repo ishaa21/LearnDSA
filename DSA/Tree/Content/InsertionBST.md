@@ -1,4 +1,4 @@
-# Insertion in BST
+﻿# Insertion in BST
 
 ## What is this?
 Adding a new node in BST while maintaining order.
@@ -27,9 +27,6 @@ O(h) (Height of tree)
 ## Key Takeaways
 - Recursive or iterative
 - Always inserted as a leaf
-
-## Recommended Problems
-- Insert into a BST (LeetCode)
 
 ## Mini Practice
 ### Problem: Insert 5

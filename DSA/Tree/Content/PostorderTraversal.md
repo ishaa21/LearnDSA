@@ -1,4 +1,4 @@
-# Postorder Traversal
+﻿# Postorder Traversal
 
 ## What is this?
 Left → Right → Root traversal.
@@ -26,9 +26,6 @@ O(h)
 ## Key Takeaways
 - Root comes last
 - Bottom-up processing
-
-## Recommended Problems
-- Binary Tree Postorder Traversal (LeetCode)
 
 ## Mini Practice
 ### Problem: Print Postorder

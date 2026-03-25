@@ -1,4 +1,4 @@
-# Stack Implementation (Linked List)
+﻿# Stack Implementation (Linked List)
 
 ## What is this?
 Stack implemented using linked list.
@@ -27,9 +27,6 @@ O(n)
 ## Key Takeaways
 - Dynamic stack
 - Extra memory per node
-
-## Recommended Problems
-- Stack using Linked List (GFG)
 
 ## Mini Practice
 ### Problem: LL Stack

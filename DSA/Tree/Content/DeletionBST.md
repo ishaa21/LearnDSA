@@ -1,4 +1,4 @@
-# Deletion in BST
+﻿# Deletion in BST
 
 ## What is this?
 Removing a node from BST while maintaining order.
@@ -26,9 +26,6 @@ O(h)
 ## Key Takeaways
 - Most complex BST operation
 - 3 specific cases
-
-## Recommended Problems
-- Delete Node in a BST (LeetCode)
 
 ## Mini Practice
 ### Problem: Delete Leaf

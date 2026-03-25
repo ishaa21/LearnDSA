@@ -1,4 +1,4 @@
-# Traversal in Doubly Linked List
+﻿# Traversal in Doubly Linked List
 
 ## What is this?
 Traversing DLL in both directions (Forward/Backward).
@@ -27,9 +27,6 @@ O(1)
 ## Key Takeaways
 - Two-way traversal
 - More versatile
-
-## Recommended Problems
-- DLL Traversal (GFG)
 
 ## Mini Practice
 ### Problem: Print Backward

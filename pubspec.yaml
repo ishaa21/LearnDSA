@@ -79,6 +79,12 @@ flutter:
     - assets/data/questions.json
     - assets/data/patterns.json
     - assets/data/pattern_questions.json
+    - assets/data/mock_tests.json
+    - assets/data/formulas.json
+    - assets/data/interview_prep.json
+    - assets/data/study_plans.json
+    - assets/data/career_roadmaps.json
+    - assets/data/aptitude_topics.json
     - DSA/logo.png
     - DSA/Arrays/
     - DSA/Arrays/Code/

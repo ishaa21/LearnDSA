@@ -5,6 +5,13 @@ import 'splash_screen.dart';
 import 'home_screen.dart';
 import 'providers/settings_provider.dart';
 import 'providers/user_progress_provider.dart';
+import 'providers/mock_test_provider.dart';
+import 'providers/formula_provider.dart';
+import 'providers/mistake_provider.dart';
+import 'providers/interview_provider.dart';
+import 'providers/study_plan_provider.dart';
+import 'providers/leaderboard_provider.dart';
+import 'providers/aptitude_provider.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -13,6 +20,13 @@ void main() {
       providers: [
         ChangeNotifierProvider(create: (_) => SettingsProvider()),
         ChangeNotifierProvider(create: (_) => UserProgressProvider()),
+        ChangeNotifierProvider(create: (_) => MockTestProvider()),
+        ChangeNotifierProvider(create: (_) => FormulaProvider()),
+        ChangeNotifierProvider(create: (_) => MistakeProvider()),
+        ChangeNotifierProvider(create: (_) => InterviewProvider()),
+        ChangeNotifierProvider(create: (_) => StudyPlanProvider()),
+        ChangeNotifierProvider(create: (_) => LeaderboardProvider()),
+        ChangeNotifierProvider(create: (_) => AptitudeProvider()),
       ],
       child: const MyApp(),
     ),

@@ -1,4 +1,4 @@
-# Level Order Traversal
+﻿# Level Order Traversal
 
 ## What is this?
 Traversal level by level (Breadth First Search).
@@ -29,9 +29,6 @@ O(n) (Max width of tree)
 ## Key Takeaways
 - BFS traversal
 - Queue is essential
-
-## Recommended Problems
-- Binary Tree Level Order Traversal (LeetCode)
 
 ## Mini Practice
 ### Problem: BFS

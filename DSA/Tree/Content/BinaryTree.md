@@ -1,4 +1,4 @@
-# Binary Tree
+﻿# Binary Tree
 
 ## What is this?
 A binary tree is a tree where each node has at most two children.
@@ -26,10 +26,6 @@ O(n)
 ## Key Takeaways
 - No ordering guarantee
 - Max 2 children per node
-
-## Recommended Problems
-- Binary Tree Inorder Traversal (LeetCode)
-- Binary Tree Basics (GFG)
 
 ## Mini Practice
 ### Problem: Create & Print

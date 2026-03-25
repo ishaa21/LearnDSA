@@ -1,4 +1,4 @@
-# Array Declaration & Initialization
+﻿# Array Declaration & Initialization
 
 ## What is this?
 Array declaration means creating an array.
@@ -31,10 +31,6 @@ O(n)
 - Initialization fills data
 - Size matters
 
-## Recommended Problems
-- Concatenation of Array (LeetCode)
-- Arrays – DS (HackerRank)
-
 ## Mini Practice
 ### Problem: Init & Print
 Declare an array of size 3, initialize it with 1, 2, 3 and print elements.
@@ -42,3 +38,17 @@ Input: (None)
 Output: 1, 2, 3
 Hint: int arr[3]; arr[0]=1...
 Solution: int[] arr = {1, 2, 3}; Print arr[0], arr[1], arr[2].
+
+### Problem: Initialize with Zeros
+Create an array of size 5 filled with zeros and print it.
+Input: Size = 5
+Output: [0, 0, 0, 0, 0]
+Hint: Use a loop or built-in method to fill.
+Solution: arr = [0]*5 or arr = [0 for i in range(5)]
+
+### Problem: Copy Array
+Copy all elements from one array to another.
+Input: [1, 2, 3]
+Output: Copy: [1, 2, 3]
+Hint: Create new array, loop and assign each element.
+Solution: new_arr = []; for x in arr: new_arr.append(x)

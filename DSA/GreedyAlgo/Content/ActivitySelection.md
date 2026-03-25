@@ -1,4 +1,4 @@
-# ActivitySelection
+﻿# ActivitySelection
 
 ## What is this?
 Selecting maximum number of non-overlapping activities.
@@ -25,9 +25,6 @@ Meeting room scheduling, task scheduling.
 ## Key Takeaways
 - Classic greedy problem
 - Sort by finish time is key
-
-## Recommended Problems
-- GFG: Activity Selection Problem
 
 ## Mini Practice
 ### Problem

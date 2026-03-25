@@ -1,4 +1,4 @@
-# Heapify
+﻿# Heapify
 
 ## What is this?
 Process of converting an array into a heap (Max or Min).
@@ -29,9 +29,6 @@ Initializing priority queues.
 ## Key Takeaways
 - Faster than N insertions
 - Can be done in-place
-
-## Recommended Problems
-- GFG: Build Heap
 
 ## Mini Practice
 ### Problem

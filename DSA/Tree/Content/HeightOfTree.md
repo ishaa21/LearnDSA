@@ -1,4 +1,4 @@
-# Height of Tree
+﻿# Height of Tree
 
 ## What is this?
 Height is the longest path from root to leaf (number of edges).
@@ -26,9 +26,6 @@ O(h)
 ## Key Takeaways
 - Recursive calculation
 - Base case is crucial
-
-## Recommended Problems
-- Maximum Depth of Binary Tree (LeetCode)
 
 ## Mini Practice
 ### Problem: Height

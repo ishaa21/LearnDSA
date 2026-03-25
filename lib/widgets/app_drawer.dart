@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../providers/user_progress_provider.dart';
 import '../theme.dart';
@@ -12,6 +13,14 @@ import '../screens/time_complexity_screen.dart';
 import '../screens/placement_notes_screen.dart';
 import '../screens/pattern_mode_screen.dart';
 import '../screens/flashcards_screen.dart';
+import '../screens/test_selection_screen.dart';
+import '../screens/formula_bank_screen.dart';
+import '../screens/mistake_tracker_screen.dart';
+import '../screens/interview_prep_screen.dart';
+import '../screens/study_plan_screen.dart';
+import '../screens/resume_career_screen.dart';
+import '../screens/leaderboard_screen.dart';
+import '../screens/aptitude_screen.dart';
 
 enum DrawerItem {
   dashboard,
@@ -22,6 +31,14 @@ enum DrawerItem {
   flashcards,
   timeComplexity,
   placementNotes,
+  mockTest,
+  formulaBank,
+  mistakeTracker,
+  interviewPrep,
+  studyPlans,
+  resumeCareer,
+  leaderboard,
+  aptitude,
   settings,
 }
 
@@ -273,32 +290,152 @@ class AppDrawer extends StatelessWidget {
                       );
                     },
                   ),
+
+                  // ── New Features ───────────────────────────
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                    child: Text('PLACEMENT PREP', style: GoogleFonts.inter(fontSize: 10, fontWeight: FontWeight.w700, color: textSub, letterSpacing: 1.2)),
+                  ),
+
+                  _DrawerNavItem(
+                    icon: Icons.psychology_rounded,
+                    label: 'Aptitude',
+                    isActive: activeItem == DrawerItem.aptitude,
+                    accentColor: accentColor,
+                    textMain: textMain,
+                    textSub: textSub,
+                    onTap: () {
+                      Navigator.pop(context);
+                      Navigator.push(context, MaterialPageRoute(builder: (_) => const AptitudeScreen()));
+                    },
+                  ),
+
+                  _DrawerNavItem(
+                    icon: Icons.quiz_rounded,
+                    label: 'Mock Tests',
+                    isActive: activeItem == DrawerItem.mockTest,
+                    accentColor: accentColor,
+                    textMain: textMain,
+                    textSub: textSub,
+                    onTap: () {
+                      Navigator.pop(context);
+                      Navigator.push(context, MaterialPageRoute(builder: (_) => const TestSelectionScreen()));
+                    },
+                  ),
+                  _DrawerNavItem(
+                    icon: Icons.functions_rounded,
+                    label: 'Formula Bank',
+                    isActive: activeItem == DrawerItem.formulaBank,
+                    accentColor: accentColor,
+                    textMain: textMain,
+                    textSub: textSub,
+                    onTap: () {
+                      Navigator.pop(context);
+                      Navigator.push(context, MaterialPageRoute(builder: (_) => const FormulaBankScreen()));
+                    },
+                  ),
+                  _DrawerNavItem(
+                    icon: Icons.bug_report_rounded,
+                    label: 'Mistake Tracker',
+                    isActive: activeItem == DrawerItem.mistakeTracker,
+                    accentColor: accentColor,
+                    textMain: textMain,
+                    textSub: textSub,
+                    onTap: () {
+                      Navigator.pop(context);
+                      Navigator.push(context, MaterialPageRoute(builder: (_) => const MistakeTrackerScreen()));
+                    },
+                  ),
+                  _DrawerNavItem(
+                    icon: Icons.work_outline_rounded,
+                    label: 'Interview Prep',
+                    isActive: activeItem == DrawerItem.interviewPrep,
+                    accentColor: accentColor,
+                    textMain: textMain,
+                    textSub: textSub,
+                    onTap: () {
+                      Navigator.pop(context);
+                      Navigator.push(context, MaterialPageRoute(builder: (_) => const InterviewPrepScreen()));
+                    },
+                  ),
+                  _DrawerNavItem(
+                    icon: Icons.calendar_month_rounded,
+                    label: 'Study Plans',
+                    isActive: activeItem == DrawerItem.studyPlans,
+                    accentColor: accentColor,
+                    textMain: textMain,
+                    textSub: textSub,
+                    onTap: () {
+                      Navigator.pop(context);
+                      Navigator.push(context, MaterialPageRoute(builder: (_) => const StudyPlanScreen()));
+                    },
+                  ),
+                  _DrawerNavItem(
+                    icon: Icons.description_rounded,
+                    label: 'Resume & Career',
+                    isActive: activeItem == DrawerItem.resumeCareer,
+                    accentColor: accentColor,
+                    textMain: textMain,
+                    textSub: textSub,
+                    onTap: () {
+                      Navigator.pop(context);
+                      Navigator.push(context, MaterialPageRoute(builder: (_) => const ResumeCareerScreen()));
+                    },
+                  ),
+                  _DrawerNavItem(
+                    icon: Icons.leaderboard_rounded,
+                    label: 'Leaderboard',
+                    isActive: activeItem == DrawerItem.leaderboard,
+                    accentColor: accentColor,
+                    textMain: textMain,
+                    textSub: textSub,
+                    onTap: () {
+                      Navigator.pop(context);
+                      Navigator.push(context, MaterialPageRoute(builder: (_) => const LeaderboardScreen()));
+                    },
+                  ),
                 ],
               ),
             ),
 
-            Divider(
-                color: (isDark ? AppColors.textSub : AppColors.lightTextSub)
-                    .withOpacity(0.15),
-                height: 1),
-            // ── Settings ──────────────────────────────────────────────────
+            // ── Settings & Feedback ───────────────────────────────────────
             Padding(
-              padding:
-                  const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-              child: _DrawerNavItem(
-                icon: Icons.settings_rounded,
-                label: 'Settings',
-                isActive: activeItem == DrawerItem.settings,
-                accentColor: accentColor,
-                textMain: textMain,
-                textSub: textSub,
-                onTap: () {
-                  Navigator.pop(context);
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (_) => const SettingsScreen()),
-                  );
-                },
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+              child: Column(
+                children: [
+                  _DrawerNavItem(
+                    icon: Icons.settings_rounded,
+                    label: 'Settings',
+                    isActive: activeItem == DrawerItem.settings,
+                    accentColor: accentColor,
+                    textMain: textMain,
+                    textSub: textSub,
+                    onTap: () {
+                      Navigator.pop(context);
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (_) => const SettingsScreen()),
+                      );
+                    },
+                  ),
+                  _DrawerNavItem(
+                    icon: Icons.feedback_rounded,
+                    label: 'Send Feedback',
+                    isActive: false, // Feedback is an action, not a screen
+                    accentColor: accentColor,
+                    textMain: textMain,
+                    textSub: textSub,
+                    onTap: () async {
+                      Navigator.pop(context);
+                      final Uri emailUri = Uri.parse("mailto:ishazalavadia@gmail.com?subject=DSA%20App%20Feedback");
+                      try {
+                        await launchUrl(emailUri);
+                      } catch (e) {
+                         debugPrint('Error launching email: $e');
+                      }
+                    },
+                  ),
+                ],
               ),
             ),
           ],

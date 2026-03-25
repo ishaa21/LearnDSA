@@ -1,4 +1,4 @@
-# Binary Search Tree (BST)
+﻿# Binary Search Tree (BST)
 
 ## What is this?
 A BST is a binary tree where left < root < right for every node.
@@ -30,10 +30,6 @@ O(n)
 ## Key Takeaways
 - Ordered tree
 - Efficient searching
-
-## Recommended Problems
-- Validate Binary Search Tree (LeetCode)
-- Search in BST (GFG)
 
 ## Mini Practice
 ### Problem: Search

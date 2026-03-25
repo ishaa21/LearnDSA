@@ -1,4 +1,4 @@
-# Infix to Postfix
+﻿# Infix to Postfix
 
 ## What is this?
 Convert infix expression (A + B) to postfix (A B +).
@@ -29,10 +29,6 @@ O(n)
 ## Key Takeaways
 - Removes parentheses
 - Standardizes order
-
-## Recommended Problems
-- Infix to Postfix Conversion (LeetCode)
-- Infix to Postfix (GFG)
 
 ## Mini Practice
 ### Problem: Convert

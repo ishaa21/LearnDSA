@@ -1,4 +1,4 @@
-# Counting Sort
+﻿# Counting Sort
 
 ## What is this?
 Counting Sort counts frequency of elements and rebuilds sorted array.
@@ -29,9 +29,6 @@ O(k)
 ## Key Takeaways
 - Non-comparison sort
 - Range-dependent speed
-
-## Recommended Problems
-- Counting Sort (GFG)
 
 ## Mini Practice
 ### Problem: Count

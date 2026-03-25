@@ -1,4 +1,4 @@
-# RabinKarp
+﻿# RabinKarp
 
 ## What is this?
 Rabin–Karp is a string searching algorithm that uses hashing to find a pattern in a text.
@@ -31,10 +31,6 @@ Foundation for plagiarism detection.
 ## Key Takeaways
 - Uses rolling hash
 - Faster than brute force in practice
-
-## Recommended Problems
-- LeetCode: Implement strStr()
-- GFG: Rabin Karp Algorithm
 
 ## Mini Practice
 ### Problem

@@ -1,4 +1,4 @@
-# Evaluation of Infix Expression
+﻿# Evaluation of Infix Expression
 
 ## What is this?
 Evaluating a standard math expression where operators are written between operands (e.g., 2 + 3).
@@ -27,9 +27,6 @@ Scientific calculators.
 ## Key Takeaways
 - Requires two stacks.
 - Respects BIDMAS/PEMDAS rules.
-
-## Recommended Problems
-- Evaluate Infix Expression (GFG)
 
 ## Mini Practice
 ### Problem: Simple Sum

@@ -1,4 +1,4 @@
-# LCS
+﻿# LCS
 
 ## What is this?
 Longest Common Subsequence of two strings (not necessarily contiguous).
@@ -25,9 +25,6 @@ Diff algorithms, bioinformatics.
 ## Key Takeaways
 - Order matters
 - Dynamic programming on 2D table
-
-## Recommended Problems
-- LeetCode: Longest Common Subsequence
 
 ## Mini Practice
 ### Problem

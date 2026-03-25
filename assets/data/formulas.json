@@ -1,0 +1,326 @@
+{
+  "categories": [
+    {
+      "id": "quantitative",
+      "name": "Quantitative Aptitude",
+      "icon": "calculate",
+      "color": "#4A90D9",
+      "topics": [
+        {
+          "name": "Number System",
+          "formulas": [
+            {"title": "Divisibility by 2", "formula": "Last digit is even (0,2,4,6,8)", "description": "A number is divisible by 2 if its last digit is even", "example": "246 → last digit 6 (even) → divisible by 2"},
+            {"title": "Divisibility by 3", "formula": "Sum of digits divisible by 3", "description": "Add all digits; if sum is divisible by 3, so is the number", "example": "123 → 1+2+3=6 → 6÷3=2 → divisible by 3"},
+            {"title": "Divisibility by 9", "formula": "Sum of digits divisible by 9", "description": "Similar to rule for 3 but sum must be divisible by 9", "example": "729 → 7+2+9=18 → 18÷9=2 → divisible by 9"},
+            {"title": "Divisibility by 11", "formula": "(Sum of odd-place digits) − (Sum of even-place digits) = 0 or divisible by 11", "description": "Difference of alternating digit sums must be 0 or multiple of 11", "example": "121 → (1+1)−(2)=0 → divisible by 11"},
+            {"title": "Sum of first n naturals", "formula": "S = n(n+1)/2", "description": "Sum of 1+2+3+...+n", "example": "n=10: S = 10×11/2 = 55"},
+            {"title": "Sum of squares", "formula": "S = n(n+1)(2n+1)/6", "description": "Sum of 1²+2²+...+n²", "example": "n=5: S = 5×6×11/6 = 55"},
+            {"title": "Sum of cubes", "formula": "S = [n(n+1)/2]²", "description": "Sum of 1³+2³+...+n³ = (sum of n naturals)²", "example": "n=3: S = (3×4/2)² = 36"},
+            {"title": "Number of factors", "formula": "N = p₁ᵃ × p₂ᵇ × ... → Factors = (a+1)(b+1)...", "description": "Prime factorize, then multiply (exponent+1) for each prime", "example": "72 = 2³×3² → factors = (3+1)(2+1) = 12"}
+          ]
+        },
+        {
+          "name": "HCF & LCM",
+          "formulas": [
+            {"title": "HCF × LCM", "formula": "HCF(a,b) × LCM(a,b) = a × b", "description": "Product of HCF and LCM equals product of the two numbers", "example": "HCF(12,18)=6, LCM=36 → 6×36 = 12×18 = 216"},
+            {"title": "HCF of Fractions", "formula": "HCF = HCF(numerators) / LCM(denominators)", "description": "Find HCF of fractions by this rule", "example": "HCF(2/3, 4/9) = HCF(2,4)/LCM(3,9) = 2/9"},
+            {"title": "LCM of Fractions", "formula": "LCM = LCM(numerators) / HCF(denominators)", "description": "Find LCM of fractions by this rule", "example": "LCM(2/3, 4/9) = LCM(2,4)/HCF(3,9) = 4/3"}
+          ]
+        },
+        {
+          "name": "Ratio & Proportion",
+          "formulas": [
+            {"title": "Proportion", "formula": "a/b = c/d → a×d = b×c", "description": "Cross multiplication in proportion", "example": "2/3 = 4/6 → 2×6 = 3×4 = 12 ✓"},
+            {"title": "Componendo-Dividendo", "formula": "If a/b = c/d → (a+b)/(a−b) = (c+d)/(c−d)", "description": "Useful shortcut for proportion problems", "example": "If x/y = 3/4 → (x+y)/(x−y) = 7/(-1)"},
+            {"title": "Duplicate Ratio", "formula": "a²/b²", "description": "Square of the ratio a:b", "example": "Duplicate ratio of 3:4 = 9:16"},
+            {"title": "Sub-duplicate Ratio", "formula": "√a/√b", "description": "Square root of the ratio a:b", "example": "Sub-duplicate of 9:16 = 3:4"}
+          ]
+        },
+        {
+          "name": "Percentage",
+          "formulas": [
+            {"title": "Percentage", "formula": "% = (Value / Total) × 100", "description": "Basic percentage formula", "example": "45 out of 60 = (45/60)×100 = 75%"},
+            {"title": "Percentage Increase", "formula": "% Inc = [(New−Old)/Old] × 100", "description": "Percentage change when value increases", "example": "Old=200, New=250: (50/200)×100 = 25%"},
+            {"title": "Percentage Decrease", "formula": "% Dec = [(Old−New)/Old] × 100", "description": "Percentage change when value decreases", "example": "Old=500, New=400: (100/500)×100 = 20%"},
+            {"title": "Successive % Change", "formula": "Net = a + b + (ab/100)", "description": "Two successive changes of a% and b%", "example": "20% ↑ then 10% ↓: 20+(-10)+(-200/100) = 8% ↑"},
+            {"title": "Population Growth", "formula": "P = P₀(1 + r/100)ⁿ", "description": "Population after n years at r% growth", "example": "P₀=10000, r=10%, n=2: P = 10000×1.1² = 12100"}
+          ]
+        },
+        {
+          "name": "Profit & Loss",
+          "formulas": [
+            {"title": "Profit %", "formula": "Profit% = [(SP−CP)/CP] × 100", "description": "SP = Selling Price, CP = Cost Price", "example": "CP=400, SP=500: (100/400)×100 = 25%"},
+            {"title": "Loss %", "formula": "Loss% = [(CP−SP)/CP] × 100", "description": "When SP < CP", "example": "CP=500, SP=400: (100/500)×100 = 20%"},
+            {"title": "SP from Profit%", "formula": "SP = CP × (100 + Profit%)/100", "description": "Find SP when profit% is known", "example": "CP=800, Profit=25%: SP = 800×125/100 = 1000"},
+            {"title": "SP from Loss%", "formula": "SP = CP × (100 − Loss%)/100", "description": "Find SP when loss% is known", "example": "CP=800, Loss=10%: SP = 800×90/100 = 720"},
+            {"title": "Dishonest Dealer", "formula": "Gain% = (Error/True Value) × 100", "description": "When dealer uses false weights", "example": "Uses 900g instead of 1000g: Gain = (100/900)×100 = 11.1%"},
+            {"title": "Marked Price", "formula": "SP = MP × (100 − Discount%)/100", "description": "Selling price after discount on marked price", "example": "MP=1000, Disc=20%: SP = 1000×80/100 = 800"}
+          ]
+        },
+        {
+          "name": "Simple Interest",
+          "formulas": [
+            {"title": "Simple Interest", "formula": "SI = (P × R × T) / 100", "description": "P=Principal, R=Rate%, T=Time in years", "example": "P=5000, R=10%, T=3: SI = 5000×10×3/100 = 1500"},
+            {"title": "Amount (SI)", "formula": "A = P + SI = P(1 + RT/100)", "description": "Total amount after simple interest", "example": "P=5000, SI=1500: A = 6500"},
+            {"title": "Principal from SI", "formula": "P = (100 × SI) / (R × T)", "description": "Find principal when SI, R, T are known", "example": "SI=1500, R=10%, T=3: P = 100×1500/(10×3) = 5000"}
+          ]
+        },
+        {
+          "name": "Compound Interest",
+          "formulas": [
+            {"title": "Compound Amount", "formula": "A = P(1 + R/100)ⁿ", "description": "Amount after n years at R% compounded annually", "example": "P=10000, R=10%, n=2: A = 10000×1.1² = 12100"},
+            {"title": "CI", "formula": "CI = A − P = P[(1+R/100)ⁿ − 1]", "description": "Compound Interest = Amount minus Principal", "example": "A=12100, P=10000: CI = 2100"},
+            {"title": "Half-yearly", "formula": "A = P(1 + R/200)²ⁿ", "description": "When interest is compounded half-yearly", "example": "P=10000, R=10%, n=1: A = 10000×(1.05)² = 11025"},
+            {"title": "Quarterly", "formula": "A = P(1 + R/400)⁴ⁿ", "description": "When interest is compounded quarterly", "example": "P=10000, R=8%, n=1: A = 10000×(1.02)⁴ ≈ 10824"},
+            {"title": "CI vs SI (2 years)", "formula": "CI − SI = P(R/100)²", "description": "Difference between CI and SI for 2 years", "example": "P=10000, R=10%: Diff = 10000×0.01 = 100"}
+          ]
+        },
+        {
+          "name": "Time & Work",
+          "formulas": [
+            {"title": "Combined Work", "formula": "1/T = 1/A + 1/B", "description": "A and B working together, T = combined time", "example": "A=10d, B=15d: 1/T = 1/10+1/15 = 1/6 → T=6 days"},
+            {"title": "LCM Method", "formula": "Total Work = LCM(time of all workers)", "description": "Take LCM as total work, find efficiency of each worker", "example": "A=10d, B=15d: LCM=30. A does 3/d, B does 2/d → Together 5/d → 6 days"},
+            {"title": "Work Equivalence", "formula": "M₁D₁H₁/W₁ = M₂D₂H₂/W₂", "description": "Men×Days×Hours/Work equation", "example": "5 men × 8 days = 4 men × ? days → ?=10 days"},
+            {"title": "A works then B", "formula": "A's part + B's part = 1", "description": "When A works for x days and B works for y days", "example": "A(10d) works 4d + B(15d) works ?d: 4/10 + ?/15 = 1 → ?=9 days"}
+          ]
+        },
+        {
+          "name": "Pipes & Cisterns",
+          "formulas": [
+            {"title": "Net Rate (Fill+Drain)", "formula": "1/T = 1/Fill − 1/Drain", "description": "When filling and draining simultaneously", "example": "Fill=6h, Drain=8h: 1/T = 1/6−1/8 = 1/24 → T=24h"},
+            {"title": "Two Filling Pipes", "formula": "1/T = 1/A + 1/B", "description": "Two pipes filling together", "example": "A=4h, B=6h: 1/T = 1/4+1/6 = 5/12 → T=12/5 = 2.4h"},
+            {"title": "Pipe Opened Later", "formula": "A fills for x min, then B joins", "description": "Calculate work done by A alone first, then together", "example": "A(12min) fills 5min alone (5/12), remaining 7/12 together"}
+          ]
+        },
+        {
+          "name": "Time, Speed & Distance",
+          "formulas": [
+            {"title": "Basic Formula", "formula": "Distance = Speed × Time", "description": "Fundamental relationship", "example": "Speed=60 km/h, Time=2h: D = 120 km"},
+            {"title": "Unit Conversion", "formula": "1 km/h = 5/18 m/s", "description": "Multiply km/h by 5/18 to get m/s", "example": "72 km/h = 72×5/18 = 20 m/s"},
+            {"title": "Average Speed", "formula": "Avg Speed = 2S₁S₂/(S₁+S₂)", "description": "For equal distances at different speeds", "example": "Going at 40, returning at 60: Avg = 2×40×60/100 = 48 km/h"},
+            {"title": "Relative Speed (Same Dir)", "formula": "Relative Speed = |S₁ − S₂|", "description": "When two objects move in same direction", "example": "Train1=60, Train2=40: Relative = 20 km/h"},
+            {"title": "Relative Speed (Opp Dir)", "formula": "Relative Speed = S₁ + S₂", "description": "When two objects move toward each other", "example": "Train1=60, Train2=40: Relative = 100 km/h"},
+            {"title": "Train passing pole", "formula": "Time = Length of Train / Speed", "description": "Time to cross a stationary point", "example": "Train=200m, Speed=20m/s: T = 200/20 = 10s"},
+            {"title": "Train passing platform", "formula": "Time = (Train + Platform) / Speed", "description": "Time to cross a platform completely", "example": "Train=200m, Platform=300m, Speed=25m/s: T = 500/25 = 20s"}
+          ]
+        },
+        {
+          "name": "Boats & Streams",
+          "formulas": [
+            {"title": "Downstream Speed", "formula": "D = B + S", "description": "B=Boat speed in still water, S=Stream speed", "example": "Boat=10, Stream=2: Downstream = 12 km/h"},
+            {"title": "Upstream Speed", "formula": "U = B − S", "description": "Speed against the current", "example": "Boat=10, Stream=2: Upstream = 8 km/h"},
+            {"title": "Speed of Boat", "formula": "B = (D + U) / 2", "description": "From downstream and upstream speeds", "example": "D=12, U=8: B = (12+8)/2 = 10 km/h"},
+            {"title": "Speed of Stream", "formula": "S = (D − U) / 2", "description": "From downstream and upstream speeds", "example": "D=12, U=8: S = (12−8)/2 = 2 km/h"}
+          ]
+        },
+        {
+          "name": "Average",
+          "formulas": [
+            {"title": "Average", "formula": "Avg = Sum / Count", "description": "Basic average formula", "example": "Avg of 10,20,30 = 60/3 = 20"},
+            {"title": "Weighted Average", "formula": "Avg = Σ(wᵢxᵢ) / Σwᵢ", "description": "Average weighted by frequency/importance", "example": "3 items of ₹10, 2 items of ₹20: Avg = (30+40)/5 = 14"},
+            {"title": "New Average (added)", "formula": "New Avg = (Old Sum + New Value) / (n+1)", "description": "Average after adding a new member", "example": "Avg of 5 nos = 20, add 26: New = (100+26)/6 = 21"},
+            {"title": "Replaced Average", "formula": "New = Old + (New − Replaced)/n", "description": "When one value is replaced", "example": "Avg of 10 nos = 15, replace 10 with 20: New = 15 + 10/10 = 16"}
+          ]
+        },
+        {
+          "name": "Mixture & Alligation",
+          "formulas": [
+            {"title": "Alligation Rule", "formula": "n₁/n₂ = (A₂ − Aₘ)/(Aₘ − A₁)", "description": "Ratio of quantities = difference of mean values", "example": "Mix ₹60/kg and ₹90/kg to get ₹70/kg: ratio = (90-70)/(70-60) = 2:1"},
+            {"title": "Replacement Formula", "formula": "After n ops = V(1 − x/V)ⁿ", "description": "x litres removed and replaced with water, n times", "example": "20L milk, replace 4L each time, 3 times: 20×(16/20)³ = 10.24L milk"},
+            {"title": "Mixture Ratio", "formula": "Mix₁:Mix₂ = (C₂−Cₘ):(Cₘ−C₁)", "description": "C = concentration, m = mixture", "example": "20% + 60% to get 40%: ratio = (60-40):(40-20) = 1:1"}
+          ]
+        },
+        {
+          "name": "Partnership",
+          "formulas": [
+            {"title": "Simple Partnership", "formula": "Profit Ratio = Investment Ratio", "description": "When time is same for all partners", "example": "A invests 3000, B invests 5000: Profit = 3:5"},
+            {"title": "Compound Partnership", "formula": "Ratio = I₁×T₁ : I₂×T₂", "description": "When investment times differ", "example": "A: 5000×12, B: 8000×6: Ratio = 60000:48000 = 5:4"}
+          ]
+        },
+        {
+          "name": "Problems on Ages",
+          "formulas": [
+            {"title": "Age n years ago", "formula": "Age n years ago = Present Age − n", "description": "Subtract n from current age", "example": "Present=30, 5 years ago = 25"},
+            {"title": "Age n years later", "formula": "Age n years later = Present Age + n", "description": "Add n to current age", "example": "Present=30, 5 years later = 35"},
+            {"title": "Ratio of Ages", "formula": "(x + n)/(y + n) = given ratio", "description": "Set up equation with current ages x, y and n years", "example": "A:B = 3:4 now, after 5 years 4:5 → solve: A=15, B=20"}
+          ]
+        },
+        {
+          "name": "Permutation & Combination",
+          "formulas": [
+            {"title": "Permutation", "formula": "ⁿPᵣ = n! / (n−r)!", "description": "Arrangements where order matters", "example": "⁵P₃ = 5!/(5-3)! = 120/2 = 60"},
+            {"title": "Combination", "formula": "ⁿCᵣ = n! / [r!(n−r)!]", "description": "Selections where order doesn't matter", "example": "⁵C₃ = 5!/(3!×2!) = 120/12 = 10"},
+            {"title": "Circular Permutation", "formula": "(n−1)!", "description": "Arrangements in a circle", "example": "5 people around table: (5-1)! = 24"},
+            {"title": "With Repetition", "formula": "n! / (p!×q!×...)", "description": "Permutations when items repeat", "example": "MISSISSIPPI: 11!/(4!×4!×2!) = 34650"},
+            {"title": "nC0 + nC1 + ... + nCn", "formula": "= 2ⁿ", "description": "Sum of all combinations", "example": "n=4: 2⁴ = 16 total subsets"}
+          ]
+        },
+        {
+          "name": "Probability",
+          "formulas": [
+            {"title": "Basic Probability", "formula": "P(E) = Favorable / Total", "description": "Probability of event E occurring", "example": "Drawing ace: P = 4/52 = 1/13"},
+            {"title": "Complementary", "formula": "P(E') = 1 − P(E)", "description": "Probability of event NOT happening", "example": "P(not ace) = 1 − 1/13 = 12/13"},
+            {"title": "P(A or B)", "formula": "P(A∪B) = P(A) + P(B) − P(A∩B)", "description": "Addition rule for probability", "example": "P(King or Heart) = 4/52 + 13/52 − 1/52 = 16/52"},
+            {"title": "P(A and B) Independent", "formula": "P(A∩B) = P(A) × P(B)", "description": "For independent events", "example": "Two coins: P(HH) = 1/2 × 1/2 = 1/4"},
+            {"title": "Conditional Probability", "formula": "P(A|B) = P(A∩B) / P(B)", "description": "Probability of A given B occurred", "example": "P(King|Face card) = (4/52)/(12/52) = 1/3"},
+            {"title": "Bayes Theorem", "formula": "P(A|B) = P(B|A)P(A) / P(B)", "description": "Reverse conditional probability", "example": "Used in medical testing, spam filtering etc."}
+          ]
+        },
+        {
+          "name": "Mensuration (2D)",
+          "formulas": [
+            {"title": "Area of Triangle", "formula": "A = ½ × base × height", "description": "Basic triangle area formula", "example": "base=10, height=6: A = ½×10×6 = 30 sq units"},
+            {"title": "Heron's Formula", "formula": "A = √[s(s−a)(s−b)(s−c)]", "description": "s = (a+b+c)/2 (semi-perimeter)", "example": "a=3,b=4,c=5: s=6, A=√(6×3×2×1) = 6 sq units"},
+            {"title": "Area of Circle", "formula": "A = πr²", "description": "Area enclosed by circle of radius r", "example": "r=7: A = 22/7×49 = 154 sq cm"},
+            {"title": "Circumference", "formula": "C = 2πr", "description": "Perimeter of a circle", "example": "r=7: C = 2×22/7×7 = 44 cm"},
+            {"title": "Area of Trapezium", "formula": "A = ½ × (a+b) × h", "description": "a,b = parallel sides, h = height", "example": "a=8, b=12, h=5: A = ½×20×5 = 50 sq cm"},
+            {"title": "Area of Parallelogram", "formula": "A = base × height", "description": "Base times perpendicular height", "example": "base=12, height=8: A = 96 sq cm"},
+            {"title": "Area of Rhombus", "formula": "A = ½ × d₁ × d₂", "description": "Half the product of diagonals", "example": "d₁=10, d₂=8: A = ½×10×8 = 40 sq cm"}
+          ]
+        },
+        {
+          "name": "Mensuration (3D)",
+          "formulas": [
+            {"title": "Cube Volume", "formula": "V = a³", "description": "Volume of cube with side a", "example": "a=5: V = 125 cubic cm"},
+            {"title": "Cube Surface Area", "formula": "SA = 6a²", "description": "Total surface area of cube", "example": "a=5: SA = 6×25 = 150 sq cm"},
+            {"title": "Cuboid Volume", "formula": "V = l × b × h", "description": "Length × Breadth × Height", "example": "l=5,b=3,h=4: V = 60 cubic cm"},
+            {"title": "Cylinder Volume", "formula": "V = πr²h", "description": "Volume of cylinder", "example": "r=7, h=10: V = 22/7×49×10 = 1540 cu cm"},
+            {"title": "Cone Volume", "formula": "V = ⅓πr²h", "description": "Volume of cone", "example": "r=7, h=12: V = ⅓×22/7×49×12 = 616 cu cm"},
+            {"title": "Sphere Volume", "formula": "V = 4/3 × πr³", "description": "Volume of sphere", "example": "r=7: V = 4/3×22/7×343 = 1437.3 cu cm"},
+            {"title": "Sphere Surface Area", "formula": "SA = 4πr²", "description": "Surface area of sphere", "example": "r=7: SA = 4×22/7×49 = 616 sq cm"}
+          ]
+        },
+        {
+          "name": "Geometry & Trigonometry",
+          "formulas": [
+            {"title": "Pythagoras Theorem", "formula": "c² = a² + b²", "description": "Hypotenuse² = Base² + Perpendicular²", "example": "a=3, b=4: c = √(9+16) = 5"},
+            {"title": "sin θ", "formula": "sin θ = Opposite / Hypotenuse", "description": "Basic trig ratio", "example": "In 30-60-90 triangle: sin30° = 1/2"},
+            {"title": "cos θ", "formula": "cos θ = Adjacent / Hypotenuse", "description": "Basic trig ratio", "example": "cos60° = 1/2"},
+            {"title": "tan θ", "formula": "tan θ = Opposite / Adjacent = sin θ / cos θ", "description": "Tangent ratio", "example": "tan45° = 1"},
+            {"title": "sin²θ + cos²θ", "formula": "sin²θ + cos²θ = 1", "description": "Fundamental trigonometric identity", "example": "sin²30 + cos²30 = 1/4 + 3/4 = 1"},
+            {"title": "Angle Sum (Triangle)", "formula": "∠A + ∠B + ∠C = 180°", "description": "Sum of angles in a triangle", "example": "If ∠A=60°, ∠B=70°: ∠C = 180−130 = 50°"},
+            {"title": "Exterior Angle", "formula": "Exterior ∠ = Sum of remote interior ∠s", "description": "Exterior angle theorem of triangle", "example": "Remote angles = 50° and 60°: Exterior = 110°"}
+          ]
+        },
+        {
+          "name": "Algebra & Logarithms",
+          "formulas": [
+            {"title": "(a+b)²", "formula": "a² + 2ab + b²", "description": "Square of a sum", "example": "(3+4)² = 9+24+16 = 49"},
+            {"title": "(a−b)²", "formula": "a² − 2ab + b²", "description": "Square of a difference", "example": "(5−2)² = 25−20+4 = 9"},
+            {"title": "a² − b²", "formula": "(a+b)(a−b)", "description": "Difference of squares", "example": "7²−3² = (7+3)(7−3) = 10×4 = 40"},
+            {"title": "a³ + b³", "formula": "(a+b)(a²−ab+b²)", "description": "Sum of cubes factorization", "example": "2³+3³ = (2+3)(4−6+9) = 5×7 = 35"},
+            {"title": "a³ − b³", "formula": "(a−b)(a²+ab+b²)", "description": "Difference of cubes factorization", "example": "3³−2³ = (3−2)(9+6+4) = 1×19 = 19"},
+            {"title": "Quadratic Formula", "formula": "x = (−b ± √(b²−4ac)) / 2a", "description": "Roots of ax² + bx + c = 0", "example": "x²−5x+6=0: x = (5±√1)/2 → x=3 or 2"},
+            {"title": "log(ab)", "formula": "log(a) + log(b)", "description": "Log of product = sum of logs", "example": "log(2×5) = log2 + log5 = log10 = 1"},
+            {"title": "log(a/b)", "formula": "log(a) − log(b)", "description": "Log of quotient = difference of logs", "example": "log(100/10) = log100 − log10 = 2−1 = 1"},
+            {"title": "log(aⁿ)", "formula": "n × log(a)", "description": "Log of power = exponent × log", "example": "log(10³) = 3×log10 = 3×1 = 3"},
+            {"title": "AP nth term", "formula": "aₙ = a + (n−1)d", "description": "a=first term, d=common difference", "example": "a=2, d=3, n=5: a₅ = 2+4×3 = 14"},
+            {"title": "GP nth term", "formula": "aₙ = a × rⁿ⁻¹", "description": "a=first term, r=common ratio", "example": "a=2, r=3, n=4: a₄ = 2×27 = 54"},
+            {"title": "Sum of GP (finite)", "formula": "S = a(rⁿ−1)/(r−1)", "description": "Sum of n terms of GP (r≠1)", "example": "a=1, r=2, n=5: S = (2⁵−1)/(2−1) = 31"}
+          ]
+        },
+        {
+          "name": "Simplification & Approximation",
+          "formulas": [
+            {"title": "BODMAS Rule", "formula": "Brackets → Orders → Division → Multiplication → Addition → Subtraction", "description": "Order of operations", "example": "2+3×4 = 2+12 = 14 (not 20)"},
+            {"title": "Percentage Approximation", "formula": "10% of x = x/10, 1% = x/100", "description": "Quick percentage calculation tricks", "example": "15% of 240 = 10%+5% = 24+12 = 36"},
+            {"title": "Square Approximation", "formula": "(a+b)² ≈ a² + 2ab (when b is small)", "description": "Quick approximation for squares", "example": "51² ≈ 50² + 2×50×1 = 2500+100 = 2600 (actual: 2601)"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dsa_formulas",
+      "name": "DSA Complexity",
+      "icon": "code",
+      "color": "#7C3AED",
+      "topics": [
+        {
+          "name": "Sorting Algorithms",
+          "formulas": [
+            {"title": "Bubble Sort", "formula": "Time: O(n²) | Space: O(1)", "description": "Best: O(n) when sorted. Stable sort.", "example": "Compare adjacent elements, swap if needed. Repeat n times."},
+            {"title": "Merge Sort", "formula": "Time: O(n log n) | Space: O(n)", "description": "Always O(n log n). Stable. Divide-and-conquer.", "example": "Split array in half → sort halves → merge sorted halves"},
+            {"title": "Quick Sort", "formula": "Time: O(n log n) avg | Space: O(log n)", "description": "Worst: O(n²) with bad pivot. Not stable.", "example": "Pick pivot → partition → recurse on partitions"},
+            {"title": "Heap Sort", "formula": "Time: O(n log n) | Space: O(1)", "description": "Not stable. In-place. Build heap then extract.", "example": "Build max-heap → repeatedly extract max"},
+            {"title": "Counting Sort", "formula": "Time: O(n+k) | Space: O(k)", "description": "k = range of input. Stable. Not comparison-based.", "example": "Count occurrences of each value, then reconstruct"}
+          ]
+        },
+        {
+          "name": "Searching Algorithms",
+          "formulas": [
+            {"title": "Linear Search", "formula": "Time: O(n) | Space: O(1)", "description": "Scan each element sequentially.", "example": "Check every element until found or end reached"},
+            {"title": "Binary Search", "formula": "Time: O(log n) | Space: O(1)", "description": "Requires sorted array. Divide search space in half.", "example": "Compare with mid → go left or right half"},
+            {"title": "Ternary Search", "formula": "Time: O(log₃ n) | Space: O(1)", "description": "Divides into 3 parts. Used for unimodal functions.", "example": "Two midpoints: m1, m2. Compare f(m1) vs f(m2)"}
+          ]
+        },
+        {
+          "name": "Data Structure Operations",
+          "formulas": [
+            {"title": "Array Access", "formula": "Access: O(1) | Search: O(n)", "description": "Insert/Delete at end: O(1), at beginning: O(n)", "example": "arr[i] is O(1), finding element is O(n)"},
+            {"title": "Hash Table", "formula": "Avg: O(1) | Worst: O(n)", "description": "Insert, Delete, Search all O(1) average", "example": "Good hash function → minimal collisions → O(1)"},
+            {"title": "BST Balanced", "formula": "All ops: O(log n)", "description": "Search, Insert, Delete in balanced BST", "example": "AVL/Red-Black trees guarantee O(log n)"},
+            {"title": "Heap", "formula": "Insert: O(log n) | Extract: O(log n)", "description": "Build: O(n). Find min/max: O(1)", "example": "Priority queue operations using binary heap"}
+          ]
+        },
+        {
+          "name": "Graph Algorithms",
+          "formulas": [
+            {"title": "BFS/DFS", "formula": "Time: O(V+E) | Space: O(V)", "description": "V = vertices, E = edges. Visit all nodes.", "example": "BFS uses queue, DFS uses stack/recursion"},
+            {"title": "Dijkstra", "formula": "Time: O((V+E) log V)", "description": "Single source shortest path. No negative weights.", "example": "Use min-heap priority queue for efficient extraction"},
+            {"title": "Bellman-Ford", "formula": "Time: O(V×E)", "description": "Handles negative weights. Detects negative cycles.", "example": "Relax all edges V-1 times. If can relax more → negative cycle"},
+            {"title": "Floyd-Warshall", "formula": "Time: O(V³) | Space: O(V²)", "description": "All-pairs shortest path. Handles negative weights.", "example": "3 nested loops over vertices. DP approach."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "os_formulas",
+      "name": "Operating Systems",
+      "icon": "computer",
+      "color": "#E67E22",
+      "topics": [
+        {
+          "name": "CPU Scheduling",
+          "formulas": [
+            {"title": "Turnaround Time", "formula": "TAT = Completion Time − Arrival Time", "description": "Total time from arrival to completion", "example": "Arrives t=2, completes t=10: TAT=8"},
+            {"title": "Waiting Time", "formula": "WT = Turnaround Time − Burst Time", "description": "Time spent waiting in ready queue", "example": "TAT=8, Burst=3: WT=5"},
+            {"title": "Response Time", "formula": "RT = First Response − Arrival Time", "description": "Time from arrival to first execution", "example": "Arrives t=0, first runs at t=4: RT=4"}
+          ]
+        },
+        {
+          "name": "Memory Management",
+          "formulas": [
+            {"title": "Page Number", "formula": "Page# = Logical Address / Page Size", "description": "Integer division gives page number", "example": "Addr=3500, PageSize=1024: Page=3"},
+            {"title": "Offset", "formula": "Offset = Logical Address % Page Size", "description": "Remainder gives offset within page", "example": "Addr=3500, PageSize=1024: Offset=428"},
+            {"title": "Physical Address", "formula": "PA = Frame# × PageSize + Offset", "description": "Convert logical to physical using page table", "example": "Frame=5, PageSize=1024, Offset=428: PA=5548"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dbms_formulas",
+      "name": "DBMS",
+      "icon": "storage",
+      "color": "#2ECC71",
+      "topics": [
+        {
+          "name": "Normalization",
+          "formulas": [
+            {"title": "1NF", "formula": "Atomic values only", "description": "No multi-valued attributes. Each cell has single value.", "example": "Split 'Phone: 123,456' into separate rows"},
+            {"title": "2NF", "formula": "1NF + No partial dependency", "description": "Non-key attributes depend on entire primary key", "example": "If PK=(A,B), attribute C depends on (A,B) not just A"},
+            {"title": "3NF", "formula": "2NF + No transitive dependency", "description": "No non-key attribute depends on another non-key attribute", "example": "If A→B and B→C, remove transitive dependency A→C via B"},
+            {"title": "BCNF", "formula": "For every FD X→Y, X is a superkey", "description": "Stricter than 3NF. Decomposition may lose dependency.", "example": "Every determinant must be a candidate key"}
+          ]
+        },
+        {
+          "name": "SQL Shortcuts",
+          "formulas": [
+            {"title": "JOIN Types", "formula": "INNER | LEFT | RIGHT | FULL | CROSS", "description": "INNER: matching rows. LEFT: all left + matching right.", "example": "SELECT * FROM A INNER JOIN B ON A.id = B.id"},
+            {"title": "Aggregate Functions", "formula": "COUNT | SUM | AVG | MIN | MAX", "description": "Used with GROUP BY for grouped calculations", "example": "SELECT dept, AVG(salary) FROM emp GROUP BY dept"},
+            {"title": "Subquery vs JOIN", "formula": "Subquery: nested SELECT. JOIN: combine tables.", "description": "JOINs typically perform better than correlated subqueries", "example": "Use JOIN when combining data from multiple tables"}
+          ]
+        }
+      ]
+    }
+  ]
+}

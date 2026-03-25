@@ -1,4 +1,4 @@
-# Priority Queue
+﻿# Priority Queue
 
 ## What is this?
 A priority queue removes elements based on priority, not order.
@@ -29,10 +29,6 @@ O(n)
 ## Key Takeaways
 - Order depends on priority
 - Commonly implemented using heap
-
-## Recommended Problems
-- Kth Largest Element in an Array (LeetCode)
-- Top K Frequent Elements (LeetCode)
 
 ## Mini Practice
 ### Problem: Priority

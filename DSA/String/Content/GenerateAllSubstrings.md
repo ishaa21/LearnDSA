@@ -1,4 +1,4 @@
-# Generate All Substrings
+﻿# Generate All Substrings
 
 ## What is this?
 Creating all possible substrings (Sequence of contiguous characters).
@@ -28,9 +28,6 @@ O(n²) (If storing all)
 ## Key Takeaways
 - Many substrings possible (N*(N+1)/2)
 - Heavy operation
-
-## Recommended Problems
-- Palindromic Substrings (LeetCode)
 
 ## Mini Practice
 ### Problem: Substrings

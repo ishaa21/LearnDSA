@@ -1,4 +1,4 @@
-# FractionalKnapsack
+﻿# FractionalKnapsack
 
 ## What is this?
 Knapsack where items can be divided (take a fraction of item).
@@ -26,9 +26,6 @@ Resource allocation, food distribution.
 ## Key Takeaways
 - Greedy works here (unlike 0/1 Knapsack)
 - Sort by bang for buck (value density)
-
-## Recommended Problems
-- GFG: Fractional Knapsack
 
 ## Mini Practice
 ### Problem

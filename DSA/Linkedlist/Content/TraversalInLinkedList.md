@@ -1,4 +1,4 @@
-# Traversal in Linked List
+﻿# Traversal in Linked List
 
 ## What is this?
 Visiting each node once.
@@ -26,9 +26,6 @@ O(1)
 ## Key Takeaways
 - Fundamental operation
 - Linear time
-
-## Recommended Problems
-- Linked List Traversal (GFG)
 
 ## Mini Practice
 ### Problem: Print All

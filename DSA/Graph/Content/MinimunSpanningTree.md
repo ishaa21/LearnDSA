@@ -1,4 +1,4 @@
-# Minimum Spanning Tree (MST)
+﻿# Minimum Spanning Tree (MST)
 
 ## What is this?
 A subset of edges that connects all vertices with minimum total weight and NO cycles.
@@ -29,10 +29,6 @@ O(V)
 - No cycles
 - Connects all vertices
 - Minimizes total cost
-
-## Recommended Problems
-- Min Cost to Connect All Points (LeetCode)
-- Minimum Spanning Tree (GFG)
 
 ## Mini Practice
 ### Problem: MST Cost

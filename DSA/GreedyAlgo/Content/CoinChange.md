@@ -1,4 +1,4 @@
-# CoinChange
+﻿# CoinChange
 
 ## What is this?
 Finding minimum coins change using greedy choice.
@@ -25,10 +25,6 @@ Standard currency systems (US Dollar, Euro, etc) are designed for greedy approac
 ## Key Takeaways
 - Works ONLY for canonical coin systems
 - Fails for arbitrary coin sets (need DP for general case)
-
-## Recommended Problems
-- LeetCode: Coin Change (Try solving greedily, see where it fails)
-- GFG: Minimum Coins (Greedy valid)
 
 ## Mini Practice
 ### Problem

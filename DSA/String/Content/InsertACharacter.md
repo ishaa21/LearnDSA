@@ -1,4 +1,4 @@
-# Insert A Character
+﻿# Insert A Character
 
 ## What is this?
 Adding a character at a specific position inside a string.
@@ -28,9 +28,6 @@ O(n)
 ## Key Takeaways
 - Strings are immutable in many languages (New object created)
 - Shifting needed
-
-## Recommended Problems
-- Insert Character in String (GFG)
 
 ## Mini Practice
 ### Problem: Insert

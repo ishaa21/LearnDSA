@@ -1,4 +1,4 @@
-# Doubly Linked List
+﻿# Doubly Linked List
 
 ## What is this?
 Each node has previous and next references.
@@ -27,9 +27,6 @@ O(n)
 ## Key Takeaways
 - Extra memory, more flexibility
 - Bidirectional
-
-## Recommended Problems
-- Doubly Linked List (GFG)
 
 ## Mini Practice
 ### Problem: Backward Travel

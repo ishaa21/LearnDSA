@@ -1,4 +1,4 @@
-# Connected Components
+﻿# Connected Components
 
 ## What is this?
 Groups of nodes where each node is reachable from others in the same group.
@@ -28,10 +28,6 @@ O(V)
 ## Key Takeaways
 - Multiple DFS/BFS runs
 - Works for undirected graphs
-
-## Recommended Problems
-- Number of Connected Components (LeetCode)
-- Connected Components (GFG)
 
 ## Mini Practice
 ### Problem: Count

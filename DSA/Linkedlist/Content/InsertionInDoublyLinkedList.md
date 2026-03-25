@@ -1,4 +1,4 @@
-# Insertion in Doubly Linked List
+﻿# Insertion in Doubly Linked List
 
 ## What is this?
 Adding node in DLL. Must update 4 pointers (prev/next of NEW, prev/next of NEIGHBORS).
@@ -25,9 +25,6 @@ O(1)
 ## Key Takeaways
 - Careful pointer handling
 - More complex than singly
-
-## Recommended Problems
-- Insert in Doubly Linked List (GFG)
 
 ## Mini Practice
 ### Problem: Insert Head

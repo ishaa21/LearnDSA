@@ -1,4 +1,4 @@
-# Reverse Doubly Linked List
+﻿# Reverse Doubly Linked List
 
 ## What is this?
 Reversing doubly linked list. All `prev` become `next` and vice versa.
@@ -26,9 +26,6 @@ O(1)
 ## Key Takeaways
 - Handle both links
 - Simpler than singly (no need for 3 pointers)
-
-## Recommended Problems
-- Reverse a Doubly Linked List (GFG)
 
 ## Mini Practice
 ### Problem: Reverse DLL

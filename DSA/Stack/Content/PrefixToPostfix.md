@@ -1,4 +1,4 @@
-# Prefix to Postfix
+﻿# Prefix to Postfix
 
 ## What is this?
 Converting Prefix (+ A B) to Postfix (A B +).
@@ -26,9 +26,6 @@ O(n)
 ## Key Takeaways
 - Stack holds partial expressions
 - Single pass
-
-## Recommended Problems
-- Prefix to Postfix (GFG)
 
 ## Mini Practice
 ### Problem: Convert

@@ -1,4 +1,4 @@
-# Postfix to Prefix
+﻿# Postfix to Prefix
 
 ## What is this?
 Converting Postfix (A B +) to Prefix (+ A B).
@@ -26,9 +26,6 @@ O(n)
 ## Key Takeaways
 - Stack simplifies transformation
 - One pass algorithm
-
-## Recommended Problems
-- Postfix to Prefix (GFG)
 
 ## Mini Practice
 ### Problem: Convert

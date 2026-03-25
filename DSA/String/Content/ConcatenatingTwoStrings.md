@@ -1,4 +1,4 @@
-# Concatenating Two Strings
+﻿# Concatenating Two Strings
 
 ## What is this?
 Joining two strings together into one.
@@ -28,9 +28,6 @@ O(n + m)
 ## Key Takeaways
 - Creates new string
 - Use StringBuilder/Buffer for huge loops
-
-## Recommended Problems
-- Merge Strings Alternately (LeetCode)
 
 ## Mini Practice
 ### Problem: Join

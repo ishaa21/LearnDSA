@@ -1,4 +1,4 @@
-# Merge Sort
+﻿# Merge Sort
 
 ## What is this?
 Merge Sort divides array into halves, sorts them recursively, and merges them in sorted order.
@@ -31,10 +31,6 @@ O(n) (Requires extra array)
 - Divide and conquer
 - Stable and efficient
 
-## Recommended Problems
-- Sort an Array (LeetCode)
-- Merge Sort (GFG)
-
 ## Mini Practice
 ### Problem: Merge
 Merge [1, 3] and [2, 4].
@@ -42,3 +38,17 @@ Input: Two sorted arrays
 Output: [1, 2, 3, 4]
 Hint: Compare heads. Pick smaller.
 Solution: Two pointer approach.
+
+### Problem: Merge Two Sorted
+Merge [1, 3, 5] and [2, 4, 6] into one sorted array.
+Input: [1, 3, 5] and [2, 4, 6]
+Output: [1, 2, 3, 4, 5, 6]
+Hint: Use two pointers, compare elements, pick smaller.
+Solution: i=0,j=0. Compare arr1[i] and arr2[j]. Pick smaller. Move that pointer.
+
+### Problem: Trace Merge Sort
+Trace the merge sort steps for [38, 27, 43, 3].
+Input: [38, 27, 43, 3]
+Output: Split: [38,27] [43,3] -> [38][27][43][3] -> Merge: [27,38][3,43] -> [3,27,38,43]
+Hint: Keep splitting until single elements, then merge back.
+Solution: Divide until size 1, then merge pairs in sorted order.

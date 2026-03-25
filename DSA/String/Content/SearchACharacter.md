@@ -1,4 +1,4 @@
-# Search a Character
+﻿# Search a Character
 
 ## What is this?
 Finding a character in string (Does it exist? Where?).
@@ -27,9 +27,6 @@ O(1)
 ## Key Takeaways
 - Simple linear search
 - Case sensitivity matters
-
-## Recommended Problems
-- First Unique Character in a String (LeetCode)
 
 ## Mini Practice
 ### Problem: Find Index

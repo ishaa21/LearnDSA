@@ -1,4 +1,4 @@
-# NQueens
+﻿# NQueens
 
 ## What is this?
 Place N queens on NxN board, no two attacking.
@@ -28,9 +28,6 @@ Constraint solving (sudoku, timetables).
 - Constraint-based backtracking
 - Diagonals can be checked fast with arrays
 
-## Recommended Problems
-- LeetCode: N-Queens
-
 ## Mini Practice
 ### Problem
 Input: N=4
@@ -42,3 +39,17 @@ Q . . .
 (One of 2 solutions)
 Hint: Try (0,1), (1,3), (2,0), (3,2).
 Solution: 2 solutions found.
+
+### Problem: 4 Queens Solution
+Place 4 queens on a 4x4 board such that no two attack each other.
+Input: N = 4
+Output: Solution exists. One arrangement: [2,4,1,3] (queen positions per row)
+Hint: Try placing queen in each column of current row. If safe, recurse for next row.
+Solution: Row1:col2, Row2:col4, Row3:col1, Row4:col3. Verify no conflicts.
+
+### Problem: Count Solutions
+How many solutions exist for the 8-Queens problem?
+Input: N = 8
+Output: 92 solutions
+Hint: Use backtracking to enumerate all valid configurations.
+Solution: Systematically try all placements, backtrack on conflicts. Total = 92.

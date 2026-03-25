@@ -1,4 +1,4 @@
-# Bubble Sort
+﻿# Bubble Sort
 
 ## What is this?
 Bubble Sort repeatedly swaps adjacent elements if they are in wrong order. Small elements "bubble" to the top.
@@ -32,10 +32,6 @@ O(1)
 - Simple but slow
 - Rarely used in practice for large data
 
-## Recommended Problems
-- Bubble Sort (GFG)
-- Sorting: Bubble Sort (HackerRank)
-
 ## Mini Practice
 ### Problem: Bubble Up
 Sort [3, 1, 2].
@@ -44,3 +40,17 @@ Output: [1, 2, 3]
 Hint:
 Pass 1: Swap(3,1)->[1,3,2]. Swap(3,2)->[1,2,3].
 Solution: Nested loop. Swap arr[j], arr[j+1].
+
+### Problem: Count Swaps
+Count total swaps needed to sort [5, 3, 1].
+Input: [5, 3, 1]
+Output: 3 swaps. Pass1: (5,3)->(3,5,1), (5,1)->(3,1,5). Pass2: (3,1)->(1,3,5).
+Hint: Track a swap counter inside the nested loop.
+Solution: swapCount=0; on each swap: swapCount++. Total = 3.
+
+### Problem: Already Sorted Detection
+Apply optimized bubble sort on [1, 2, 3, 4, 5].
+Input: [1, 2, 3, 4, 5]
+Output: 0 swaps, detected sorted in 1 pass
+Hint: Use a swapped flag. If no swaps in a pass, array is sorted.
+Solution: In first pass, no swaps occur. Flag stays false. Break early.
